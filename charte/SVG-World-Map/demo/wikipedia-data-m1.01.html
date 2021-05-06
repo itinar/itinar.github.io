@@ -41,6 +41,11 @@
         <script src="../tables/countries.json"></script>
         <script>
         	console.log("salut");
+        	fetch("./countries.json")
+.then(response => {
+   return response.json();
+})
+.then(data => console.log(data));
             // Global variables
             var myWorldMap;
 
