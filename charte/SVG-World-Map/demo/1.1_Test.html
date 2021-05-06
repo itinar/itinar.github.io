@@ -7,7 +7,11 @@
 	</head>
 	<body>
         <script src="../src/svg-world-map.js"></script>
-        <script>svgWorldMap()</script>
-        dfd
+        <script>		
+        	loadSVGWorldMap();
+			async function loadSVGWorldMap() {
+    		myWorldMap = await svgWorldMap();
+    	// Do something with the map...
+    	</script>
     </body>
 </html>
