@@ -7,6 +7,51 @@
 	</head>
 	<body>
         <script src="../src/svg-world-map.js"></script>
-        <script>svgWorldMap()</script>
+        <script>
+
+        // Default options
+		var options = {
+
+		    // Base path 
+		    libPath: '../src/', // Point to library folder, e.g. (http[s]:)//myserver.com/map/src/
+
+		    // Basic options
+		    bigMap: true, // Set to 'false' to load small map without provinces
+		    showOcean: true, // Show or hide ocean layer
+		    showAntarctica: true, // Show or hide antarctic layer
+		    showLabels: true, // Show country labels
+		    showMicroLabels: false, // Show microstate labels
+		    showMicroStates: true, // Show microstates on map
+		    showInfoBox: false, // Show info box
+
+		    // Color options
+		    oceanColor: '#fcf403', 
+		    worldColor: '#FFFFFF', 
+		    labelFill: { out: '#666666',  over: '#CCCCCC',  click: '#000000' }, 
+		    countryStroke: { out: '#FFFFFF',  over: '#FFFFFF',  click: '#333333' }, 
+		    countryStrokeWidth: { out: '0.5',  over: '1',  click: '1' }, 
+		    provinceFill: { out: '#B9B9B9',  over: '#FFFFFF',  click: '#666666' }, 
+		    provinceStroke: { out: '#FFFFFF',  over: '#FFFFFF',  click: '#666666' }, 
+		    provinceStrokeWidth: { out: '0.1',  over: '0.5',  click: '0.5' }, 
+
+		    // Group options
+		    groupCountries: true, // Enable or disable country grouping
+		    groupBy: [ "region" ], // Sort countryData by this value(s) and return to countryGroups
+
+		    // Callback functions from the map to the outside, can have custom names
+		    mapOut: "mapOut", 
+		    mapOver: "mapOver", 
+		    mapClick: "mapClick", 
+		    mapTable: "mapTable", // (Custom) callback function for HTML data parsing
+		    mapDate: "mapDate", // (Custom) callback function for time control date return
+
+		    // Time controls
+		    timeControls: false, // Set to 'true' for time controls
+		    timePause: true, // Set to 'false' for time animation autostart
+		    timeLoop: false //  Set to 'true' for time animation loop
+		};
+        svgWorldMap(options)
+
+  		</script>
     </body>
 </html>
