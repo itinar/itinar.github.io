@@ -26770,10 +26770,11 @@
    font-size="5"
    font-family="Verdana">Zimbabwe</text>
 </g>
-<circle
-   style="fill:#b9b9b9;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+<ellipse
+   style="fill:#b9b9b9;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.101574;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
    id="VA"
-   cx="506.11121"
+   cx="506.08582"
    cy="122.50109"
-   r="0.75"
-   inkscape:label="#VA" /></svg>
+   inkscape:label="#VA"
+   rx="0.77460659"
+   ry="0.74921322" /></svg>
