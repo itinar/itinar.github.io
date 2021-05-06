@@ -46,6 +46,7 @@
             // Load SVG World Map
             loadSVGWorldMap();
             async function loadSVGWorldMap() {
+            	console.log("loadSVGWorldMap");
                 // Startup SVG World Map
                 myWorldMap = await svgWorldMap({ bigMap: true, /* set to false for smaller, faster map */ showOcean: true, /*showAntarctica: false,*/ showLabels: false, showInfoBox: true });
                 // Build controls 
@@ -58,6 +59,7 @@
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
             async function loadWikipediaData() {
+            	console.log("loadWikipediaData");
                 // Reset 
                 myWorldMap.reset();
                 document.getElementById('code').classList.add('hidden');
@@ -94,13 +96,15 @@
 
             // Callback function for HTML table parsing, defined in 'options.mapTable'
             function mapTable(tableData) {
+            	console.log("mapTable");
                 if (tableData != '') {
                     // JSON output syntax highlighting 
                     var tableOutput = JSON.stringify(tableData, null, 2);
-                    console.log("tableOutput ");console.log(tableOutput);
+                    console.log("tableOutput ");console.log(tableOutput);console.log("tableData ");console.log(tableData);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
                     document.getElementById('code').innerHTML = "";
                     jsonDisplay.outputPretty(tableOutput);
+                    console.log("tableOutput ");console.log(tableOutput);console.log("tableData ");console.log(tableData);
                     document.getElementById('code').innerHTML = close + document.getElementById('code').innerHTML;
                     // Update country colors 
                     var updateData = {};
@@ -163,6 +167,7 @@
 
             // Load Wikipedia demo page
             function setWikiURL(urlNumber) {
+            	console.log("setWikiURL");
                 var wikiPages = [
                     'https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations',
                     'https://en.wikipedia.org/wiki/List_of_South_American_countries_by_population',
@@ -179,6 +184,7 @@
 
             // Reset map and country list
             function resetMapAndList() {
+            	console.log("setWikiURL");
                 myWorldMap.reset();
                 document.getElementById('code').classList.add('hidden');
                 var lis = document.getElementsByTagName("li");
@@ -189,6 +195,7 @@
 
             // Demo country list
             function buildCountryControls() {
+            	console.log("buildCountryControls");
                 var out = '<ul>';
                 for (var countryid in myWorldMap.countries) {
                     if (myWorldMap.countries[countryid].name != undefined) {
@@ -201,6 +208,7 @@
 
             // Get some random color from the element name
             function getHighlightColor(id) {
+            	console.log("getHighlightColor");
                 // Get the numbers for the id letters, add them, square them and take the last 6 digits
                 var number = parseInt(id.substr(0, 1).charCodeAt(0) + '' + id.substr(1, 2).charCodeAt(0));
                 var hex = '#' + parseInt(number * number).toString().substr(-6, 6);
