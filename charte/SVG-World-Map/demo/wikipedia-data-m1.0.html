@@ -81,7 +81,8 @@
                 try {
                     const req = await fetch(url);
                     const json = await req.json();
-                    var htmlData = json.parse.text["*"];
+                    //var htmlData = json.parse.text["*"];
+
                     myWorldMap.table(htmlData);
                     console.log("url ");console.log(url);
                     console.log("req ");console.log(req);
@@ -97,6 +98,7 @@
                 if (tableData != '') {
                     // JSON output syntax highlighting 
                     var tableOutput = JSON.stringify(tableData, null, 2);
+                    console.log("tableOutput ");console.log(tableOutput);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
                     document.getElementById('code').innerHTML = "";
                     jsonDisplay.outputPretty(tableOutput);
