@@ -1,4 +1,4 @@
-BRICS = '{
+{
   "BR": {
     "Country": "Brazil",
     "Population (in Thousands) (2018)": 210869,
@@ -101,4 +101,4 @@ BRICS = '{
     "Life expectancy (years, avg.)": 71.2,
     "HDI (2019)": "0.741 (high)"
   }
-}'
+}

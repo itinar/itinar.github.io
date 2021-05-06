@@ -8,7 +8,7 @@
 	</head>
 	<body>
         <div id="wikidata" class="box">
-            Wikipedia page UR asdf<br>
+            Wikipedia page UR asdfasdfasd<br>
             <input type="text" id="pageurl" value="https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations"><br>
             <button id="loaddata" onclick="loadWikipediaData()">Load data</button>
             <button id="reset" onclick="resetMapAndList()">Reset map</button><br>
@@ -38,7 +38,7 @@
         <div id="countries" class="box"></div>
         <script src="../src/svg-world-map.js"></script>
         <script src="js/pretty-json.js"></script>
-        <script src="../tables/BRICS.json"></script>
+        <script src="../tables/countries.json"></script>
         <script>
         	console.log("salut");
             // Global variables
@@ -84,7 +84,7 @@
                 try {
                     const req = await fetch(url);
                     const json = await req.json();
-                    var htmlData = json.parse(BRICS);
+                    var htmlData = json.parse(countries);
                     myWorldMap.table(htmlData);
                     console.log("url ");console.log(url);
                     console.log("req ");console.log(req);
