@@ -8,7 +8,7 @@
 	</head>
 	<body>
         <div id="wikidata" class="box">
-            Wikipedia page UR naju<br>
+            Wikipedia page UR asdf<br>
             <input type="text" id="pageurl" value="https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations"><br>
             <button id="loaddata" onclick="loadWikipediaData()">Load data</button>
             <button id="reset" onclick="resetMapAndList()">Reset map</button><br>
@@ -83,7 +83,10 @@
                     const json = await req.json();
                     var htmlData = json.parse.text["*"];
                     myWorldMap.table(htmlData);
-                    console.log(htmlData);
+                    console.log("url ");console.log(url);
+                    console.log("req ");console.log(req);
+                    console.log("json ");console.log(json);
+                    console.log("htmlData ");console.log(htmlData);
                 } catch (e) {
                     //console.error(e);
                 }
