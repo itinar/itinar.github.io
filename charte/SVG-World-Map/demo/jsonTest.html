@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	
+	/*let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+   	let request = new XMLHttpRequest();
+   	request.open('GET', requestURL);
+ 	request.responseType = 'json';
+	request.send();
+
+	request.onload = function() {
+  		const superHeroes = request.response;
+  		populateHeader(superHeroes);
+  		showHeroes(superHeroes);
+	}*/
+
+	var filePath = '../tables/BRICS.json';
+
+	readFile(filePath, function (error, content) {
+    	var data = JSON.parse(content);
+    	console.log(data.collection.length);
+	});
+
+</script>
