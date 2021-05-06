@@ -69,14 +69,14 @@
                 var pageTitle = decodeURIComponent(pageUrl[pageUrl.length-1]);
                 document.getElementById('code').innerHTML = 'Loading Wikipedia data...';
                 document.getElementById('code').classList.remove('hidden');
-                const url = "https://en.wikipedia.org/w/api.php?" +
+                const url = "https://en.wikipedia.org/wiki/BRICS"; /*+
                     new URLSearchParams({
                         origin: "*",
                         action: "parse",
                         format: "json",
                         prop: "text",
                         page: pageTitle
-                    });
+                    });*/
                 try {
                     const req = await fetch(url);
                     const json = await req.json();
