@@ -14,7 +14,7 @@
 
 	var filePath = '../tables/BRICS.json';
 
-	readFile(filePath, function (error, content) {
+	fs.readFile(filePath, function (error, content) {
     	var data = JSON.parse(content);
     	console.log(data.collection.length);
 	});
