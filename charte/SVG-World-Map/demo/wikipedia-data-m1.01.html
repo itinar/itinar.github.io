@@ -89,7 +89,7 @@
                 try {
                     const req = await fetch(url);
                     const json = await req.json();
-                    var htmlData = json.parse(countries);
+                    var htmlData = json.parse(data);
                     myWorldMap.table(htmlData);
                     console.log("url ");console.log(url);
                     console.log("req ");console.log(req);
