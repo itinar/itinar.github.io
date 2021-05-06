@@ -110,8 +110,9 @@
             	console.log("mapTable");
                 if (tableData != '') {
                     // JSON output syntax highlighting 
-                    var tableOutput = JSON.stringify(tableData, null, 2);
+                    //var tableOutput = JSON.stringify(tableData, null, 2);
 
+                    var tableOutput = data;
 
                     console.log("tableOutput ");console.log(tableOutput);console.log("tableData ");console.log(tableData);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
