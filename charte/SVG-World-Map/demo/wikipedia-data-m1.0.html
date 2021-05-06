@@ -8,7 +8,7 @@
 	</head>
 	<body>
         <div id="wikidata" class="box">
-            Wikipedia page UR asdf<br>
+            Wikipedia page UR fdsa<br>
             <input type="text" id="pageurl" value="https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations"><br>
             <button id="loaddata" onclick="loadWikipediaData()">Load data</button>
             <button id="reset" onclick="resetMapAndList()">Reset map</button><br>
@@ -70,7 +70,7 @@
                 var pageTitle = decodeURIComponent(pageUrl[pageUrl.length-1]);
                 document.getElementById('code').innerHTML = 'Loading Wikipedia data...';
                 document.getElementById('code').classList.remove('hidden');
-                const url = "https://en.wikipedia.org/wiki/BRICS" +
+                const url = "https://en.wikipedia.org/w/api.php?" +
                     new URLSearchParams({
                         origin: "*",
                         action: "parse",
