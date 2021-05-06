@@ -42,9 +42,19 @@
         <script>
         	console.log("salut");
         	
-        	fetch('../tables/BRICS.json')
-                .then(response => response.json())
-                .then(data => console.log(data));
+        	const fs = require('fs');
+const json_data = require('../tables/BRICS.json');
+
+fs.readFile(json_data, 'utf8', function (err, data) {
+  try {
+    data = JSON.parse(data)
+    for (let i in data){
+    console.log(data)
+    }
+  } catch (e) {
+    // Catch error in case file doesn't exist or isn't valid JSON
+  }
+});
 
 
 
