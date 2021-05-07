@@ -83,6 +83,8 @@
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
             async function loadCountryData(country) {
                 console.log("loadCountryData");
+                console.log("country");console.log(country);
+
                 // Reset 
                 myWorldMap.reset();
                 document.getElementById('code').classList.add('hidden');
@@ -101,6 +103,7 @@
                     console.log("json");console.log(json); // show the JSON file content into console 
                     travelDataIn = json;
                     console.log("travelDataIn");console.log(travelDataIn);
+                    return travelDataIn;
                 });
 
                 console.log("travelDataIn");console.log(travelDataIn);
