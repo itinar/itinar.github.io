@@ -5,10 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>SVG World Map Demo</title>
         <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <script data-main="scripts/main" src="../src/require.js"></script>
 	</head>
 	<body>
         <div id="wikidata" class="box">
-            Wikipedia page UR chum scho<br>
+            Wikipedia page UR chum scho bro<br>
             <input type="text" id="pageurl" value="https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations"><br>
             <button id="loaddata" onclick="loadWikipediaData()">Load data</button>
             <button id="reset" onclick="resetMapAndList()">Reset map</button><br>
@@ -37,7 +38,7 @@
         </div>
         <div id="countries" class="box"></div>
         <script src="../src/svg-world-map.js"></script>
-        <script src="../src/require.js"></script>
+        <script data-main="scripts/main" src="../src/require.js"></script>
         <script src="js/pretty-json.js"></script>
         <!--<script src="../tables/BRICS.json"></script>-->
         <script>

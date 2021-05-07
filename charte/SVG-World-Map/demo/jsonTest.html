@@ -1,22 +1,37 @@
-<script type="text/javascript">
-	
-	/*let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-   	let request = new XMLHttpRequest();
-   	request.open('GET', requestURL);
- 	request.responseType = 'json';
-	request.send();
+<head>
+	<script src="../src/require.js"></script>
+	<script src="../src/jquery.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		/*let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+	   	let request = new XMLHttpRequest();
+	   	request.open('GET', requestURL);
+	 	request.responseType = 'json';
+		request.send();
 
-	request.onload = function() {
-  		const superHeroes = request.response;
-  		populateHeader(superHeroes);
-  		showHeroes(superHeroes);
-	}*/
+		request.onload = function() {
+	  		const superHeroes = request.response;
+	  		populateHeader(superHeroes);
+	  		showHeroes(superHeroes);
+		}*/
 
-	var filePath = '../tables/BRICS.json';
+		const filePath = '../src/BRICS.json';
 
-	fs.readFile(filePath, function (error, content) {
-    	var data = JSON.parse(content);
-    	console.log(data.collection.length);
-	});
+		var arr = null;
+		$.ajax({
+		    'async': false,
+		    'global': false,
+		    'url': "../src/BRICS.json",
+		    'dataType': "json",
+		    'success': function (data) {
+		        arr = data;
+		    }
+		});
 
-</script>
+		console.log("arr");console.log(arr);
+		//console.log("data");console.log(data);
+
+	</script>
+</body>
