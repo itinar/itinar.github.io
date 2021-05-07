@@ -76,13 +76,13 @@
 
 
             function showCountry(){
-                var countryChosen = document.getElementById('countryChosen');
+                var countryChosen = document.getElementById('countryChosen').value;
                 console.log("countryChosen");console.log(countryChosen);
                 console.log("schiss:");console.log(loadCountryData(countryChosen));
             }
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
-            function loadCountryData(country) {
+            async function loadCountryData(country) {
                 console.log("loadCountryData");
                 console.log("country");console.log(country);
 
