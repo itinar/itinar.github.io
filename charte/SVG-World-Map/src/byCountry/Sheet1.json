@@ -1,6 +1,7 @@
 {
-    "CH":[
+    "Sheet1":[
         {
+            "level":"level",
             "code2":"code2",
             "code3":"code3",
             "name":"name",
@@ -19,12 +20,20 @@
             "vaxAntigenComingIn":"vaxAntigenComingIn"
         },
         {
+            "level":"country",
             "code2":"AF",
             "code3":"AFG",
             "name":"Afghanistan",
             "capital":"Kabul",
             "region":"Asia",
             "subregion":"Southern Asia",
+            "unVaxQuarantineComingIn":10,
+            "vaxQuarantineComingIn":10,
+            "unVaxPcrComingIn":72,
+            "vaxPcrComingIn":72
+        },
+        {
+            "level":"state1",
             "states__code":"BDS",
             "states__name":"Badakhshān",
             "states__subdivision":"null",
@@ -34,6 +43,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state2",
             "states__code":"BGL",
             "states__name":"Baghlān",
             "states__subdivision":"null",
@@ -43,6 +53,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state3",
             "states__code":"BAL",
             "states__name":"Balkh",
             "states__subdivision":"null",
@@ -52,6 +63,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state4",
             "states__code":"BDG",
             "states__name":"Bādghīs",
             "states__subdivision":"null",
@@ -61,6 +73,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state5",
             "states__code":"BAM",
             "states__name":"Bāmyān",
             "states__subdivision":"null",
@@ -70,6 +83,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state6",
             "states__code":"DAY",
             "states__name":"Dāykundī",
             "states__subdivision":"null",
@@ -79,6 +93,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state7",
             "states__code":"FRA",
             "states__name":"Farāh",
             "states__subdivision":"null",
@@ -88,6 +103,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state8",
             "states__code":"FYB",
             "states__name":"Fāryāb",
             "states__subdivision":"null",
@@ -97,6 +113,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state9",
             "states__code":"GHA",
             "states__name":"Ghaznī",
             "states__subdivision":"null",
@@ -106,6 +123,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state10",
             "states__code":"GHO",
             "states__name":"Ghōr",
             "states__subdivision":"null",
@@ -115,6 +133,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state11",
             "states__code":"HEL",
             "states__name":"Helmand",
             "states__subdivision":"null",
@@ -124,6 +143,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state12",
             "states__code":"HER",
             "states__name":"Herāt",
             "states__subdivision":"null",
@@ -133,6 +153,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state13",
             "states__code":"JOW",
             "states__name":"Jowzjān",
             "states__subdivision":"null",
@@ -142,6 +163,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state14",
             "states__code":"KAN",
             "states__name":"Kandahār",
             "states__subdivision":"null",
@@ -151,6 +173,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state15",
             "states__code":"KHO",
             "states__name":"Khōst",
             "states__subdivision":"null",
@@ -160,15 +183,17 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state16",
             "states__code":"KNR",
             "states__name":"Kunar",
             "states__subdivision":"null",
             "unVaxQuarantineComingIn":10,
-            "vaxQuarantineComingIn":10,
+            "vaxQuarantineComingIn":5,
             "unVaxPcrComingIn":72,
             "vaxPcrComingIn":72
         },
         {
+            "level":"state17",
             "states__code":"KDZ",
             "states__name":"Kunduz",
             "states__subdivision":"null",
@@ -178,6 +203,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state18",
             "states__code":"KAB",
             "states__name":"Kābul",
             "states__subdivision":"null",
@@ -187,6 +213,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state19",
             "states__code":"KAP",
             "states__name":"Kāpīsā",
             "states__subdivision":"null",
@@ -196,6 +223,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state20",
             "states__code":"LAG",
             "states__name":"Laghmān",
             "states__subdivision":"null",
@@ -205,6 +233,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state21",
             "states__code":"LOG",
             "states__name":"Lōgar",
             "states__subdivision":"null",
@@ -214,6 +243,7 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state22",
             "states__code":"NAN",
             "states__name":"Nangarhār",
             "states__subdivision":"null",
@@ -223,15 +253,17 @@
             "vaxPcrComingIn":72
         },
         {
+            "level":"state23",
             "states__code":"NIM",
             "states__name":"Nīmrōz",
             "states__subdivision":"null",
             "unVaxQuarantineComingIn":10,
             "vaxQuarantineComingIn":5,
             "unVaxPcrComingIn":72,
-            "vaxPcrComingIn":72
+            "vaxPcrComingIn":240
         },
         {
+            "level":"state24",
             "states__code":"NUR",
             "states__name":"Nūristān",
             "states__subdivision":"null",
@@ -241,6 +273,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state25",
             "states__code":"PIA",
             "states__name":"Paktiyā",
             "states__subdivision":"null",
@@ -250,15 +283,17 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state26",
             "states__code":"PKA",
             "states__name":"Paktīkā",
             "states__subdivision":"null",
-            "unVaxQuarantineComingIn":10,
+            "unVaxQuarantineComingIn":20,
             "vaxQuarantineComingIn":5,
             "unVaxPcrComingIn":72,
             "vaxPcrComingIn":240
         },
         {
+            "level":"state27",
             "states__code":"PAN",
             "states__name":"Panjshayr",
             "states__subdivision":"null",
@@ -268,6 +303,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state28",
             "states__code":"PAR",
             "states__name":"Parwān",
             "unVaxQuarantineComingIn":20,
@@ -276,6 +312,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state29",
             "states__code":"SAM",
             "states__name":"Samangān",
             "states__subdivision":"null",
@@ -285,6 +322,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state30",
             "states__code":"SAR",
             "states__name":"Sar-e Pul",
             "states__subdivision":"null",
@@ -294,15 +332,17 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state31",
             "states__code":"TAK",
             "states__name":"Takhār",
             "states__subdivision":"null",
             "unVaxQuarantineComingIn":20,
             "vaxQuarantineComingIn":5,
-            "unVaxPcrComingIn":72,
+            "unVaxPcrComingIn":24,
             "vaxPcrComingIn":240
         },
         {
+            "level":"state32",
             "states__code":"URU",
             "states__name":"Uruzgān",
             "states__subdivision":"null",
@@ -312,6 +352,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state33",
             "states__code":"WAR",
             "states__name":"Wardak",
             "states__subdivision":"null",
@@ -321,15 +362,13 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"state34",
             "states__code":"ZAB",
             "states__name":"Zābul",
-            "states__subdivision":"null",
-            "unVaxQuarantineComingIn":20,
-            "vaxQuarantineComingIn":5,
-            "unVaxPcrComingIn":24,
-            "vaxPcrComingIn":240
+            "states__subdivision":"null"
         },
         {
+            "level":"country",
             "code2":"AX",
             "code3":"ALA",
             "name":"Åland Islands",
@@ -342,6 +381,7 @@
             "vaxPcrComingIn":240
         },
         {
+            "level":"country",
             "code2":"AL",
             "code3":"ALB",
             "name":"Albania",
@@ -354,50 +394,76 @@
             "vaxPcrComingIn":720
         },
         {
-
+            "level":"state1",
+            "states__code":1,
+            "states__name":"Berat",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state2",
+            "states__code":9,
+            "states__name":"Dibër",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state3",
+            "states__code":2,
+            "states__name":"Durrës",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state4",
+            "states__code":3,
+            "states__name":"Elbasan",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state5",
+            "states__code":4,
+            "states__name":"Fier",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state6",
+            "states__code":5,
+            "states__name":"Gjirokastër",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state7",
+            "states__code":6,
+            "states__name":"Korçë",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state8",
+            "states__code":7,
+            "states__name":"Kukës",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state9",
+            "states__code":8,
+            "states__name":"Lezhë",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state10",
+            "states__code":10,
+            "states__name":"Shkodër",
+            "states__subdivision":"null"
         },
         {
-
+            "level":"state11",
+            "states__code":11,
+            "states__name":"Tiranë",
+            "states__subdivision":"null"
         },
         {
-            "code2":"DZ",
-            "code3":"DZA",
-            "name":"Algeria",
-            "capital":"Algiers",
-            "region":"Africa",
-            "subregion":"Northern Africa",
-            "unVaxQuarantineComingIn":50,
-            "unVaxPcrComingIn":48
-        },
-        {
-
+            "level":"state12",
+            "states__code":12,
+            "states__name":"Vlorë",
+            "states__subdivision":"null"
         }
     ]
 }

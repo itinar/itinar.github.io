@@ -10,6 +10,7 @@
             "states__code":"states__code",
             "states__name":"states__name",
             "states__subdivision":"states__subdivision",
+            "path":"path",
             "unVaxQuarantineComingIn":"unVaxQuarantineComingIn",
             "vaxQuarantineComingIn":"vaxQuarantineComingIn",
             "unVaxPcrComingIn":"unVaxPcrComingIn",

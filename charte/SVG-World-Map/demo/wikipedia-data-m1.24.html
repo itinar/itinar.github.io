@@ -78,6 +78,10 @@
                 console.log("countryChosen");console.log(countryChosen);
                 await loadCountryData(countryChosen);
                 console.log("travelData:");console.log(travelData);
+
+                for (i = 0; i < cars.length; i++) {
+                    
+                }
             }
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
@@ -95,7 +99,7 @@
                 // Load Wiki data
                 //var loadDataIn;
                 
-                var filePath = '../src/byCountry' + country + '.json';
+                var filePath = '../src/byCountry/' + country + '.json';
 
                 console.log(filePath);
 
