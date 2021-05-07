@@ -72,15 +72,13 @@
                 
             }
 
-
-
-
             async function showCountry(){
                 var chumDaDri;
                 var countryChosen = document.getElementById('countryChosen').value;
                 console.log("countryChosen");console.log(countryChosen);
-                await loadCountryData(countryChosen);
-                console.log("chumDaDri:");console(chumDaDri);
+                await var chumDaODri = loadCountryData(countryChosen);
+                console.log("chumDaDri:");console.log(chumDaDri);
+                console.log("chumDaODri:");console.log(chumDaODri);
             }
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
