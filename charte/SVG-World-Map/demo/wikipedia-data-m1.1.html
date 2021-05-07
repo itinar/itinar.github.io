@@ -104,6 +104,7 @@
                     console.log("close");console.log(close);
                     document.getElementById('code').innerHTML = "";
                     jsonDisplay.outputPretty(tableOutput);
+                    console.log("outputPretty");console.log(jsonDisplay.outputPretty(tableOutput));
                     document.getElementById('code').innerHTML = close + document.getElementById('code').innerHTML;
                     // Update country colors 
                     var updateData = {};
