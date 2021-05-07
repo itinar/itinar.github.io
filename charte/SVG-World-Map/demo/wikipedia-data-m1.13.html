@@ -123,7 +123,8 @@
                     console.log("tableData =! ''");
                     // JSON output syntax highlighting 
                     console.log("tableData");console.log(tableData);
-                    var tableOutput = JSON.stringify(cData, null, 2);
+                    tableData = cData;
+                    var tableOutput = JSON.stringify(tableData, null, 2);
                     console.log("tableOutput");console.log(tableOutput);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
                     console.log("close");console.log(close);
