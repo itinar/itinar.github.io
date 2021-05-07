@@ -100,11 +100,12 @@
                 var travelDataOut = JSON.stringify(travelDataIn, null, 2);
                 console.log("travelDataOut");console.log(travelDataOut);
 
-                document.getElementById("demo") = travelDataIn.BR.Country;
-                document.getElementById("demo2") = travelDataIn[2].Country;
+                //document.getElementById("demo") = travelDataIn.BR.Country;
+                document.getElementById("demo2") = travelDataIn[1].name;
+                document.getElementById("demo2") = travelDataIn[1].code2;
 
-                document.getElementById("demo") = travelDataOut.BR.Country;
-                document.getElementById("demo2") = travelDataOut[2].Country;
+                //document.getElementById("demo") = travelDataOut.BR.Country;
+                //document.getElementById("demo2") = travelDataOut[2].Country;
 
 
             }

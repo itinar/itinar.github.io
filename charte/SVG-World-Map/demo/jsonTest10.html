@@ -1,0 +1,39 @@
+<head>
+	<script src="../src/require.js"></script>
+	<script src="../src/jquery.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		/*let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+	   	let request = new XMLHttpRequest();
+	   	request.open('GET', requestURL);
+	 	request.responseType = 'json';
+		request.send();
+
+		request.onload = function() {
+	  		const superHeroes = request.response;
+	  		populateHeader(superHeroes);
+	  		showHeroes(superHeroes);
+		}*/
+
+		var bricsRaw = '{ "BR": { "Country": "Brazil", "Population (in Thousands) (2018)": 210869, "Nom. GDP bil. USD (2020 est.)": 1363, "PPP GDP bil. USD (2020 est.)": 4593, "Nom. GDP per capita USD (2020 est.)": 6450, "PPP GDP per capita USD (2020 est.)": 17016, "GDP growth (2018 est.)": "1.0%", "Foreign Exchange Reserves (2021)": "$355,620 million", "HFCE (2018)": "$1,194,670 bn", "Government spending": "$846.6 bn", "Exports": "$393.2 bn", "Imports": "$201.9 bn", "Literacy rate": "94.4%", "Life expectancy (years, avg.)": 76.8, "HDI (2019)": "0.765 (high)" }, "CN": { "Country": "China", "Population (in Thousands) (2018)": 1415045.928, "Nom. GDP bil. USD (2020 est.)": 14860, "PPP GDP bil. USD (2020 est.)": 29471, "Nom. GDP per capita USD (2020 est.)": 10873, "PPP GDP per capita USD (2020 est.)": 20984, "GDP growth (2018 est.)": "6.7%", "Foreign Exchange Reserves (2021)": "$3,349,305 million", "HFCE (2018)": "$5,352,545 bn", "Government spending": "$2,031.0 bn", "Exports": "$2,157.0 bn", "Imports": "$1,731.0 bn", "Literacy rate": "96.4%", "Life expectancy (years, avg.)": 76.4, "HDI (2019)": "0.761 (high)" }, "IN": { "Country": "India", "Population (in Thousands) (2018)": 1367089.879, "Nom. GDP bil. USD (2020 est.)": 2592, "PPP GDP bil. USD (2020 est.)": 12363, "Nom. GDP per capita USD (2020 est.)": 1877, "PPP GDP per capita USD (2020 est.)": 9027, "GDP growth (2018 est.)": "7.1%", "Foreign Exchange Reserves (2021)": "$590,185 million", "HFCE (2018)": "$1,729,560 bn", "Government spending": "$616.0 bn", "Exports": "$303.4 bn", "Imports": "$426.8 bn", "Literacy rate": "72.1%", "Life expectancy (years, avg.)": 68.8, "HDI (2019)": "0.645 (medium)" }, "RU": { "Country": "Russia", "Population (in Thousands) (2018)": 143964.709, "Nom. GDP bil. USD (2020 est.)": 1464, "PPP GDP bil. USD (2020 est.)": 4519, "Nom. GDP per capita USD (2020 est.)": 9972, "PPP GDP per capita USD (2020 est.)": 30820, "GDP growth (2018 est.)": "1.6%", "Foreign Exchange Reserves (2021)": "$586,100 million", "HFCE (2018)": "$856,329 bn", "Government spending": "$414.0 bn", "Exports": "$336.8 bn", "Imports": "$212.7 bn", "Literacy rate": "99.7%", "Life expectancy (years, avg.)": 72.7, "HDI (2019)": "0.824 (very high)" }, "ZA": { "Country": "South Africa", "Population (in Thousands) (2018)": 57398.421, "Nom. GDP bil. USD (2020 est.)": 370, "PPP GDP bil. USD (2020 est.)": 834, "Nom. GDP per capita USD (2020 est.)": 6193, "PPP GDP per capita USD (2020 est.)": 13965, "GDP growth (2018 est.)": "1.4%", "Foreign Exchange Reserves (2021)": "$53,760 million", "HFCE (2018)": "$211,693 bn", "Government spending": "$95.27 bn", "Exports": "$78.25 bn", "Imports": "$80.22 bn", "Literacy rate": "94.3%", "Life expectancy (years, avg.)": 63.6, "HDI (2019)": "0.709 (high)" }, "undefined": { "Country": "Average", "Population (in Thousands) (2018)": 627060.914, "Nom. GDP bil. USD (2020 est.)": 3653.7, "PPP GDP bil. USD (2020 est.)": 8119.9, "Nom. GDP per capita USD (2020 est.)": 7422, "PPP GDP per capita USD (2020 est.)": 19041, "GDP growth (2018 est.)": "3.5%", "Foreign Exchange Reserves (2021)": "$986,994 million", "HFCE (2018)": "$1,868,959 bn", "Government spending": "$800.574 bn", "Exports": "$562.94 bn", "Imports": "$446.68 bn", "Literacy rate": "93%", "Life expectancy (years, avg.)": 71.2, "HDI (2019)": "0.741 (high)" } }';
+
+		var countriesRaw = '[{ "code2": "AS", "code3": "ASM", "name": "American Samoa", "capital": "Pago Pago", "region": "Oceania", "subregion": "Polynesia", "states": [] }, { "code2": "AD", "code3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "region": "Europe", "subregion": "Southern Europe", "states": [ { "code": "07", "name": "Andorra la Vella", "subdivision": null }, { "code": "02", "name": "Canillo", "subdivision": null }, { "code": "03", "name": "Encamp", "subdivision": null }, { "code": "08", "name": "Escaldes-Engordany", "subdivision": null }, { "code": "04", "name": "La Massana", "subdivision": null }, { "code": "05", "name": "Ordino", "subdivision": null }, { "code": "06", "name": "Sant Julià de Lòria", "subdivision": null } ] }, { "code2": "AO", "code3": "AGO", "name": "Angola", "capital": "Luanda", "region": "Africa", "subregion": "Middle Africa", "states": [ { "code": "BGO", "name": "Bengo", "subdivision": null }, { "code": "BGU", "name": "Benguela", "subdivision": null }, { "code": "BIE", "name": "Bié", "subdivision": null }, { "code": "CAB", "name": "Cabinda", "subdivision": null }, { "code": "CNN", "name": "Cunene", "subdivision": null }, { "code": "HUA", "name": "Huambo", "subdivision": null }, { "code": "HUI", "name": "Huíla", "subdivision": null }, { "code": "CCU", "name": "Kuando Kubango", "subdivision": null }, { "code": "CNO", "name": "Kwanza Norte", "subdivision": null }, { "code": "CUS", "name": "Kwanza Sul", "subdivision": null }, { "code": "LUA", "name": "Luanda", "subdivision": null }, { "code": "LNO", "name": "Lunda Norte", "subdivision": null }, { "code": "LSU", "name": "Lunda Sul", "subdivision": null }, { "code": "MAL", "name": "Malange", "subdivision": null }, { "code": "MOX", "name": "Moxico", "subdivision": null }, { "code": "NAM", "name": "Namibe", "subdivision": null }, { "code": "UIG", "name": "Uíge", "subdivision": null }, { "code": "ZAI", "name": "Zaire", "subdivision": null } ] }]';
+
+		console.log("bricsRaw");console.log(bricsRaw);
+
+		var brics = JSON.parse(bricsRaw);
+
+		console.log("brics");console.log(brics);
+
+		console.log("countriesRaw");console.log(countriesRaw);
+
+		var countries = JSON.parse(countriesRaw);
+
+		console.log("countries");console.log(countries);
+
+
+
+	</script>
+</body>
