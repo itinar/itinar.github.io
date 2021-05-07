@@ -89,13 +89,16 @@
 
                 console.log(filePath);
 
-                var countryTravel;
+                var travelDataIn;
 
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
-                    countryTravel = json;
-                    console.log("countryTravel");console.log(countryTravel);
-                }); 
+                    travelDataIn = json;
+                    console.log("travelDataIn");console.log(travelDataIn);
+                });
+
+                var travelDataOut = JSON.stringify(travelDataIn, null, 2);
+                console.log("travelDataOut");console.log(travelDataOut);
 
 
             }
@@ -107,7 +110,7 @@
                     console.log("tableData =! ''");
                     // JSON output syntax highlighting 
                     console.log("tableData");console.log(tableData);
-                    //tableData = countryTravel;
+                    //tableData = travelData;
                     var tableOutput = JSON.stringify(tableData, null, 2);
                     console.log("tableOutput");console.log(tableOutput);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
