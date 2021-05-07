@@ -75,12 +75,12 @@
 
 
 
-            function showCountry(){
+            async function showCountry(){
                 var chumDaDri;
                 var countryChosen = document.getElementById('countryChosen').value;
                 console.log("countryChosen");console.log(countryChosen);
-                console.log("schiss:");console.log(loadCountryData(countryChosen));
-                console(chumDaDri);
+                await loadCountryData(countryChosen);
+                console.log("chumDaDri:");console(chumDaDri);
             }
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
