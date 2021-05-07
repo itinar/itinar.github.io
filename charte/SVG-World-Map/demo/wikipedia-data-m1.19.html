@@ -76,9 +76,11 @@
 
 
             function showCountry(){
+                var chumDaDri;
                 var countryChosen = document.getElementById('countryChosen').value;
                 console.log("countryChosen");console.log(countryChosen);
                 console.log("schiss:");console.log(loadCountryData(countryChosen));
+                console(chumDaDri);
             }
 
             // Wait for asynchronous Wikipedia JSON load and pass data to library 
@@ -103,6 +105,7 @@
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
                     travelDataIn = json;
+                    chumDaDri = json;
                     console.log("travelDataIn");console.log(travelDataIn);
                     //return travelDataIn;
                 });
