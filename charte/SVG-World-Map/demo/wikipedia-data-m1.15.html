@@ -45,15 +45,6 @@
 
             console.log("filePath");console.log(filePath);
 
-            var cData = 0;
-
-            $.getJSON(filePath, function(json) { 
-                console.log("json");console.log(json); // show the JSON file content into console 
-                cData = json;
-                console.log("cData");console.log(cData);
-            }); 
-
-
 
 
 
@@ -103,7 +94,7 @@
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
                     countryTravel = json;
-                    console.log("cData");console.log(cData);
+                    console.log("countryTravel");console.log(countryTravel);
                 }); 
 
 
@@ -116,7 +107,7 @@
                     console.log("tableData =! ''");
                     // JSON output syntax highlighting 
                     console.log("tableData");console.log(tableData);
-                    tableData = cData;
+                    //tableData = countryTravel;
                     var tableOutput = JSON.stringify(tableData, null, 2);
                     console.log("tableOutput");console.log(tableOutput);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
