@@ -90,13 +90,11 @@
                     lis[i].classList.add('hidden');
                 }
                 // Load Wiki data
-                var countryChosen = document.getElementById('countryChosen').value.split('/');
-
+                var travelDataIn;
+                var countryChosen = document.getElementById('countryChosen');
                 var filePath = '../src/' + countryChosen + '.json';
 
                 console.log(filePath);
-
-                var travelDataIn;
 
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
@@ -106,7 +104,7 @@
 
                 console.log("travelDataIn");console.log(travelDataIn);
 
-                return travelDataIn
+                return travelDataIn;
 
                 //var travelDataOut = JSON.stringify(travelDataIn, null, 2);
                 //console.log("travelDataOut");console.log(travelDataOut);
