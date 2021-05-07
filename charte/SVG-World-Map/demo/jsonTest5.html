@@ -21,6 +21,12 @@
 
 		console.log("filePath");console.log(filePath);
 
+		loadJSON(filePath);
+
+		var data = loadJSON(filePath);
+
+		console.log("data");console.log(data);
+
 	    function loadJSON(filePath, success, error) 
 	    { 
 	    	var xhr = new XMLHttpRequest(); 
