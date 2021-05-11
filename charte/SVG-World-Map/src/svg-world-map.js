@@ -146,7 +146,7 @@ var svgWorldMap = (function() {
                 svg.setAttribute("data", options.libPath + "world-states.svg");
             // Load big map with provinces
             } else {
-                svg.setAttribute("data", options.libPath + "world-states-provinces.svg");
+                svg.setAttribute("data", options.libPath + "world-states-provinces-stripes.svg");
             }
             container.appendChild(svg);
             // Add container and SVG CSS
