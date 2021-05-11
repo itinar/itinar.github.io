@@ -8,18 +8,40 @@ jq -c < shizzle7/CH.json > shizzle7/mini-CH.json
 
 
 
+
+
 Option Explicit
 Sub dupliList()
 
 Dim i As Integer
 Dim ws As Worksheet
 Dim sh As Worksheet
-Set ws = Sheets("AF_States")
+Set ws = Sheets("AF")
 Set sh = Sheets("dl")
 Application.ScreenUpdating = 0
-For i = 2 To Range("B" & Rows.Count).End(xlUp).Row
+For i = 2 To Range("C" & Rows.Count).End(xlUp).Row
     Sheets("AF").Copy After:=sh
-    ActiveSheet.Name = sh.Range("B" & i).Value
+    ActiveSheet.Name = sh.Range("C" & i).Value
 Next i
 
+End Sub
+
+
+Sub dupliList()
+Dim ws As Worksheet, Ct As Long, c As Range
+Set ws = Worksheets("AF")
+Application.ScreenUpdating = False
+For Each c In Sheets("dl").Range("C1:C249")
+    If c.Value <> "" Then
+        ws.Copy after:=Sheets(Sheets.Count)
+        ActiveSheet.Name = c.Value
+        Ct = Ct + 1
+    End If
+Next c
+If Ct > 0 Then
+    MsgBox Ct & " new sheets created from list"
+Else
+    MsgBox "No names on list"
+End If
+Application.ScreenUpdating = True
 End Sub
