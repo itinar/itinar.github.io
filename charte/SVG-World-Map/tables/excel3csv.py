@@ -12,7 +12,7 @@ import os
 # with the form {sheet_name: dataframe}
 #file = input("file name:")
 
-data = pd.read_excel('countriesTest02.xlsx', sheet_name=None)
+data = pd.read_excel('countriesTest03.xlsx', sheet_name=None)
 
 os.makedirs('csv')
 

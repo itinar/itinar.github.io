@@ -1,11 +1,11 @@
 Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,e,v,uv,Unnamed: 9,Unnamed: 10,quara,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22,Unnamed: 23,test,Unnamed: 25,Unnamed: 26,Unnamed: 27,Unnamed: 28,Unnamed: 29,Unnamed: 30,Unnamed: 31,Unnamed: 32,Unnamed: 33
 ,,code2,code3,name,capital,region,subregion,,,,,,,where,,,min,,,max,,,comment,pcr,,,ag,,,,visa,,loadStates
-,1.0,AF,AFG,Afghanistan,Kabul,Asia,Southern Asia,,,,,,,,,,,,,,,,,test,,,,,,,,,
-,2.0,AX,ALA,Åland Islands,Mariehamn,Europe,Northern Europe,,,,,,,quara/into/where,,,quara/into/min,,,quara/into/max,,,,test/into/pcr,,,test/into/ag,,,,bool,,
-,3.0,AL,ALB,Albania,Tirana,Europe,Southern Europe,,,into,,,,quara/into/where/e,quara/into/where/v,quara/into/where/uv,quara/into/min/e,quara/into/min/v,quara/into/min/uv,quara/into/max/e,quara/into/max/v,quara/into/max/uv,quara/into/comment,test/into/pcr/e,test/into/pcr/v,test/into/pcr/uv,test/into/ag/e,test/into/ag/v,test/into/ag/uv,test/into/comment,visa/into/bool,visa/into/comment,loadStates/into
-,4.0,DZ,DZA,Algeria,Algiers,Africa,Northern Africa,,,,,,,,,,,,,,,,,,,,,,,,,,
-,5.0,AS,ASM,American Samoa,Pago Pago,Oceania,Polynesia,,,,,,,,,,,,,,,,,,,,,,,,,,
-,6.0,AD,AND,Andorra,Andorra la Vella,Europe,Southern Europe,,,,,,,,,,,,,,,,,,,,,,,,,,
+,1.0,AT,AFG,Afghanistan,Kabul,Asia,Southern Asia,,,,,,,,,,,,,,,,,test,,,,,,,,,
+,2.0,FR,ALA,Åland Islands,Mariehamn,Europe,Northern Europe,,,,,,,quara/into/where,,,quara/into/min,,,quara/into/max,,,,test/into/pcr,,,test/into/ag,,,,bool,,
+,3.0,DE,ALB,Albania,Tirana,Europe,Southern Europe,,,into,,,,quara/into/where/e,quara/into/where/v,quara/into/where/uv,quara/into/min/e,quara/into/min/v,quara/into/min/uv,quara/into/max/e,quara/into/max/v,quara/into/max/uv,quara/into/comment,test/into/pcr/e,test/into/pcr/v,test/into/pcr/uv,test/into/ag/e,test/into/ag/v,test/into/ag/uv,test/into/comment,visa/into/bool,visa/into/comment,loadStates/into
+,4.0,IT,DZA,Algeria,Algiers,Africa,Northern Africa,,,,,,,,,,,,,,,,,,,,,,,,,,
+,5.0,ES,ASM,American Samoa,Pago Pago,Oceania,Polynesia,,,,,,,,,,,,,,,,,,,,,,,,,,
+,6.0,CH,AND,Andorra,Andorra la Vella,Europe,Southern Europe,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,7.0,AO,AGO,Angola,Luanda,Africa,Middle Africa,,,,,,,quara/out/where,,,quara/out/min,,,quara/out/max,,,,test/out/pcr,,,test/out/ag,,,,,,
 ,8.0,AI,AIA,Anguilla,The Valley,Americas,Caribbean,,,out,,,,quara/out/where/e,quara/out/where/v,quara/out/where/uv,quara/out/min/e,quara/out/min/v,quara/out/min/uv,quara/out/max/e,quara/out/max/v,quara/out/max/uv,quara/out/comment,test/out/pcr/e,test/out/pcr/v,test/out/pcr/uv,test/out/ag/e,test/out/ag/v,test/out/ag/uv,test/out/comment,visa/out/bool,visa/out/comment,loadStates/out
 ,9.0,AQ,ATA,Antarctica,,Polar,,,,,,,,,,,,,,,,,,,,,,,,,,,
