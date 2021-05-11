@@ -1,0 +1,25 @@
+flatten-tool unflatten -f=csv shizzle/ -o=shizzle/testWrite02.json
+flatten-tool unflatten -f=csv shizzle4/ -o=shizzle4/testWrite03.json
+jq -c < shizzle7/CH.json > shizzle7/mini-CH.json
+
+
+=INDIRECT("'"&$A2&"'!"&CHAR(COLUMN(H2)+96)&INDEX(BaseCountries!$B$2:$B$253,MATCH(MID(CELL("filename",$A$1),FIND("]",CELL("filename",$A$1))+1,255),BaseCountries!$C$2:$C$253,0)+1))
+
+
+
+
+Option Explicit
+Sub dupliList()
+
+Dim i As Integer
+Dim ws As Worksheet
+Dim sh As Worksheet
+Set ws = Sheets("AF_States")
+Set sh = Sheets("dl")
+Application.ScreenUpdating = 0
+For i = 2 To Range("B" & Rows.Count).End(xlUp).Row
+    Sheets("AF").Copy After:=sh
+    ActiveSheet.Name = sh.Range("B" & i).Value
+Next i
+
+End Sub

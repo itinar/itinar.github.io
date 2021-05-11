@@ -58,6 +58,8 @@
             // Global variables
             var myWorldMap;
 
+            var countryMainFile;
+
             // Load SVG World Map
             loadSVGWorldMap();
             async function loadSVGWorldMap() {
@@ -73,15 +75,15 @@
             }
 
             async function showCountry(){
-                var travelData;
+                
                 var countryChosen = document.getElementById('countryChosen').value;
                 console.log("countryChosen");console.log(countryChosen);
                 await loadCountryData(countryChosen);
-                console.log("travelData:");console.log(travelData);
+                console.log("countryMainFile:");console.log(countryMainFile);
 
                 for (i = 1; i < 7000; i++) {
                     
-                    if (travelData[i].countryChosen.level) {}
+                    if (countryMainFile[i].countryChosen.level) {}
                 }
             }
 
@@ -100,31 +102,31 @@
                 // Load Wiki data
                 //var loadDataIn;
                 
-                var filePath = '../src/byCountry/' + country + '.json';
+                var filePath = '../src/json_m/' + country + '.json';
 
                 console.log(filePath);
 
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
-                    travelData = json;
-                    //travelData = json;
+                    countryMainFile = json;
+                    //countryMainFile = json;
                     //console.log("loadDataIn");console.log(loadDataIn);
                     //return loadDataIn;
                 });
 
-                //console.log("travelData");console.log(travelData);
+                //console.log("countryMainFile");console.log(countryMainFile);
 
-                //return travelData;
+                //return countryMainFile;
 
-                //var travelDataOut = JSON.stringify(loadDataIn, null, 2);
-                //console.log("travelDataOut");console.log(travelDataOut);
+                //var countryMainFileOut = JSON.stringify(loadDataIn, null, 2);
+                //console.log("countryMainFileOut");console.log(countryMainFileOut);
 
                 //document.getElementById("demo") = loadDataIn.BR.Country;
                 //console.log(loadDataIn[1].name);
                 //console.log(loadDataIn[1].code2);
 
-                //document.getElementById("demo") = travelDataOut.BR.Country;
-                //document.getElementById("demo2") = travelDataOut[2].Country;
+                //document.getElementById("demo") = countryMainFileOut.BR.Country;
+                //document.getElementById("demo2") = countryMainFileOut[2].Country;
             }
 
             // Callback function for HTML table parsing, defined in 'options.mapTable'
@@ -134,7 +136,7 @@
                     console.log("tableData =! ''");
                     // JSON output syntax highlighting 
                     console.log("tableData");console.log(tableData);
-                    //tableData = travelData;
+                    //tableData = countryMainFile;
                     var tableOutput = JSON.stringify(tableData, null, 2);
                     console.log("tableOutput");console.log(tableOutput);
                     var close = '<a class="hide" onclick="document.getElementById(\'code\').classList.add(\'hidden\')">×</a>';
