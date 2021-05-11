@@ -14,6 +14,8 @@ import os
 
 data = pd.read_excel('countriesTest02.xlsx', sheet_name=None)
 
+os.makedirs('csv')
+
 # loop through the dictionary and save csv
 for sheet_name, df in data.items():
     os.makedirs('csv/'+sheet_name)
