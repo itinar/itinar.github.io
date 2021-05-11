@@ -181,7 +181,12 @@
             function highlightMine(groupIn) {
                 console.log("groupIn");console.log(groupIn);
                 console.log("provData");console.log(provData);
+                for (var i = Object.keys(provData["main"]).length; i >= 0; i--) {
+                    console.log(provData["main"][i][nu]);
+                }
+                
             }
+            
 
             // Get some random color from the element name
             function getHighlightColor(id) {
