@@ -169,7 +169,7 @@
 
                 var cData = 0;
 
-                $.getJSON(filePath, function(json) { 
+                $.getJSON(filePath, async function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
                     cData = json;
                     provData = json;
