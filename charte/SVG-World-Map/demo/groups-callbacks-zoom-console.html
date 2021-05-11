@@ -27,7 +27,7 @@
             
             // Wait for JSON data first, then init SVG World Map
             loadCountryData().then(function(countryData) {
-                console.log("loadCountryData()");
+                console.log("loadCountryData() loaded --> async function");
                 loadSVGWorldMap(countryData);
             });
 
@@ -63,9 +63,13 @@
             function mapClick(country) {
                 console.log("mapClick()");
                 document.getElementById("click").innerHTML = country.id;
+                console.log("document.getElementById("click").innerHTML");console.log(document.getElementById("click").innerHTML);
+                console.log("country.id");console.log(country.id);
                 if (country != undefined && country.id != 'Ocean') {
+                    console.log("country not undefined nor ocean");
                     var nation = country.country; // Get parent nation
                     if (nation != undefined) {
+                        console.log("nation not undefined");
                         var out = '<a class="hide" onclick="document.getElementById(\'info\').classList.add(\'hidden\')">×</a>';
                         out += 'Country: ' + country.id;
                         out += '<br><br><a onmouseover="highlightCountry(\'' + nation.id + '\')" onmouseout="myWorldMap.out(\'' + nation.id + '\')" onclick="myWorldMap.click(\'' + nation.id + '\')">Nation: ' + nation.name + '</a><br>';
@@ -76,6 +80,7 @@
                         nation.provinces.forEach(function(province) { 
                             out += '<a onmouseover="myWorldMap.over(\'' + province.id + '\')" onmouseout="myWorldMap.out(\'' + province.id + '\')" onclick="myWorldMap.click(\'' + province.id + '\')">' + province.id + '</a>, '; 
                         }); 
+                        console.log("out");console.log(out);
                         document.getElementById("info").innerHTML = out;
                         document.getElementById("info").classList.remove("hidden");
                     }
@@ -108,6 +113,7 @@
                         out += '<li id="' + subgroup + '" onmouseout="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'out\')" onmouseover="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'over\')" onclick="highlightGroup(\'' + group + '\', \'' + group + '\', \'click\')">' + name + '</li>'; 
                     }
                     out += '</ul>';
+                    console.log("out");console.log(out);
                 }
                 document.getElementById("groups").innerHTML = out;
             }
@@ -115,6 +121,7 @@
             // Highlight country 
             function highlightCountry(id) {
                 console.log("highlightCountry()");
+                console.log("id");console.log(id);
                 var color = getHighlightColor(id);
                 myWorldMap.update({ [id]: color });
             }
