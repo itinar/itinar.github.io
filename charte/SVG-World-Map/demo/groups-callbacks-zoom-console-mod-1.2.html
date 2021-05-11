@@ -24,10 +24,12 @@
         <script src="../src/jquery.js"></script>
         <script>
 
-            var provData;
+            
 
             // Global variables
             var myWorldMap;
+
+            var provData;
             
             // Wait for JSON data first, then init SVG World Map
             loadCountryData().then(function(countryData) {
@@ -182,7 +184,7 @@
                 console.log("groupIn");console.log(groupIn);
                 console.log("provData");console.log(provData);
                 for (var i = Object.keys(provData["main"]).length; i >= 0; i--) {
-                    console.log(provData["main"][i][nu]);
+                    console.log(provData["main"][i]["nu"]);
                 }
                 
             }
