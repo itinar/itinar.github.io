@@ -28,7 +28,6 @@
 
             // Global variables
             var myWorldMap;
-
             var provData;
             
             // Wait for JSON data first, then init SVG World Map
@@ -163,7 +162,7 @@
                 }
             }
 
-            function loadCountry(id){
+            async function loadCountry(id){
                 var filePath = '../tables/json_m/' + id + '_m.json';
 
                 console.log("filePath");console.log(filePath);
@@ -176,7 +175,7 @@
                     provData = json;
                     console.log("cData");console.log(cData);
                 });
-                highlightMine(cData);
+                //highlightMine(cData);
             }
 
             // Highlight country group
