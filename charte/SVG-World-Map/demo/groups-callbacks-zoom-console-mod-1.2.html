@@ -23,6 +23,9 @@
         <script src="js/svg-pan-zoom.min.js"></script>
         <script src="../src/jquery.js"></script>
         <script>
+
+            var provData;
+
             // Global variables
             var myWorldMap;
             
@@ -159,7 +162,7 @@
             }
 
             function loadCountry(id){
-                var filePath = '../tables/json_m/' + id + '.json';
+                var filePath = '../tables/json_m/' + id + '_m.json';
 
                 console.log("filePath");console.log(filePath);
 
@@ -168,37 +171,15 @@
                 $.getJSON(filePath, function(json) { 
                     console.log("json");console.log(json); // show the JSON file content into console 
                     cData = json;
+                    provData = json;
                     console.log("cData");console.log(cData);
                 });
+                highlightMine(cData);
             }
 
             // Highlight country group
-            function highlightMine(id, group, trigger) {
-                console.log("highlightGroup()");
-                console.log("input group");console.log(group);
-                var group = myWorldMap.countryGroups[group];
-                console.log("var id");console.log(id);
-                console.log("var group");console.log(group);
-                console.log("var trigger");console.log(trigger);
-                console.log("var group[id]");console.log(group[id]);
-                var data2 = {};
-                console.log("var data2[group[id]]");console.log(data2[group[id]]);
-                if (trigger == 'out') {
-                    console.log("if (trigger == 'out')");
-                    for (var country in group[id]) {
-                        console.log("country");console.log(country);
-                        myWorldMap.out(country);
-                    }
-                } else if (trigger == 'over' || trigger == 'click') {
-                    var color = getHighlightColor(id);
-                    var data = {};
-                    for (var country in group[id]) {
-                        data[country] = color; // Set data for map update
-                        console.log("data one");console.log(data[country]);
-                    }
-                    console.log("data");console.log(data);
-                    myWorldMap.update(data);
-                }
+            function highlightMine(groupIn) {
+                console.log("groupIn");console.log(groupIn);
             }
 
             // Get some random color from the element name
