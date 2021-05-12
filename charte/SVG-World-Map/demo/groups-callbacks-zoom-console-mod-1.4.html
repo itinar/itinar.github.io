@@ -19,10 +19,6 @@
         <div id="countries" class="box"></div>
         <div id="groups" class="box"></div>
         <div id="info" class="box hidden"></div>
-
-        <input type="radio" name="vac" value="1" checked="checked">Yes
-        <input type="radio" name="vac" value="0">No
-
         <script src="../src/svg-world-map-mod1.0.js"></script>
         <script src="js/svg-pan-zoom.min.js"></script>
         <script src="../src/jquery.js"></script>
@@ -123,6 +119,7 @@
             function buildCountryControls() {
                 console.log("buildCountryControls()");
                 var out = '<ul>';
+                out += '<input type="radio" name="vac" value="1" checked="checked">Yes<input type="radio" name="vac" value="0">No';
                 for (var countryid in myWorldMap.countries) {
                     out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
                 }
