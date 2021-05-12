@@ -114,7 +114,11 @@
             function buildCountryControls() {
                 console.log("buildCountryControls()");
                 var out = '<ul>';
-                out += '<input type="radio" name="vac" value="1" checked="checked">Yes<input type="radio" name="vac" value="0">No';
+                out += '<label>Vac</label><input type="radio" name="vac" value="1" checked="checked">Yes<input type="radio" name="vac" value="0">No';
+                out += '<label>ok with quara</label><input type="radio" name="quaraIf" value="beginn"><input type="radio" name="quaraIf" value="end">';
+                out += '<label>ok with quara, could be left after:</label><input type="text" name="quaraTime" value="min">and might take up to<input type="text" name="quaraTime" value="max">';
+                out += '<label>ok with test</label><input type="radio" name="testIf" value="1" checked="checked">Yes<input type="radio" name="testIf" value="0">No';
+                out += '<label>which one</label><input type="radio" name="PCRalso" value="1">PCRalso<input type="radio" name="AGonly" value="0">AGonly';
                 for (var countryid in myWorldMap.countries) {
                     out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
                 }
