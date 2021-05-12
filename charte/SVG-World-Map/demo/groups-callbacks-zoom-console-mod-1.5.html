@@ -220,26 +220,32 @@
                     if(vacGet[i].checked){
                         vacStat = vacGet[i].value;
                     }
+                    console.log("vacStat");console.log(vacStat);
                 }
                 for (var i = 1; i >= 0; i--) {
                     if(quaraIfGet[i].checked){
                         quaraIfStat = quaraIfGet[i].value;
                     }
+                    console.log("quaraIfStat");console.log(quaraIfStat);
                 }
                 if(quaraIfStat){
                     quaraTimeMinStat = quaraTimeMinGet.value;
+                    console.log("quaraTimeMinStat");console.log(quaraTimeMinStat);
                     quaraTimeMaxStat = quaraTimeMaxGet.value;
+                    console.log("quaraTimeMaxStat");console.log(quaraTimeMaxStat);
                 }
                 for (var i = 1; i >= 0; i--) {
                     if(testIfGet[i].checked){
                         testIfStat = testIfGet[i].value;
                     }
+                    console.log("testIfStat");console.log(testIfStat);
                 }
                 if (testIfStat) {
                     for (var i = 1; i >= 0; i--) {
                         if(testPCRAlsoGet[i].checked){
                         testPCRAlsoStat = testPCRAlsoGet[i].value;
                         }
+                        console.log("testPCRAlsoStat");console.log(testPCRAlsoStat);
                     }
                 }
                 for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
@@ -264,7 +270,10 @@
             }
 
             function checkQuara(i,dir){
+                console.log("checkQuara");
+                console.log("i");console.log(i);
                 if (provData.main[i].quara[dir]) {
+                    console.log("provData.main[i].quara[dir]")
                     if (provData.main[i].quara[dir].where.e) {
                         console.log("e true");
                         return [true, provData.main[i].quara[dir].min.e, provData.main[i].quara[dir].max.e];
@@ -286,7 +295,7 @@
                         }
                     }
                 }else{
-                    console.log("e false");
+                    console.log("false");
                     return false;
                 }
             }
