@@ -32,12 +32,7 @@
             var vacGet = document.getElementsByName('vac');
             var vacStat = 1;
 
-            for (var i = vacGet.length; i--;) {
-                vacGet[i].onchange = function() {
-                    console.log(this.value);
-                    vacStat = this.value;
-                }
-            }
+            
 
 
             var inputs = document.getElementsByClassName('radio');
@@ -243,6 +238,13 @@
                 console.log("number");console.log(number);
                 console.log("number.Format");console.log(Intl.NumberFormat('en-GB').format(number));
                 return new Intl.NumberFormat('en-GB').format(number);
+            }
+
+            for (var i = vacGet.length; i--;) {
+                vacGet[i].onchange = function() {
+                    console.log(this.value);
+                    vacStat = this.value;
+                }
             }
         </script>
     </body>
