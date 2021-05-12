@@ -37,6 +37,7 @@
             var testPCRAlsoGet = document.getElementsByName('PCRAlso');
 
 
+
             
 
 
@@ -123,7 +124,7 @@
                 out += '<label>ok with quara</label>Yes<input type="radio" name="quaraIf" value="beginn">No<input type="radio" name="quaraIf" value="end">';
                 out += 'ok with quara, could be left after:<input type="text" name="quaraTimeMin" >and might take up to<input type="text" name="quaraTimeMax">';
                 out += '<label>ok with test</label>Yes<input type="radio" name="testIf" value="true" checked="checked">No<input type="radio" name="testIf" value="false">';
-                out += '<label>which one</label>PCRalso<input type="radio" name="PCRalso" value="true">AGonly<input type="radio" name="PCRalso" value="false">';
+                out += '<label>which one</label>PCRalso<input type="radio" name="PCRAlso" value="true">AGonly<input type="radio" name="PCRAlso" value="false">';
                 for (var countryid in myWorldMap.countries) {
                     out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
                 }
