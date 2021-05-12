@@ -213,7 +213,7 @@
             }
 
             // Highlight country group
-            function highlightMine(groupIn) {
+            function highlightMine(groupIn, id) {
                 console.log("groupIn");console.log(groupIn);
                 console.log("provData");console.log(provData);
                 
@@ -254,6 +254,11 @@
                     console.log(provData["main"][i]["nu"]);
                     var colorInto;
                     var colorOut;
+                    //heime ned analysiere CH-->CH
+                    if(id == provData["main"][i]){
+                        console.log("homeCountry");
+                        continue;
+                    }
                     //falls gesperrt alles kicken
                     var quaraInto = checkQuara(i,"into");
                     console.log("quaraInto");console.log(quaraInto);
@@ -271,11 +276,11 @@
                 }
             }
 
-            function checkQuara(i, dir){
+            async function checkQuara(i, dir){
                 console.log("checkQuara");
                 console.log("i");console.log(i);
                 console.log("dir");console.log(dir);
-                var jsonData = provData.main[i];
+                await var jsonData = provData.main[i];
                 console.log("jsonData");console.log(jsonData);
                 if (jsonData.quara[dir]) {
                     console.log("provData.main[i].quara[dir]")
@@ -306,7 +311,7 @@
                     return false;
                 }
             }
-            
+
 
 
 
