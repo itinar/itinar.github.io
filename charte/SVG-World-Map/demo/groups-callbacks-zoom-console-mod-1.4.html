@@ -19,6 +19,10 @@
         <div id="countries" class="box"></div>
         <div id="groups" class="box"></div>
         <div id="info" class="box hidden"></div>
+
+        <input type="radio" name="vac" value="1" checked="checked">Yes
+        <input type="radio" name="vac" value="0">No
+
         <script src="../src/svg-world-map-mod1.0.js"></script>
         <script src="js/svg-pan-zoom.min.js"></script>
         <script src="../src/jquery.js"></script>
@@ -29,7 +33,27 @@
             // Global variables
             var myWorldMap;
             var provData;
-            
+            var vacGet = document.getElementsByName('vac');
+            var vacStat = 1;
+
+            for (var i = vacGet.length; i--;) {
+                vacGet[i].onchange = function() {
+                    console.log(this.value);
+                    vacStat = this.value;
+                }
+            }
+
+
+            var inputs = document.getElementsByClassName('radio');
+            //var textbox = document.getElementById('vacState');
+            var i
+            for (i = 0; i < inputs.length; i++) {
+                inputs[i].onclick = function(){
+                console.log("this.dataset.price");
+              }
+            }
+
+                        
             // Wait for JSON data first, then init SVG World Map
             loadCountryData().then(function(countryData) {
                 console.log("loadCountryData() loaded --> async function");
@@ -183,15 +207,18 @@
             function highlightMine(groupIn) {
                 console.log("groupIn");console.log(groupIn);
                 console.log("provData");console.log(provData);
-                for (var i = Object.keys(provData["main"]).length; i >= 0; i--) {
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
                     console.log(provData["main"][i]["nu"]);
-                }
-                
-                for (var i = Object.keys(groupIn["main"]).length; i >= 0; i--) {
-                    console.log(groupIn["main"][i]["nu"]);
+                    //falls gesperrt alles kicken
+                    if(false){
+                        //quara
+                        if()
+                    }else{
+                        //checke obmes wot gseh
+                    }
                 }
             }
-            
+
             
 
             // Get some random color from the element name

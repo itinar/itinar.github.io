@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SVG World Map Demo</title>
+  </head>
+  <body>
+<div id="app"></div>
+<script type="text/javascript">
+  
+  // Import stylesheets
+
+  // Write Javascript code!
+  const appDiv = document.getElementById('app');
+  appDiv.innerHTML = `
+    <form name="demo">
+      <div class="radio-listener">
+        <label>
+          Mario
+          <input type="radio" value="mario" name="characters" checked>
+        </label>
+        <label>
+          Luigi
+          <input type="radio" value="luigi" name="characters">
+        </label>
+        <label>
+          Toad
+          <input type="radio" value="toad" name="characters">
+        </label>
+      </div>
+    </form>
+    You've selected:
+    <div class="currentValue"></div>
+  `;
+
+  // inject the checked value
+  const currentValue = document.querySelector('.currentValue');
+
+  const form = document.forms.demo;
+  const radios = form.elements.characters;
+
+  const values = ['mario', 'luigi', 'toad'];
+
+  function selectRandomValue() {
+    currentValue.innerText = radios.value;
+  };
+
+</script>
+</body>
+
+
+
