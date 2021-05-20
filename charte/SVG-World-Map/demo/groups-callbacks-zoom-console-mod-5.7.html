@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SVG World Map Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/demo-mod-1.3.css">
+	</head>
+	<body>
+        <div id="labels" class="box hidden">
+            <button onclick="myWorldMap.labels('all')">Country labels</button>
+            <button onclick="myWorldMap.labels('micro')">Microstate labels</button>
+            <!--put menu here, mobile TODO-->
+        </div>
+        <div id="overout" class="box hidden">
+            Path over: <span id="over"></span><br><br>
+            Path out: <span id="out"></span><br><br>
+            Path click: <span id="click"></span>
+        </div>
+        <div id="countries" class="box"></div>
+        <div id="groups" class="box hidden"></div>
+        <div id="info" class="box hidden"></div>
+        <script src="../src/svg-world-map-mod2.2.js"></script>
+        <script src="js/svg-pan-zoom.min.js"></script>
+        <script src="../src/jquery.js"></script>
+        <script>
+
+            // Global variables
+            var myWorldMap;
+            var myWorldMap2;
+            var provData;
+            var vacGet = document.getElementsByName('vac');
+            var curFewTimeBeginGet = document.getElementsByName('curFewTimeBegin');
+            var curFewTimeEndGet = document.getElementsByName('curFewTimeEnd');
+
+            var vacStat;
+            var curFewTimeBeginStat;
+            var curFewTimeEndStat;
+
+            var chosenCountryId;
+            var chosenCountryName;
+
+
+
+            
+
+
+            var inputs = document.getElementsByClassName('radio');
+            //var textbox = document.getElementById('vacState');
+            var i
+            for (i = 0; i < inputs.length; i++) {
+                inputs[i].onclick = function(){
+                //////console.log("this.dataset.price");
+              }
+            }
+
+                        
+            // Wait for JSON data first, then init SVG World Map
+            loadCountryData().then(function(countryData) {
+                //////console.log("loadCountryData() loaded --> async function");
+                loadSVGWorldMap(countryData);
+            });
+
+            // Load SVG World Map
+            async function loadSVGWorldMap(countryData) {
+                //////console.log("loadSVGWorldMap()");
+                // Custom options
+                var params = { 
+                    showLabels: true, 
+                    showInfoBox: true, 
+                    bigMap: true,
+                    // Color options
+                    oceanColor: '#D8EBFF', 
+                    worldColor: '#FFFFFF', 
+                    labelFill: { out: '#666666',  over: '#CCCCCC',  click: '#000000' }, 
+                    //countryFill: { out: '#B9B9B9',  over: '#CCCCCC',  click: '#666666' }, // TODO: Currently this makes no sense for main country groups, until all country borders are existing in the SVG (a lot are missing, e.g. Japan, Greenland, Antarctica)
+                    countryStroke: { out: '#FFFFFF',  over: '#FFFFFF',  click: '#333333' }, 
+                    countryStrokeWidth: { out: '0.2',  over: '0.6',  click: '0.6' }, 
+                    provinceFill: { out: '#B9B9B9',  over: '#B9B9B9',  click: '#B9B9B9' }, 
+                    provinceStroke: { out: '#FFFFFF',  over: '#FFFFFF',  click: '#FFFFFF' }, 
+                    provinceStrokeWidth: { out: '0.2',  over: '0.6',  click: '0.6' },
+                    groupBy: [ "region", "sovereignty" ]
+                };
+                // Startup
+                myWorldMap = await svgWorldMap(params, countryData);
+                // Controls
+                buildCountryControls();
+                buildGroupControls();
+                // Test svgPanZoom 
+                svgPanZoom = svgPanZoom(myWorldMap.worldMap, { minZoom: 1, dblClickZoomEnabled: false });  //controlIconsEnabled: true, beforePan: beforePan
+            }
+
+
+            // Default callback functions, custom names can be defined in 'options.mapOver', 'options.mapOut' and 'options.mapClick'
+            function mapOver(country) {
+                ////////console.log("mapOver() country:");//////console.log(country);
+                document.getElementById("over").innerHTML = country.id;
+            }
+
+            function mapOut(country) {
+                ////////console.log("mapOut()");//////console.log(country);
+                document.getElementById("out").innerHTML = country.id;
+            }
+
+            function mapClick(country) {
+                ////console.log("mapClick()");//////console.log(country);
+                document.getElementById("click").innerHTML = country.id;
+                ////console.log('document.getElementById("click").innerHTML');//////console.log(document.getElementById("click").innerHTML);
+                ////console.log("country.id");//////console.log(country.id);
+                if (country != undefined && country.id != 'Ocean') {
+                        //////console.log("country not undefined nor ocean");
+                        var nation = country.country; // Get parent nation
+                        if (nation != undefined) {
+                            //////console.log("nation not undefined");
+
+
+                            if(Boolean(provData)){
+                                var address;
+                                //console.log("jo brudi da bini");
+                                for(var obj in provData.main){
+                                	//console.log("obj: " + obj + " nation.id" + nation.id);
+        						    if(provData.main[obj].nu == nation.id){
+        						    	address = obj;
+        						        break
+        						    }
+        						}
+        						//console.log("address: " + address);
+                                var out = '<a class="hide" onclick="document.getElementById(\'info\').classList.add(\'hidden\')">×</a>';
+                                //TODO exclude homecountry
+                                if(chosenCountryId == nation.id){
+                                    out += '<div class="infoHome hc">We do not have information on travel within countries</div>'
+                                } else {
+                                	//console.log("address: " + address);
+                                	var forbiddenInto = checkForbidden("into", provData.main[address]);
+                                	var forbiddenOut = checkForbidden("out", provData.main[address]);
+                                    var quaraInto = checkQuara("into", provData.main[address]);
+                                    var quaraOut = checkQuara("out", provData.main[address]);
+                                    var PCRInto = checkTest("into", "pcr", provData.main[address]);
+                                    var PCROut = checkTest("out", "pcr", provData.main[address]);
+                                    var AGInto = checkTest("into", "ag", provData.main[address]);
+                                    var AGOut = checkTest("out", "ag", provData.main[address]);
+
+                                    var cGoing; 
+                                    var cComing;
+
+                                    if(Boolean(forbiddenInto)){
+                                        cComing = "forbidden";
+                                    } else if(Boolean(quaraInto)){
+                                        cComing = "quara";
+                                    } else if(Boolean(PCRInto)){
+                                        cComing = "pcr";
+                                    } else if(Boolean(AGInto)){
+                                        cComing = "ag";
+                                    }else{
+                                    	cComing = "open";
+                                    }
+
+                                    if(Boolean(forbiddenOut)){
+                                        cGoing = "forbidden";
+                                    } else if(Boolean(quaraOut)){
+                                        cGoing = "quara";
+                                    } else if(Boolean(PCROut)){
+                                        cGoing = "pcr";
+                                    } else if(Boolean(AGOut)){
+                                        cGoing = "ag";
+                                    }else{
+                                    	cGoing = "open";
+                                    }
+
+
+                                    out += '<div id="into" class="' + cGoing + '">';
+                                    out += '<div class="infoHeading">restrictions travelling from ';
+                                    out += chosenCountryName;
+                                    out += " to ";
+                                    //console.log("country.id" + country.id);
+                                    //console.log("nation.id + -country).toLowerCase()" + (nation.id + "-country").toLowerCase());
+                                    if(!(country.id == nation.id) && !(country.id == (nation.id + "-country").toLowerCase())){
+                                    	out += country.id;
+                                    	out += ", ";
+                                    }
+                                    out += nation.name;
+                                    out += '</div><div class="infoContent">';
+                                    //TODO travel to this destination has been forbidden by it's authorities
+                                     //Yes, xx days
+                                    out += forbiddenPhrase("out", provData.main[address]);
+                                    out += quaraPhrase("out", provData.main[address])
+                                    if(Boolean(PCROut) || Boolean(AGOut)){
+                                        out += " testing: yes, ";
+                                    }
+                                    out += testPhrase("out", "pcr", provData.main[address]);
+                                    //TODO: AND/OR
+                                    if(Boolean(PCROut) && Boolean(AGOut)){
+                                        out += " and // or ";
+                                    }
+                                    out += testPhrase("out", "ag", provData.main[address]);
+                                    if(!Boolean(PCROut) && !Boolean(AGOut)){
+                                        out += "";
+                                    }
+                                    //TODO comments
+                                    //console.log("out: " + out);
+                                    //console.log('out.search("quarantine"): ' + out.search("quarantine") + ', out.search("testing"): ' + out.search("testing"));
+                                    if(out.search("forbidden") == -1 && out.search("quarantine") == -1 && out.search("testing") == -1){
+                                        out += "none apply";
+                                    }
+
+                                    var out2 = "";
+                                    out2 += '</div></div><div id="out" class="' + cComing + '">';
+                                    out2 += '<div class="infoHeading">restrictions travelling from ';
+                                    out2 += nation.name;
+                                    out2 += " to ";
+                                    out2 += chosenCountryName;
+                                    out2 += '</div><div class="infoContent">'
+                                    out2 += forbiddenPhrase("into", provData.main[address]);
+                                    out2 += quaraPhrase("into", provData.main[address])
+                                    if(Boolean(PCRInto) || Boolean(AGInto)){
+                                        out2 += "testing: yes, ";
+                                    }
+                                    out2 += testPhrase("into", "pcr", provData.main[address]);
+                                    //TODO: AND/OR
+                                    if(Boolean(PCRInto) && Boolean(AGInto)){
+                                        out2 += " and // or ";
+                                    }
+                                    out2 += testPhrase("into", "ag", provData.main[address]);
+                                    if(!Boolean(PCRInto) && !Boolean(AGInto)){
+                                        out2 += "";
+                                    }
+                                    //TODO comments
+                                    if(out2.search("forbidden") == -1 && out2.search("quarantine") == -1 && out2.search("testing") == -1){
+                                        out2 += "none apply";
+                                    }
+
+                                    out += out2;
+
+                                    out += '</div></div>';
+                                    /*out += 'Country: ' + country.id;
+                                    out += '<br><br><a onmouseover="highlightCountry(\'' + nation.id + '\')" onmouseout="myWorldMap.out(\'' + nation.id + '\')" onclick="myWorldMap.click(\'' + nation.id + '\')">Nation: ' + nation.name + '</a><br>';
+                                    out += 'Official name: ' + nation.longname + '<br>Code: ' + nation.id + '<br>';
+                                    out += '<a onmouseout="highlightGroup(\'' + nation.region + '\', \'region\', \'out\')" onmouseover="highlightGroup(\'' + nation.region + '\', \'region\', \'over\')" onclick="highlightGroup(\'' + nation.region + '\', \'region\', \'click\')">Region: ' + nation.region + '</a><br>';
+                                    out += 'Population: ' + formatInteger(nation.population);
+                                    out += '<br><br>All countries / provinces / states in ' + nation.name + ':<br>';
+                                    nation.provinces.forEach(function(province) { 
+                                        out += '<a onmouseover="myWorldMap.over(\'' + province.id + '\')" onmouseout="myWorldMap.out(\'' + province.id + '\')" onclick="myWorldMap.click(\'' + province.id + '\')">' + province.id + '</a>, '; 
+                                    }); 
+                                    */
+                                    //////console.log("out");//////console.log(out);
+                                }
+                                document.getElementById("info").innerHTML = out;
+                                document.getElementById("info").classList.remove("hidden");
+                            }
+                        }
+                } else {
+                    ////////console.log('Country not found');
+                    //document.getElementById("info").classList.add("hidden");
+                }
+            }
+
+            function forbiddenPhrase(dir, jsonData){
+            	var forbidden = checkForbidden(dir, jsonData);
+            	fOut = "";
+            	if(forbidden){
+            		fOut += "Travel forbidden. <br>"
+            	}
+            	return fOut;
+            }
+
+            function quaraPhrase(dir, jsonData){
+                var quara = checkQuara(dir, jsonData);
+                //console.log("quara");//console.log(quara);
+                var qOut = "";
+                if(Boolean(quara)){
+                    qOut += "quarantine: ";
+                    qOut += 'yes, '
+                    if(quara.where == "home"){
+                        qOut += 'at home';
+                    }else{
+                        qOut += 'in a ';
+                        qOut += quara.where;
+                    }
+                    qOut += ', up to ';
+                    qOut += parseInt(quara.dur);
+                    qOut += ' days<br>';
+                }
+                
+                return qOut;
+            }
+            function testPhrase(dir, type, jsonData){
+                var tOut = "";
+                var test = checkTest(dir, type, jsonData);
+                if(Boolean(test)){
+                    //tOut += 'yes, ';
+                    if(type == "pcr"){
+                        tOut += "pcr";
+                    }else{
+                        tOut += "antibody";
+                    }
+                    tOut += ' test results no older than ';
+                    tOut += parseInt(test.hours);
+                    tOut += ' hours';
+                }
+                ////console.log("tOut");////console.log(tOut);
+                return tOut;
+            }
+
+            function buildDropDown(){
+            	var key = {};
+            	var out = '<select onchange=' + '\'chooseCountry(this)\' name=' +  '\'countries\'' + ' id=\'countrySelector\'' + '>';
+            	out += '<option value=\'choose\'>choose your county of origin</option>'
+            	//shit nach name sortier, originau esch nach ID
+            	for (var countryid in myWorldMap.countries) {
+            		var content = {};
+            		content["id"] = countryid;
+                    key[myWorldMap.countries[countryid].name] = content;
+                }
+            	var countries = sortObjKeysAlphabetically(key);                
+                ////console.log(countries);
+                //menü boue
+            	for (var country in countries) {
+                    out += '<option value=\'' + countries[country].id + '\'>' + country + '</option>';
+                }
+                out += '</select>'
+                return out;
+            }
+
+            // Demo country list
+            function buildCountryControls() {
+                //////console.log("buildCountryControls()");
+                var out = "";
+                out += "<h1>Logo</h1>"
+                out += "where are you travelling from<br>";
+                out += buildDropDown();
+                out += '<br><br><ul>';
+                out += '<label>I have been vaccinated</label>Yes<input onchange="highlightMine()" type="radio" name="vac" value="true" checked="checked">No<input onchange="highlightMine()" type="radio" name="vac" value="false">';
+                out += 'I am ok with a curfew starting at, or later:<input onchange="highlightMine()" type="text" name="curFewTimeBegin" >ending at, or earlier<input onchange="highlightMine()" type="text" name="curFewTimeEnd">';
+                /*
+                for (var countryid in myWorldMap.countries) {
+                    out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
+                }
+                out += '</ul>';*/
+                //////console.log("out");//////console.log(out);
+                document.getElementById("countries").innerHTML = out;
+            }
+
+            // Demo control buttons
+            function buildGroupControls() {
+                //////console.log("buildGroupControls()");
+                /*var regionNames = { AF: "Afrika", AN: "Antarctica", AS: "Asia", EU: "Europe", NA: "North America", OC: "Ocania", SA: "South America" };
+                var out = '';
+                for (var group in myWorldMap.countryGroups) {
+                    out += '<u>' + group.charAt(0).toUpperCase() + group.slice(1) + ':</u><br><br><ul>'; // Capitalize first letter
+                    for (var subgroup in myWorldMap.countryGroups[group]) {
+                        if (group == 'region') { var name = regionNames[subgroup]; } else { var name = subgroup; }
+                        out += '<li id="' + subgroup + '" onmouseout="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'out\')" onmouseover="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'over\')" onclick="highlightGroup(\'' + group + '\', \'' + group + '\', \'click\')">' + name + '</li>'; 
+                    }
+                    out += '</ul>';
+                    
+                }
+                //////console.log("out");//////console.log(out);
+                document.getElementById("groups").innerHTML = out;
+                */
+            }
+
+            // Highlight country 
+            function highlightCountry(id) {
+                //////console.log("highlightCountry()");
+                //////console.log("id");//////console.log(id);
+                var color = getHighlightColor(id);
+                myWorldMap.update({ [id]: color });
+            }
+
+            // Highlight country group
+            function highlightGroup(id, group, trigger) {
+                //////console.log("highlightGroup()");
+                //////console.log("input group");//////console.log(group);
+                var group = myWorldMap.countryGroups[group];
+                //////console.log("var id");//////console.log(id);
+                //////console.log("var group");//////console.log(group);
+                //////console.log("var trigger");//////console.log(trigger);
+                //////console.log("var group[id]");//////console.log(group[id]);
+                var data2 = {};
+                //////console.log("var data2[group[id]]");//////console.log(data2[group[id]]);
+                if (trigger == 'out') {
+                    //////console.log("if (trigger == 'out')");
+                    for (var country in group[id]) {
+                        //////console.log("country");//////console.log(country);
+                        myWorldMap.out(country);
+                    }
+                } else if (trigger == 'over' || trigger == 'click') {
+                    var color = getHighlightColor(id);
+                    var data = {};
+                    for (var country in group[id]) {
+                        data[country] = color; // Set data for map update
+                        //////console.log("data one");//////console.log(data[country]);
+                    }
+                    //////console.log("data");//////console.log(data);
+                    myWorldMap.update(data);
+                }
+            }
+
+            function chooseCountry(inputCountry){
+            	chosenCountryId = inputCountry.value;
+            	chosenCountryName = myWorldMap.countries[chosenCountryId].name;
+            	loadCountry(chosenCountryId);
+            }
+
+            async function loadCountry(id){
+                var filePath = '../src/json_m/' + id + '_m.json';
+
+                //console.log("filePath");//console.log(filePath);
+
+                var cData = 0;
+
+                const result = await $.getJSON(filePath, function(json) { 
+                    //////console.log("json");//////console.log(json); // show the JSON file content into //////console 
+                    cData = json;
+                    provData = json;
+                    //////console.log("cData");//////console.log(cData);
+                });
+
+
+                //////console.log("result");//////console.log(result);
+                highlightMine();
+            }
+
+            async function loadThisJson(filePath){
+                let response = await fetch(filePath);
+                let data = await response.json();
+                return data;
+            }
+
+            // Highlight country group
+            async function highlightMine() {
+                ////////console.log("groupIn");//////console.log(groupIn);
+                ////////console.log("provData");//////console.log(provData);
+
+                myWorldMap.reset();
+
+                //close info box
+                document.getElementById('info').classList.add('hidden');
+                //document.getElementById('code').classList.add('hidden');
+                var lis = document.getElementsByTagName("li");
+                for (var i=0; i<lis.length; i++) {
+                    lis[i].classList.add('hidden');
+                }
+
+                var data = {};
+                
+
+                for (var i = 1; i >= 0; i--) {
+                    if(vacGet[i].checked){
+                        vacStat = (vacGet[i].value === "true");
+                    } 
+                    //////console.log("vacStat");//////console.log(vacStat);
+                }
+
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
+
+                    var colorInto = "open";
+                    var colorOut = "open";
+
+                    //heime ned analysiere CH-->CH
+                    if(chosenCountryId == provData["main"][i].nu){
+                        data[provData.main[i].nu] = "url(#" + "hc" + ")";
+                        continue;
+                    }
+
+
+                    //if(provData.main[i].){
+	                    //check for restrictions
+	                    //console.log("i: " + i);
+	                	var forbiddenInto = checkForbidden("into", provData.main[i]);
+	                    var forbiddenOut = checkForbidden("out", provData.main[i]);
+	                    var quaraInto = checkQuara("into", provData.main[i]);
+	                    var quaraOut = checkQuara("out", provData.main[i]);
+	                    var pcrInto = checkTest("into", "pcr", provData.main[i]);
+	                    var agInto = checkTest("into", "ag", provData.main[i]);
+	                    var pcrOut = checkTest("out", "pcr", provData.main[i]);
+	                    var agOut = checkTest("out", "ag", provData.main[i]);
+	                    var loadStates = checkStates("into", provData.main[i]);
+
+
+
+		                //going on vacation
+	                    if(Boolean(agOut)){
+	                        colorOut = "ag";
+	                    }    
+	                    if(Boolean(pcrOut)){
+	                        colorOut = "pcr";
+	                    }
+	                    if(Boolean(quaraOut)){
+		                    colorOut = "quara";
+	                    }
+	                    if(Boolean(forbiddenOut)){
+	                    	colorOut = "forbidden";
+		                }
+
+
+		                console.log(provData.main[i].nu + " load states ? " + loadStates);
+		                //returning
+		                if(!Boolean(loadStates)){
+		                	if(Boolean(agInto)){
+	                        colorInto = "ag";
+		                    }    
+		                    if(Boolean(pcrInto)){
+		                        colorInto = "pcr";
+		                    }
+		                    if(Boolean(quaraInto)){
+			                    colorInto = "quara";
+		                    }
+		                    if(Boolean(forbiddenInto)){
+		                    	colorInto = "forbidden";
+			                }
+
+
+		                    if (Boolean(colorInto) && Boolean(colorOut)) {
+		                    	if(colorInto == colorOut){
+		                            ////console.log("colors are the same");
+		                    		////console.log("url(#" + colorInto + ")");
+		                    		data[provData.main[i].nu] = "url(#" + colorInto + ")";
+		                    		//console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+		                    	}else{
+		                            ////console.log("colors aren't the same");
+		                    		////console.log("url(#" + colorInto + colorOut + ")");
+		                    		data[provData.main[i].nu] = "url(#" + colorInto + colorOut + ")";
+		                    		//console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+		                    	}
+		                    }
+		                }else{
+		                	var filePath = '../src/json_m/' + chosenCountryId + '_States_m.json';
+		                	var stateData;
+
+			                //console.log("filePath");//console.log(filePath);
+
+			                var cData = 0;
+
+			                const result = await $.getJSON(filePath, function(json) { 
+			                    //////console.log("json");//////console.log(json); // show the JSON file content into //////console 
+			                    cData = json;
+			                    stateData = json;
+			                    console.log("cData");console.log(cData);
+			                });
+			                console.log("stateData");console.log(stateData);
+
+			                for(var obj in stateData.main){
+			                	console.log("loop for: " + provData.main[i].nu);
+			                	var colorIntoStates = "open";
+			                	var forbiddenIntoStates = checkForbidden("into", stateData.main[obj].states);
+	                    		var quaraIntoStates = checkQuara("into", stateData.main[obj].states);
+	                    		var pcrIntoStates = checkTest("into", "pcr", stateData.main[obj].states);
+	                    		var agIntoStates = checkTest("into", "ag", stateData.main[obj].states);
+	                    		console.log("country: " + stateData.main[obj].nu + " state: " + stateData.main[obj].states.nu + " forbiddenIntoStates: " + forbiddenIntoStates + " quaraIntoStates: " + quaraIntoStates + " pcrIntoStates: " + pcrIntoStates + " agIntoStates: " + agIntoStates);
+			                	if(provData.main[i].nu == stateData.main[obj].nu){
+			                		console.log(provData.main[i].nu + " == " + stateData.main[obj].nu)
+			                		if(Boolean(agIntoStates)){
+			                        colorIntoStates = "ag";
+				                    }    
+				                    if(Boolean(pcrIntoStates)){
+				                        colorIntoStates = "pcr";
+				                    }
+				                    if(Boolean(quaraIntoStates)){
+					                    colorIntoStates = "quara";
+				                    }
+				                    if(Boolean(forbiddenIntoStates)){
+				                    	colorIntoStates = "forbidden";
+					                }
+					                console.log("colorIntoStates1: " + colorIntoStates + " colorOut: " + colorOut);
+
+					                if (Boolean(colorIntoStates) && Boolean(colorOut)) {
+				                    	if(colorIntoStates == colorOut){
+				                            ////console.log("colors are the same");
+				                            console.log("colorIntoStates2: " + colorIntoStates + " colorOut: " + colorOut);
+				                    		console.log("url(#" + colorIntoStates + ")");
+				                    		data[stateData.main[obj].states.nu] = "url(#" + colorIntoStates + ")";
+				                    		//console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+				                    	}else{
+				                            ////console.log("colors aren't the same");
+				                            console.log("colorIntoStates3: " + colorIntoStates + " colorOut: " + colorOut);
+				                    		console.log("url(#" + colorIntoStates + colorOut + ")");
+				                    		data[stateData.main[obj].states.nu] = "url(#" + colorIntoStates + colorOut + ")";
+				                    		//console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+				                    	}
+
+			                    	}
+					            }
+
+					            
+
+					        }
+					        data[(provData.main[i].nu).toLowerCase() +"-country"] = "none";
+					        console.log('(provData.main[i].nu).toLowerCase() +"-country" -->' + (provData.main[i].nu).toLowerCase() +"-country");
+					        console.log("data");console.log(data);
+		                }
+						
+                	//}
+
+
+                }
+                myWorldMap.update(data);
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--){
+                	myWorldMap.out(provData["main"][i].nu);
+                	//////console.log(provData["main"][i].nu);
+                }
+                
+                //////console.log("data");//////console.log(data);
+            }
+
+            function checkStates(dir, jsonData){
+            	if(Boolean(jsonData.loadStates)){
+            		if(Boolean(jsonData.loadStates[dir])){
+            			return Boolean(jsonData.loadStates[dir].bool);
+            		}else{
+            			return false;
+            		}
+            	}else{
+            		return false;
+            	}  	
+            }
+
+            function checkQuara(dir, jsonData){
+                ////console.log("checkQuara");
+                ////console.log("i");////console.log(i);
+                ////console.log("dir");////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                ////console.log("jsonData");//////console.log(jsonData);
+                //console.log(jsonData);
+                if (Boolean(jsonData.quara)) {
+	                if (Boolean(jsonData.quara[dir])) {
+	                	if(Boolean(jsonData.quara[dir].where)){
+	                    ////console.log("provData.main[i].quara[dir]")
+		                    if (Boolean(jsonData.quara[dir].where.e)) {
+		                        ////console.log("quara e true");
+	                            var result = {};
+	                            result["where"] = jsonData.quara[dir].where.e;                            
+	                            if(Boolean(jsonData.quara[dir].dur.e)){
+	                            	result["dur"] = jsonData.quara[dir].dur.e;
+	                            } else if (vacStat == true){
+	                            	if(Boolean(jsonData.quara[dir].dur.v)){
+	                            		result["dur"] = jsonData.quara[dir].dur.v;
+	                            	}else{
+	                            		//console.log("error with checkQuaram e v: " + jsonData.nu);
+	                            	}
+	                            } else if (vacStat == false){
+	                            	if(Boolean(jsonData.quara[dir].dur.uv)){
+	                            		result["dur"] = jsonData.quara[dir].dur.uv;
+	                            	}else{
+	                            		//console.log("error with checkQuara e uv: " + jsonData.nu);
+	                            	}
+	                            }else{
+	                            	//console.log("error with checkQuara e: " + jsonData.nu);
+	                            }
+		                        return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.quara[dir].where.v)){
+		                            ////console.log("quara v true");
+	                                var result = {};
+	    	                        result["where"] = jsonData.quara[dir].where.v;
+	    	                        if(Boolean(jsonData.quara[dir].dur.v)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.v;
+	    	                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.e;
+	    	                        } else {
+	    	                        	//console.log("error with checkQuara v: " + jsonData.nu);
+	    	                        }
+	                                return result;
+		                        }else{
+		                            ////console.log("quara v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.quara[dir].where.uv)){
+		                            ////console.log("quara uv true");
+	                                var result = {};
+		                            result["where"] = jsonData.quara[dir].where.uv;
+	                                if(Boolean(jsonData.quara[dir].dur.uv)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.uv;
+	    	                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.e;
+	    	                        } else {
+	    	                        	//console.log("error with checkQuara uv: " + jsonData.nu);
+	    	                        }
+
+	                                return result;
+		                        }else{
+		                            ////console.log("quara uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        console.log("error checkQuara 1");
+		                    }
+		                }else{
+		                	console.log("error checkQuara 2");
+		                }
+	                }
+	            }else{
+                    ////console.log("quara false");
+                    return false;
+	            }
+            }
+
+            function checkForbidden(dir, jsonData){
+                ////console.log("checkQuara");
+                ////console.log("i");////console.log(i);
+                ////console.log("dir");////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                ////console.log("jsonData");//////console.log(jsonData);
+                if (Boolean(jsonData.forbidden)) {
+	                if (Boolean(jsonData.forbidden[dir])) {
+	                    ////console.log("provData.main[i].quara[dir]")
+	                    if(Boolean(jsonData.forbidden[dir].bool)){
+		                    if (Boolean(jsonData.forbidden[dir].bool.e)) {
+		                        ////console.log("quara e true");
+	                            var result = jsonData.forbidden[dir].bool.e;
+		                        return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.forbidden[dir].bool.v)){
+		                            ////console.log("quara v true");
+	                                var result = jsonData.forbidden[dir].bool.v;
+	                                return result;
+		                        }else{
+		                            ////console.log("quara v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.forbidden[dir].bool.uv)){
+		                            ////console.log("quara uv true");
+	                                var result = jsonData.forbidden[dir].bool.uv;
+	                                return result;
+		                        }else{
+		                            ////console.log("quara uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }
+	                }
+	            }else{
+                    ////console.log("quara false");
+                    return false;
+	            }
+            }
+
+            function checkTest(dir, type, jsonData){
+                ////////console.log("checkQuara");
+                ////////console.log("i");//////console.log(i);
+                //////console.log("dir");//////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                //////console.log("jsonData");//////console.log(jsonData);
+                if (Boolean(jsonData.test)) {
+	                if (Boolean(jsonData.test[dir])) {
+	                	if (Boolean(jsonData.test[dir][type])) {
+		                    ////////console.log("provData.main[i].test[dir]")
+		                    if (Boolean(jsonData.test[dir][type].e)) {
+		                        ////////console.log("test e true");
+                                var result = {};
+                                result["hours"] = jsonData.test[dir][type].e;
+                                return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.test[dir][type].v)){
+		                            ////////console.log("test v true");
+		                            var result = {};
+                                    result["hours"] = jsonData.test[dir][type].v;
+                                    return result;
+		                        }else{
+		                            ////////console.log("test v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.test[dir][type].uv)){
+		                            ////////console.log("test uv true");
+		                            var result = {};
+                                    result["hours"] = jsonData.test[dir][type].uv;
+                                    return result;
+		                        }else{
+		                            ////////console.log("test uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }else{
+		                	return false;
+		                }
+	                }
+	            }else{
+                    ////////console.log("test false");
+                    return false;
+	            }
+            }
+
+
+
+
+            
+
+            // Get some random color from the element name
+            function getHighlightColor(id) {
+                //////console.log("getHighlightColor()");
+                // Get the numbers for the id letters, add them, square them and take the last 6 digits
+                var number = parseInt(id.substr(0, 1).charCodeAt(0) + '' + id.substr(1, 2).charCodeAt(0));
+                var hex = '#' + parseInt(number * number).toString().substr(-6, 6);
+                return hex;
+            }
+
+            // Asynchronous JSON load
+            async function loadCountryData() {
+                //////console.log("loadCountryData()");
+                let response = await fetch('../src/country-data.json');
+                //////console.log("response");//////console.log(response);
+                let data = await response.json();
+                ////////console.log("data");//////console.log(data);
+                return data;
+            }
+
+            // Number format helper function
+            function formatInteger(number) {
+                //////console.log("formatInteger()");
+                //////console.log("number");//////console.log(number);
+                //////console.log("number.Format");//////console.log(Intl.NumberFormat('en-GB').format(number));
+                return new Intl.NumberFormat('en-GB').format(number);
+            }
+
+            function sortObjKeysAlphabetically(obj) {
+			  return Object.keys(obj).sort((a,b) => a > b).reduce((result, key) => {
+			    result[key] = obj[key];
+				return result;
+			  }, {});
+			}
+        </script>
+    </body>
+</html>

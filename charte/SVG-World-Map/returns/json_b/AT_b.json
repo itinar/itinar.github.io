@@ -1,0 +1,508 @@
+{
+    "main": [
+        {
+            "nu": "AT",
+            "code": "AUT",
+            "name": "Austria",
+            "nu.1": "Vienna",
+            "region": "Europe",
+            "subregion": "Western Europe"
+        },
+        {
+            "nu": "FR",
+            "code": "FRA",
+            "name": "France",
+            "nu.1": "Paris",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    },
+                    "or": "or",
+                    "ag": {
+                        "v": "24"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "code": "DEU",
+            "name": "Germany",
+            "nu.1": "Berlin",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "IT",
+            "code": "ITA",
+            "name": "Italy",
+            "nu.1": "Rome",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "10"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "v": "72",
+                        "uv": "72"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "uv": "1"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "PL",
+            "code": "POL",
+            "name": "Poland",
+            "nu.1": "Warsaw",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "e": "1"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "PT",
+            "code": "PRT",
+            "name": "Portugal",
+            "nu.1": "Lisbon",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "e": "1"
+                    },
+                    "comment": "comment",
+                    "": "comment"
+                }
+            }
+        },
+        {
+            "nu": "ES",
+            "code": "ESP",
+            "name": "Spain",
+            "nu.1": "Madrid",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "uv": "72"
+                    },
+                    "ag": {
+                        "v": "24"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "CH",
+            "code": "CHE",
+            "name": "Switzerland",
+            "nu.1": "Bern",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    },
+                    "comment": {
+                        "en": "only by plane"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "GB",
+            "code": "GBR",
+            "name": "United Kingdom",
+            "nu.1": "London",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7.0",
+                        "uv": "10.0"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "v": "home",
+                        "uv": "hotel"
+                    },
+                    "dur": {
+                        "e": "14"
+                    }
+                }
+            },
+            "test": {
+                "into": {
+                    "pcr": {
+                        "e": "72.0"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24.0"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                },
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    }
+                }
+            },
+            "link": {
+                "into": "http://bonsur.at"
+            },
+            "loadStates": {
+                "into": {
+                    "bool": ".0",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "uv": "1"
+                    }
+                }
+            }
+        }
+    ]
+}

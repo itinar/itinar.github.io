@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> </title>
+  <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+<body>
+<div id="dataviz_basicZoom">
+
+</div>
+<script>
+
+// append the svg object to the body of the page
+
+d3.text("http://192.168.1.151/charte/SVG-World-Map/src/world-states-provinces-stripes-test05.svg", function(error, externalSVGText) {
+         if (error) {console.log(error); return;}
+
+         chart_div.html(externalSVGText);
+
+         svg = d3.select("svg")
+    .call(d3.zoom().on("zoom", function () {
+       svg.attr("transform", d3.event.transform)
+    }))
+});
+</script>
+</body>
+</html>

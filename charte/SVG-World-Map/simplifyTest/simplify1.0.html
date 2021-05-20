@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../src/simplify-js/simplify.js"></script>
+	<script src="../src/raphael/raphael.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	function getData(){
+		const file = document.getElementById('input').files[0];
+		console.log("file");console.log(file);
+		if (file) {
+		    var reader = new FileReader();
+		    reader.readAsText(file, "UTF-8");
+		    reader.onload = function (evt) {
+		        document.getElementById("fileContents").innerHTML = evt.target.result;
+		        console.log("evt.target.result");console.log(evt.target.result);
+		    }
+		    reader.onerror = function (evt) {
+		        document.getElementById("fileContents").innerHTML = "error reading file";
+		    }
+		}
+	}
+	function simplifySVG(tolerance, highQuality){
+		var notDone = 0;
+		var outOf = 0;
+		paths = document.getElementsByTagName("path");
+		console.log(paths);
+		for (var i = paths.length - 1; i >= 0; i--) {
+			console.log("doing a path:");
+			console.log('paths[i].getAttribute("d").search("h")' + paths[i].getAttribute("d").search("h") + 'paths[i].getAttribute("d").search("H")' + paths[i].getAttribute("d").search("H"));
+			outOf++;
+			if(paths[i].getAttribute("d").search("h") != -1 || paths[i].getAttribute("d").search("H") != -1){
+				notDone++;
+				continue;
+			}
+			oldD = paths[i].getAttribute("d");
+			newD = simplifyPath(paths[i].getAttribute("d"), tolerance, highQuality);
+			paths[i].setAttribute("d", newD);
+		}
+		console.log(notDone + "/" + outOf + " skipped");
+	}
+	function simplifyPath(data, tolerance, highQuality){
+		dataArray = data.split('M');
+		simplifiedPath = "";
+		for (var i = dataArray.length - 1; i >= 1; i--) {
+			simplifiedPath += simplifyM("M" + dataArray[i], tolerance, highQuality);
+		}
+		return simplifiedPath;
+	}
+	function simplifyM(data, tolerance, highQuality){
+		if(data == undefined){
+			//console.log("gotta give me something to work with...");
+			return;
+		}
+		if(tolerance == undefined){
+			tolerance = 0.4;
+		}
+		if(highQuality == undefined){
+			highQuality = false;
+		}
+
+
+		//make relative into absolute values
+		points = Raphael.parsePathString(Raphael._pathToAbsolute(data));
+
+		var out = "";
+
+		var pointsDigestible = [];
+		var pointsOfPath;
+		var final
+
+		//make points digestible to simplify
+		for (var i = 0; i <= points.length - 1; i++) {
+			var pointsCOrM;
+			pointsCOrM = points[i][0];
+				pointsTogether = [];
+				pointsTogether["x"] = points[i][points[i].length - 2];
+				pointsTogether["y"] = points[i][points[i].length - 1];
+				pointsDigestible.push(pointsTogether);
+		}
+	
+		//actualy simplify
+		var simplified = simplify(pointsDigestible, tolerance, highQuality);
+
+		//add the first element
+		outAbsolute = [];
+		outAbsolute[0] = points[0];
+
+		//go through simple data
+		for (var i = 1; i <= simplified.length - 2; i++) {
+			//go through the points given before simplifying
+			for (var j = 0; j <= points.length - 1; j++) {
+				//add data from points corresponding to the simplified points
+				if ((simplified[i].x == points[j][points[j].length - 2]) && (simplified[i].y == points[j][points[j].length - 1])) {
+					outAbsolute[i] = points[j];	
+				}
+			}
+		}
+
+		//add last
+		outAbsolute[simplified.length - 1] = points[points.length - 1];
+
+		var arrayRelative = Raphael.pathToRelative(outAbsolute);
+		if(arrayRelative.length < 7){
+			return data;
+		}
+		var outRelative = "";
+		for (var i = 0; i <= arrayRelative.length - 1; i++) {
+			for (var l = 0; l <= arrayRelative[i].length - 1; l++) {
+				if(!(arrayRelative[i][l] < 0) && (typeof arrayRelative[i][l] == "number") && l != 1 ){
+					outRelative += ",";
+				}
+				outRelative += arrayRelative[i][l];
+			}
+		}
+		return outRelative;
+	}
+	function download(filename, text) {
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+
+		element.click();
+
+		document.body.removeChild(element);
+	}
+	function generateDownload() {
+		var contents = document.getElementById("fileContents").innerHTML;
+		console.log("contents");console.log(contents);
+		download("smaller.svg",contents);
+
+
+	}
+	</script>
+	<input type="file" id="input" single>
+	<br>tolerance: <input type="text" id="tolerance" value="0.5">
+	<br>high quality: <input type="checkbox" id="highQuality">
+	<br><button onclick="getData()">load</button>
+	<br><button onclick='simplifySVG(Number(document.getElementById("tolerance").value), document.getElementById("highQuality").checked)'>letse go</button>
+	<div id="fileContents"></div>
+	<br><button onclick="generateDownload()">download</button>
+</body>
+</html>

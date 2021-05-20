@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var countryDropdown = document.getElementById("countries");
+		//var showCountry = document.getElementById("showCountry");
+		function chooseCountry(inputCountry){
+			document.getElementById("showCountry").innerHTML = inputCountry.value;
+		}
+
+
+	</script>
+	<label for="cars">Choose a car:</label>
+
+	<select onchange="chooseCountry(this)" name="cars" id="countries">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+	</select>
+	<div id="showCountry"></div>
+
+</body>
+</html>

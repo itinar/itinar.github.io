@@ -1,0 +1,317 @@
+{
+    "main": [
+        {
+            "nu": "AT",
+            "code": "AUT",
+            "name": "Austria",
+            "nu.1": "Vienna",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "e": "home"
+                    },
+                    "dur": {
+                        "v": "7",
+                        "uv": "10"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    },
+                    "or": "and",
+                    "ag": {
+                        "e": "24"
+                    },
+                    "comment": {
+                        "en": "comment test",
+                        "de": "kommentar test",
+                        "fr": "commentaire test",
+                        "es": "comentar test"
+                    }
+                }
+            },
+            "link": {
+                "out": "http://bonsur.at"
+            },
+            "loadStates": {
+                "out": {
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "code": "FRA",
+            "name": "France",
+            "nu.1": "Paris",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    },
+                    "or": "or",
+                    "ag": {
+                        "v": "24"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "code": "DEU",
+            "name": "Germany",
+            "nu.1": "Berlin",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "IT",
+            "code": "ITA",
+            "name": "Italy",
+            "nu.1": "Rome",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "10"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "uv": "1"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "v": "72",
+                        "uv": "72"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "PL",
+            "code": "POL",
+            "name": "Poland",
+            "nu.1": "Warsaw",
+            "region": "Europe",
+            "subregion": "Eastern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "PT",
+            "code": "PRT",
+            "name": "Portugal",
+            "nu.1": "Lisbon",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "e": "1"
+                    },
+                    "comment": "comment",
+                    "": "comment"
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "ES",
+            "code": "ESP",
+            "name": "Spain",
+            "nu.1": "Madrid",
+            "region": "Europe",
+            "subregion": "Southern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "uv": "72"
+                    },
+                    "ag": {
+                        "v": "24"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "CH",
+            "code": "CHE",
+            "name": "Switzerland",
+            "nu.1": "Bern",
+            "region": "Europe",
+            "subregion": "Western Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    },
+                    "comment": {
+                        "en": "only by plane"
+                    }
+                }
+            },
+            "loadStates": {
+                "out": {
+                    "bool": "1",
+                    "comment": {
+                        "en": "co ls en",
+                        "de": "co ls de",
+                        "fr": "co ls fr",
+                        "es": "co ls es"
+                    }
+                }
+            }
+        },
+        {
+            "nu": "GB",
+            "code": "GBR",
+            "name": "United Kingdom",
+            "nu.1": "London",
+            "region": "Europe",
+            "subregion": "Northern Europe",
+            "quara": {
+                "into": {
+                    "where": {
+                        "uv": "home"
+                    },
+                    "dur": {
+                        "uv": "12"
+                    }
+                },
+                "out": {
+                    "where": {
+                        "v": "home",
+                        "uv": "hotel"
+                    },
+                    "dur": {
+                        "e": "14"
+                    }
+                }
+            },
+            "forbidden": {
+                "out": {
+                    "bool": {
+                        "uv": "1"
+                    }
+                }
+            },
+            "test": {
+                "out": {
+                    "pcr": {
+                        "e": "72"
+                    }
+                }
+            }
+        }
+    ]
+}

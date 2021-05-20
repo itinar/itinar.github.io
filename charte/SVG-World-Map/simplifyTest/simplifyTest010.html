@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../src/simplify-js/simplify.js"></script>
+	<script src="../src/raphael/raphael.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+	function simplifyPath(data, tolerance, highQuality){
+		dataArray = data.split('M');
+		simplifiedPath = "";
+		for (var i = dataArray.length - 1; i >= 1; i--) {
+			simplifiedPath += simplifyM("M" + dataArray[i], tolerance, highQuality);
+		}
+		return simplifiedPath;
+	}
+	function simplifyM(data, tolerance, highQuality){
+		if(data == undefined){
+			//console.log("gotta give me something to work with...");
+			return;
+		}
+		if(tolerance == undefined){
+			tolerance = 0.4;
+		}
+		if(highQuality == undefined){
+			highQuality = false;
+		}
+
+
+		//make relative into absolute values
+		points = Raphael.parsePathString(Raphael._pathToAbsolute(data));
+
+		var out = "";
+
+		var pointsDigestible = [];
+		var pointsOfPath;
+		var final
+
+		//make points digestible to simplify
+		for (var i = 0; i <= points.length - 1; i++) {
+			var pointsCOrM;
+			pointsCOrM = points[i][0];
+				pointsTogether = [];
+				pointsTogether["x"] = points[i][points[i].length - 2];
+				pointsTogether["y"] = points[i][points[i].length - 1];
+				pointsDigestible.push(pointsTogether);
+		}
+	
+		//actualy simplify
+		var simplified = simplify(pointsDigestible, tolerance, highQuality);
+
+		//add the first element
+		outAbsolute = [];
+		outAbsolute[0] = points[0];
+
+		//go through simple data
+		for (var i = 1; i <= simplified.length - 2; i++) {
+			//go through the points given before simplifying
+			for (var j = 0; j <= points.length - 1; j++) {
+				//add data from points corresponding to the simplified points
+				if ((simplified[i].x == points[j][points[j].length - 2]) && (simplified[i].y == points[j][points[j].length - 1])) {
+					outAbsolute[i] = points[j];	
+				}
+			}
+		}
+
+		//add last
+		outAbsolute[simplified.length - 1] = points[points.length - 1];
+
+		var arrayRelative = Raphael.pathToRelative(outAbsolute);
+		var outRelative = "";
+		for (var i = 0; i <= arrayRelative.length - 1; i++) {
+			for (var l = 0; l <= arrayRelative[i].length - 1; l++) {
+				if(!(arrayRelative[i][l] < 0) && (typeof arrayRelative[i][l] == "number") && l != 1 ){
+					outRelative += ",";
+				}
+				outRelative += arrayRelative[i][l];
+			}
+		}
+		return outRelative;
+	}
+
+	</script>
+</body>
+</html>

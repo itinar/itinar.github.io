@@ -1,0 +1,1030 @@
+{
+    "main": [
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "846",
+            "states": {
+                "code": "A",
+                "name": "Alsace",
+                "nu": "FR-A",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "847",
+            "states": {
+                "code": "B",
+                "name": "Aquitaine",
+                "nu": "FR-B",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "848",
+            "states": {
+                "code": "C",
+                "name": "Auvergne",
+                "nu": "FR-C",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "849",
+            "states": {
+                "code": "E",
+                "name": "Brittany",
+                "nu": "FR-E",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "850",
+            "states": {
+                "code": "D",
+                "name": "Burgundy",
+                "nu": "FR-D",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "851",
+            "states": {
+                "code": "F",
+                "name": "Centre-Val de Loire",
+                "nu": "FR-F",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "852",
+            "states": {
+                "code": "G",
+                "name": "Champagne-Ardenne",
+                "nu": "FR-G",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "853",
+            "states": {
+                "code": "H",
+                "name": "Corsica",
+                "nu": "FR-H",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "10"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "854",
+            "states": {
+                "code": "I",
+                "name": "Franche-Comté",
+                "nu": "FR-I",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "855",
+            "states": {
+                "code": "K",
+                "name": "Languedoc-Roussillon",
+                "nu": "FR-K",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "856",
+            "states": {
+                "code": "L",
+                "name": "Limousin",
+                "nu": "FR-L",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "857",
+            "states": {
+                "code": "M",
+                "name": "Lorraine",
+                "nu": "FR-M",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "858",
+            "states": {
+                "code": "P",
+                "name": "Lower Normandy",
+                "nu": "FR-P",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "859",
+            "states": {
+                "code": "N",
+                "name": "Midi-Pyrénées",
+                "nu": "FR-N",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "860",
+            "states": {
+                "code": "O",
+                "name": "Nord-Pas-de-Calais",
+                "nu": "FR-O",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "861",
+            "states": {
+                "code": "R",
+                "name": "Pays de la Loire",
+                "nu": "FR-R",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "862",
+            "states": {
+                "code": "S",
+                "name": "Picardy",
+                "nu": "FR-S",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "863",
+            "states": {
+                "code": "T",
+                "name": "Poitou-Charentes",
+                "nu": "FR-T",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "864",
+            "states": {
+                "code": "U",
+                "name": "Provence-Alpes-Côte d'Azur",
+                "nu": "FR-U",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "865",
+            "states": {
+                "code": "V",
+                "name": "Rhône-Alpes",
+                "nu": "FR-V",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "866",
+            "states": {
+                "code": "Q",
+                "name": "Upper Normandy",
+                "nu": "FR-Q",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "867",
+            "states": {
+                "code": "J",
+                "name": "Île-de-France",
+                "nu": "FR-J",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "uv": "1"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "898",
+            "states": {
+                "code": "BW",
+                "name": "Baden-Württemberg",
+                "nu": "DE-BW",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "899",
+            "states": {
+                "code": "BY",
+                "name": "Bayern",
+                "nu": "DE-BY",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "900",
+            "states": {
+                "code": "BE",
+                "name": "Berlin",
+                "nu": "DE-BE",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "901",
+            "states": {
+                "code": "BB",
+                "name": "Brandenburg",
+                "nu": "DE-BB",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "902",
+            "states": {
+                "code": "HB",
+                "name": "Bremen",
+                "nu": "DE-HB",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "903",
+            "states": {
+                "code": "HH",
+                "name": "Hamburg",
+                "nu": "DE-HH",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "904",
+            "states": {
+                "code": "HE",
+                "name": "Hessen",
+                "nu": "DE-HE",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "905",
+            "states": {
+                "code": "MV",
+                "name": "Mecklenburg-Vorpommern",
+                "nu": "DE-MV",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "906",
+            "states": {
+                "code": "NI",
+                "name": "Niedersachsen",
+                "nu": "DE-NI",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "907",
+            "states": {
+                "code": "NW",
+                "name": "Nordrhein-Westfalen",
+                "nu": "DE-NW",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "908",
+            "states": {
+                "code": "RP",
+                "name": "Rheinland-Pfalz",
+                "nu": "DE-RP",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "909",
+            "states": {
+                "code": "SL",
+                "name": "Saarland",
+                "nu": "DE-SL",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "910",
+            "states": {
+                "code": "SN",
+                "name": "Sachsen",
+                "nu": "DE-SN",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "911",
+            "states": {
+                "code": "ST",
+                "name": "Sachsen-Anhalt",
+                "nu": "DE-ST",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "912",
+            "states": {
+                "code": "SH",
+                "name": "Schleswig-Holstein",
+                "nu": "DE-SH",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "913",
+            "states": {
+                "code": "TH",
+                "name": "Thüringen",
+                "nu": "DE-TH",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "v": "home",
+                            "uv": "hotel"
+                        },
+                        "dur": {
+                            "e": "12"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72"
+                        },
+                        "comment": {
+                            "en": "only by plane"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

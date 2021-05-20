@@ -51,17 +51,17 @@
 
             // Default callback functions, custom names can be defined in 'options.mapOver', 'options.mapOut' and 'options.mapClick'
             function mapOver(country) {
-                console.log("mapOver()");
+                //console.log("mapOver()");
                 document.getElementById("over").innerHTML = country.id;
             }
 
             function mapOut(country) {
-                console.log("mapOut()");
+                //console.log("mapOut()");
                 document.getElementById("out").innerHTML = country.id;
             }
 
             function mapClick(country) {
-                console.log("mapClick()");
+                //console.log("mapClick()");
                 document.getElementById("click").innerHTML = country.id;
                 console.log('document.getElementById("click").innerHTML');console.log(document.getElementById("click").innerHTML);
                 console.log("country.id");console.log(country.id);
@@ -122,8 +122,8 @@
 
             // Highlight country 
             function highlightCountry(id) {
-                console.log("highlightCountry()");
-                console.log("id");console.log(id);
+                //console.log("highlightCountry()");
+                //console.log("id");console.log(id);
                 var color = getHighlightColor(id);
                 myWorldMap.update({ [id]: color });
             }

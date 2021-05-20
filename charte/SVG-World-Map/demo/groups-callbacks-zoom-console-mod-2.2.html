@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SVG World Map Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+	</head>
+	<body>
+        <div id="labels" class="box">
+            <button onclick="myWorldMap.labels('all')">Country labels</button>
+            <button onclick="myWorldMap.labels('micro')">Microstate labels</button>
+        </div>
+        <div id="overout" class="box">
+            Path over: <span id="over"></span><br><br>
+            Path out: <span id="out"></span><br><br>
+            Path click: <span id="click"></span>
+        </div>
+        <div id="countries" class="box"></div>
+        <div id="groups" class="box"></div>
+        <div id="info" class="box hidden"></div>
+        <script src="../src/svg-world-map-mod1.0.js"></script>
+        <script src="js/svg-pan-zoom.min.js"></script>
+        <script src="../src/jquery.js"></script>
+        <script>
+
+            // Global variables
+            var myWorldMap;
+            var provData;
+            var vacGet = document.getElementsByName('vac');
+            var quaraIfGet = document.getElementsByName('quaraIf');
+            var quaraTimeMinGet = document.getElementsByName('quaraTimeMin');
+            var quaraTimeMaxGet = document.getElementsByName('quaraTimeMax');
+            var testIfGet = document.getElementsByName('testIf');
+            var testPCRAlsoGet = document.getElementsByName('PCRAlso');
+
+            var vacStat;
+            var quaraIfStat;
+            var quaraTimeMinStat;
+            var quaraTimeMaxStat;
+            var testIfStat;
+            var testPCRAlsoStat;
+
+
+
+            
+
+
+            var inputs = document.getElementsByClassName('radio');
+            //var textbox = document.getElementById('vacState');
+            var i
+            for (i = 0; i < inputs.length; i++) {
+                inputs[i].onclick = function(){
+                //console.log("this.dataset.price");
+              }
+            }
+
+                        
+            // Wait for JSON data first, then init SVG World Map
+            loadCountryData().then(function(countryData) {
+                //console.log("loadCountryData() loaded --> async function");
+                loadSVGWorldMap(countryData);
+            });
+
+            // Load SVG World Map
+            async function loadSVGWorldMap(countryData) {
+                //console.log("loadSVGWorldMap()");
+                // Custom options
+                var params = { 
+                    showLabels: true, 
+                    showInfoBox: true, 
+                    groupBy: [ "region", "sovereignty" ]
+                };
+                // Startup
+                myWorldMap = await svgWorldMap(params, countryData);
+                // Controls
+                buildCountryControls();
+                buildGroupControls();
+                // Test svgPanZoom 
+                svgPanZoom = svgPanZoom(myWorldMap.worldMap, { minZoom: 1, dblClickZoomEnabled: false });  //controlIconsEnabled: true, beforePan: beforePan
+            }
+
+            // Default callback functions, custom names can be defined in 'options.mapOver', 'options.mapOut' and 'options.mapClick'
+            function mapOver(country) {
+                ////console.log("mapOver() country:");//console.log(country);
+                document.getElementById("over").innerHTML = country.id;
+            }
+
+            function mapOut(country) {
+                ////console.log("mapOut()");//console.log(country);
+                document.getElementById("out").innerHTML = country.id;
+            }
+
+            function mapClick(country) {
+                //console.log("mapClick()");//console.log(country);
+                document.getElementById("click").innerHTML = country.id;
+                //console.log('document.getElementById("click").innerHTML');//console.log(document.getElementById("click").innerHTML);
+                //console.log("country.id");//console.log(country.id);
+                if (country != undefined && country.id != 'Ocean') {
+                    //console.log("country not undefined nor ocean");
+                    var nation = country.country; // Get parent nation
+                    if (nation != undefined) {
+                        //console.log("nation not undefined");
+                        var out = '<a class="hide" onclick="document.getElementById(\'info\').classList.add(\'hidden\')">×</a>';
+                        out += 'Country: ' + country.id;
+                        out += '<br><br><a onmouseover="highlightCountry(\'' + nation.id + '\')" onmouseout="myWorldMap.out(\'' + nation.id + '\')" onclick="myWorldMap.click(\'' + nation.id + '\')">Nation: ' + nation.name + '</a><br>';
+                        out += 'Official name: ' + nation.longname + '<br>Code: ' + nation.id + '<br>';
+                        out += '<a onmouseout="highlightGroup(\'' + nation.region + '\', \'region\', \'out\')" onmouseover="highlightGroup(\'' + nation.region + '\', \'region\', \'over\')" onclick="highlightGroup(\'' + nation.region + '\', \'region\', \'click\')">Region: ' + nation.region + '</a><br>';
+                        out += 'Population: ' + formatInteger(nation.population);
+                        out += '<br><br>All countries / provinces / states in ' + nation.name + ':<br>';
+                        nation.provinces.forEach(function(province) { 
+                            out += '<a onmouseover="myWorldMap.over(\'' + province.id + '\')" onmouseout="myWorldMap.out(\'' + province.id + '\')" onclick="myWorldMap.click(\'' + province.id + '\')">' + province.id + '</a>, '; 
+                        }); 
+                        //console.log("out");//console.log(out);
+                        document.getElementById("info").innerHTML = out;
+                        document.getElementById("info").classList.remove("hidden");
+                    }
+                } else {
+                    ////console.log('Country not found');
+                    //document.getElementById("info").classList.add("hidden");
+                }
+            }
+
+            function buildDropDown(){
+            	var key = {};
+            	var out = '<select onchange=' + '\'chooseCountry(this)\' name=' +  '\'countries\'' + ' id=\'countries\'' + '>';
+            	out += '<option value=\'choose\'>choose your county of origin</option>'
+            	for (var countryid in myWorldMap.countries) {
+            		var content = {};
+            		content["id"] = countryid;
+                    key[myWorldMap.countries[countryid].name] = content;
+                }
+            	var countries = sortObjKeysAlphabetically(key);                
+                console.log(countries);
+            	for (var country in countries) {
+                    out += '<option value=\'' + countries[country].id + '\'>' + country + '</option>';
+                }
+                out += '</select>'
+                return out;
+            }
+
+            // Demo country list
+            function buildCountryControls() {
+                //console.log("buildCountryControls()");
+                var out = '<ul>';
+                out += '<label>Vac</label>Yes<input type="radio" name="vac" value="true" checked="checked">No<input type="radio" name="vac" value="false">';
+                out += '<label>ok with quara</label>Yes<input type="radio" name="quaraIf" value="true">No<input type="radio" name="quaraIf" value="false">';
+                out += 'ok with quara, could be left after:<input type="text" name="quaraTimeMin" >and might take up to<input type="text" name="quaraTimeMax">';
+                out += '<label>ok with test</label>Yes<input type="radio" name="testIf" value="true" checked="checked">No<input type="radio" name="testIf" value="false">';
+                out += '<label>which one</label>PCRalso<input type="radio" name="PCRAlso" value="true">AGonly<input type="radio" name="PCRAlso" value="false">';
+                for (var countryid in myWorldMap.countries) {
+                    out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
+                }
+                out += '</ul>';
+                //console.log("out");//console.log(out);
+                document.getElementById("countries").innerHTML = out;
+            }
+
+            // Demo control buttons
+            function buildGroupControls() {
+                //console.log("buildGroupControls()");
+                var regionNames = { AF: "Afrika", AN: "Antarctica", AS: "Asia", EU: "Europe", NA: "North America", OC: "Ocania", SA: "South America" };
+                var out = '';
+                for (var group in myWorldMap.countryGroups) {
+                    out += '<u>' + group.charAt(0).toUpperCase() + group.slice(1) + ':</u><br><br><ul>'; // Capitalize first letter
+                    for (var subgroup in myWorldMap.countryGroups[group]) {
+                        if (group == 'region') { var name = regionNames[subgroup]; } else { var name = subgroup; }
+                        out += '<li id="' + subgroup + '" onmouseout="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'out\')" onmouseover="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'over\')" onclick="highlightGroup(\'' + group + '\', \'' + group + '\', \'click\')">' + name + '</li>'; 
+                    }
+                    out += '</ul>';
+                    
+                }
+                //console.log("out");//console.log(out);
+                document.getElementById("groups").innerHTML = out;
+            }
+
+            // Highlight country 
+            function highlightCountry(id) {
+                //console.log("highlightCountry()");
+                //console.log("id");//console.log(id);
+                var color = getHighlightColor(id);
+                myWorldMap.update({ [id]: color });
+            }
+
+            // Highlight country group
+            function highlightGroup(id, group, trigger) {
+                //console.log("highlightGroup()");
+                //console.log("input group");//console.log(group);
+                var group = myWorldMap.countryGroups[group];
+                //console.log("var id");//console.log(id);
+                //console.log("var group");//console.log(group);
+                //console.log("var trigger");//console.log(trigger);
+                //console.log("var group[id]");//console.log(group[id]);
+                var data2 = {};
+                //console.log("var data2[group[id]]");//console.log(data2[group[id]]);
+                if (trigger == 'out') {
+                    //console.log("if (trigger == 'out')");
+                    for (var country in group[id]) {
+                        //console.log("country");//console.log(country);
+                        myWorldMap.out(country);
+                    }
+                } else if (trigger == 'over' || trigger == 'click') {
+                    var color = getHighlightColor(id);
+                    var data = {};
+                    for (var country in group[id]) {
+                        data[country] = color; // Set data for map update
+                        //console.log("data one");//console.log(data[country]);
+                    }
+                    //console.log("data");//console.log(data);
+                    myWorldMap.update(data);
+                }
+            }
+
+            async function loadCountry(id){
+                var filePath = './json_m/' + id + '_m.json';
+
+                //console.log("filePath");//console.log(filePath);
+
+                var cData = 0;
+
+                const result = await $.getJSON(filePath, function(json) { 
+                    //console.log("json");//console.log(json); // show the JSON file content into //console 
+                    cData = json;
+                    provData = json;
+                    //console.log("cData");//console.log(cData);
+                });
+                //console.log("result");//console.log(result);
+                highlightMine(cData, id);
+            }
+
+            // Highlight country group
+            function highlightMine(groupIn, id) {
+                ////console.log("groupIn");//console.log(groupIn);
+                ////console.log("provData");//console.log(provData);
+
+                myWorldMap.reset();
+                //document.getElementById('code').classList.add('hidden');
+                var lis = document.getElementsByTagName("li");
+                for (var i=0; i<lis.length; i++) {
+                    lis[i].classList.add('hidden');
+                }
+
+                var data = {};
+                
+
+                for (var i = 1; i >= 0; i--) {
+                    if(vacGet[i].checked){
+                        vacStat = (vacGet[i].value === "true");
+                    } 
+                    //console.log("vacStat");//console.log(vacStat);
+                }
+                for (var i = 1; i >= 0; i--) {
+                    if(quaraIfGet[i].checked){
+                        quaraIfStat = (quaraIfGet[i].value === "true");
+                    }
+                    ////console.log("quaraIfStat");//console.log(quaraIfStat);
+                }
+                if(quaraIfStat){
+                    quaraTimeMinStat = quaraTimeMinGet.value;
+                    ////console.log("quaraTimeMinStat");//console.log(quaraTimeMinStat);
+                    quaraTimeMaxStat = quaraTimeMaxGet.value;
+                    ////console.log("quaraTimeMaxStat");//console.log(quaraTimeMaxStat);
+                }
+                for (var i = 1; i >= 0; i--) {
+                    if(testIfGet[i].checked){
+                        testIfStat = (testIfGet[i].value === "true");
+                    }
+                    ////console.log("testIfStat");//console.log(testIfStat);
+                }
+                if (testIfStat) {
+                    for (var i = 1; i >= 0; i--) {
+                        if(testPCRAlsoGet[i].checked){
+                        testPCRAlsoStat = (testPCRAlsoGet[i].value === "true");
+                        }
+                        ////console.log("testPCRAlsoStat");//console.log(testPCRAlsoStat);
+                    }
+                }
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
+                    ////console.log(provData["main"][i]["nu"]);
+                    var colorInto;
+                    var colorOut;
+                    var color = "red";
+                    ////console.log(Boolean(colorInto);
+                    ////console.log("id");//console.log(id);
+                    ////console.log('provData["main"][i].nu');//console.log(provData["main"][i].nu);
+                    ////console.log('id == provData["main"][i].nu');//console.log(id == provData["main"][i].nu);
+
+                    //heime ned analysiere CH-->CH
+                    console.log(provData.main[i].nu)
+                    if(id == provData["main"][i].nu){
+                        //console.log("homeCountry");
+                        data[provData.main[i].nu] = "url(#" + "hc" + ")";
+                        continue;
+                    }
+                    //falls gesperrt alles kicken
+                    var quaraInto = checkQuara(i,"into");
+                    var quaraOut = checkQuara(i,"out");
+                    if(quaraInto){
+                    	colorInto = "quara";
+                    	//console.log("quaraInto --> defined");
+                    }
+                    if(quaraOut){
+                    	colorOut = "quara";
+                    	//console.log("quaraOut --> defined");
+                    }
+
+                    if (colorInto && colorOut) {
+                    	if(colorInto == colorOut){
+                    		console.log("url(#" + colorInto + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + ")";
+                    	}else{
+                    		console.log("url(#" + colorInto + colorOut + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + colorOut + ")";
+                    	}
+                    	continue
+                    }
+
+
+                    if(!Boolean(colorInto)){
+                    	var pcrInto = checkTest(i, "into", "pcr");
+                    	var agInto = checkTest(i, "into", "ag");
+                    	if(pcrInto){
+                    		colorInto = "pcr";
+                    	}else if(agInto){
+                    		colorInto = "ag";
+                    	}
+                    }
+                    if(!Boolean(colorInto)){
+                    	var pcrOut = checkTest(i, "out", "pcr");
+                    	var agOut = checkTest(i, "out", "ag");
+                    	if(pcrOut){
+                    		colorOut = "pcr";
+                    	}else if(agOut){
+                    		colorOut = "ag";
+                    	}
+                    }
+                    if (colorInto && colorOut) {
+                    	if(colorInto == colorOut){
+                    		console.log("url(#" + colorInto + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + ")";
+                    	}else{
+                    		console.log("url(#" + colorInto + colorOut + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + colorOut + ")";
+                    	}
+                    	continue
+                    }
+                    if(!colorOut){
+                    	colorOut = "open";
+                    }
+                    if(!colorInto){
+                    	colorInto = "open";
+                    }
+                    if (colorInto && colorOut) {
+                    	if(colorInto == colorOut){
+                    		console.log("url(#" + colorInto + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + ")";
+                    	}else{
+                    		console.log("url(#" + colorInto + colorOut + ")");
+                    		data[provData.main[i].nu] = "url(#" + colorInto + colorOut + ")";
+                    	}
+                    }
+                }
+                myWorldMap.update(data);
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--){
+                	myWorldMap.out(provData["main"][i].nu);
+                	//console.log(provData["main"][i].nu);
+                }
+                
+                //console.log("data");//console.log(data);
+            }
+
+            function checkQuara(i, dir){
+                ////console.log("checkQuara");
+                ////console.log("i");//console.log(i);
+                //console.log("dir");//console.log(dir);
+                var jsonData = {};
+                jsonData = provData.main[i];
+                //console.log("jsonData");//console.log(jsonData);
+                if (Boolean(jsonData.quara)) {
+	                if (Boolean(jsonData.quara[dir])) {
+	                    ////console.log("provData.main[i].quara[dir]")
+	                    if (Boolean(jsonData.quara[dir].where.e)) {
+	                        ////console.log("quara e true");
+	                        return true;
+	                    }else if(vacStat == true){
+	                        if (Boolean(provData.main[i].quara[dir].where.v)){
+	                            ////console.log("quara v true");
+	                            return true;
+	                        }else{
+	                            ////console.log("quara v false");
+	                            return false;
+	                        }
+	                    }else if(vacStat == false){
+	                        if (Boolean(jsonData.quara[dir].where.uv)){
+	                            ////console.log("quara uv true");
+	                            return true;
+	                        }else{
+	                            ////console.log("quara uv false");
+	                            return false;
+	                        }
+	                    }else{
+	                        return "haha";
+	                    }
+	                }
+	            }else{
+                    ////console.log("quara false");
+                    return false;
+	            }
+            }
+
+            function checkTest(i, dir, type){
+                ////console.log("checkQuara");
+                ////console.log("i");//console.log(i);
+                //console.log("dir");//console.log(dir);
+                var jsonData = {};
+                jsonData = provData.main[i];
+                //console.log("jsonData");//console.log(jsonData);
+                if (Boolean(jsonData.test)) {
+	                if (Boolean(jsonData.test[dir])) {
+	                	if (Boolean(jsonData.test[dir][type])) {
+		                    ////console.log("provData.main[i].test[dir]")
+		                    if (Boolean(jsonData.test[dir][type].e)) {
+		                        ////console.log("test e true");
+		                        return true;
+		                    }else if(vacStat == true){
+		                        if (Boolean(provData.main[i].test[dir][type].v)){
+		                            ////console.log("test v true");
+		                            return true;
+		                        }else{
+		                            ////console.log("test v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.test[dir][type].uv)){
+		                            ////console.log("test uv true");
+		                            return true;
+		                        }else{
+		                            ////console.log("test uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }else{
+		                	return false;
+		                }
+	                }
+	            }else{
+                    ////console.log("test false");
+                    return false;
+	            }
+            }
+
+
+
+
+            
+
+            // Get some random color from the element name
+            function getHighlightColor(id) {
+                //console.log("getHighlightColor()");
+                // Get the numbers for the id letters, add them, square them and take the last 6 digits
+                var number = parseInt(id.substr(0, 1).charCodeAt(0) + '' + id.substr(1, 2).charCodeAt(0));
+                var hex = '#' + parseInt(number * number).toString().substr(-6, 6);
+                return hex;
+            }
+
+            // Asynchronous JSON load
+            async function loadCountryData() {
+                //console.log("loadCountryData()");
+                let response = await fetch('../src/country-data.json');
+                //console.log("response");//console.log(response);
+                let data = await response.json();
+                ////console.log("data");//console.log(data);
+                return data;
+            }
+
+            // Number format helper function
+            function formatInteger(number) {
+                //console.log("formatInteger()");
+                //console.log("number");//console.log(number);
+                //console.log("number.Format");//console.log(Intl.NumberFormat('en-GB').format(number));
+                return new Intl.NumberFormat('en-GB').format(number);
+            }
+
+            function sortObjKeysAlphabetically(obj) {
+			  return Object.keys(obj).sort((a,b) => a > b).reduce((result, key) => {
+			    result[key] = obj[key];
+				return result;
+			  }, {});
+			}
+        </script>
+    </body>
+</html>

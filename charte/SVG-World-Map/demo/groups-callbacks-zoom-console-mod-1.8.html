@@ -24,8 +24,6 @@
         <script src="../src/jquery.js"></script>
         <script>
 
-            console.out("1.7nöi");
-
             // Global variables
             var myWorldMap;
             var provData;
@@ -216,17 +214,19 @@
             function highlightMine(groupIn, id) {
                 console.log("groupIn");console.log(groupIn);
                 console.log("provData");console.log(provData);
+
+                var data = {};
                 
 
                 for (var i = 1; i >= 0; i--) {
                     if(vacGet[i].checked){
-                        vacStat = Boolean(vacGet[i].value);
+                        vacStat = (vacGet[i].value === "true");
                     }
                     console.log("vacStat");console.log(vacStat);
                 }
                 for (var i = 1; i >= 0; i--) {
                     if(quaraIfGet[i].checked){
-                        quaraIfStat = Boolean(quaraIfGet[i].value);
+                        quaraIfStat = (quaraIfGet[i].value === "true");
                     }
                     console.log("quaraIfStat");console.log(quaraIfStat);
                 }
@@ -238,42 +238,55 @@
                 }
                 for (var i = 1; i >= 0; i--) {
                     if(testIfGet[i].checked){
-                        testIfStat = Boolean(testIfGet[i].value);
+                        testIfStat = (testIfGet[i].value === "true");
                     }
                     console.log("testIfStat");console.log(testIfStat);
                 }
                 if (testIfStat) {
                     for (var i = 1; i >= 0; i--) {
                         if(testPCRAlsoGet[i].checked){
-                        testPCRAlsoStat = Boolean(testPCRAlsoGet[i].value);
+                        testPCRAlsoStat = (testPCRAlsoGet[i].value === "true");
                         }
                         console.log("testPCRAlsoStat");console.log(testPCRAlsoStat);
                     }
                 }
                 for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
-                    console.log(provData["main"][i]["nu"]);
+                    //console.log(provData["main"][i]["nu"]);
                     var colorInto;
                     var colorOut;
+                    var color = "red";
+                    console.log(Boolean(colorInto));
+                    //console.log("id");console.log(id);
+                    //console.log('provData["main"][i].nu');console.log(provData["main"][i].nu);
+                    //console.log('id == provData["main"][i].nu');console.log(id == provData["main"][i].nu);
+
                     //heime ned analysiere CH-->CH
-                    if(id == provData["main"][i]){
+                    if(id == provData["main"][i].nu){
                         console.log("homeCountry");
                         continue;
                     }
                     //falls gesperrt alles kicken
                     var quaraInto = checkQuara(i,"into");
-                    console.log("quaraInto");console.log(quaraInto);
+                    var quaraOut = checkQuara(i,"into");
+                    //console.log("quaraInto");console.log(quaraInto);
+                    //console.log("Boolean(quaraInto)");console.log(Boolean(quaraInto));
+
+                    
+
                     if(quaraInto){
-                        //luege ob passiv oder ned
-                        if(quaraIfStat){
-                            quaraInto
-                        }else{
-
-                        }
-                    }else{
-
+                    	colorInto = "red";
+                    	console.log("quaraInto --> defined");
+                    }
+                    if(quaraOut){
+                    	colorOut = "red";
+                    	console.log("quaraInto --> defined");
+                    }
+                    if (colorInto && colorOut) {
+                    	data[provData.main[i].nu] = colorInto + colorOut;
                     }
                     
                 }
+                console.log("data");console.log(data);
             }
 
             function checkQuara(i, dir){
@@ -298,7 +311,7 @@
                     }else if(vacStat == false){
                         if (jsonData.quara[dir].where.uv){
                             console.log("uv true");
-                            return [true, jsonData.quara[dir].min.e, jsonData.quara[dir].max.uv];
+                            return [true, jsonData.quara[dir].min.uv, jsonData.quara[dir].max.uv];
                         }else{
                             console.log("uv false");
                             return false;

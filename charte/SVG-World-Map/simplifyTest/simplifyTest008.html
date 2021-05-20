@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../src/simplify-js/simplify.js"></script>
+	<script src="../src/raphael/raphael.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var tolerance = 0.5;
+	var highQuality = false;
+	var data = "M481.986,93.648c0.648-0.335,1.428-0.676,2.137-0.865c-0.335,0.357,0.47,0.271,0.741,0.337c0.229,0.056,0.346,0.155,0.601,0.086c0.319-0.084,0.673-0.617,0.784-0.122c-0.041-0.111-0.074-0.223-0.106-0.341c0.239,0.054,0.53,0.041,0.5-0.286c0.188,0.143,0.501,0.229,0.652-0.025c0.128,0.313,0.587,0.212,0.76,0c0.199,0.736,1.276,0.731,1.909,0.994c-0.337,0.396-0.695,0.876-0.088,1.177c0.204,0.102,0.335,0.053,0.478,0.024c-0.106,0.268,0.764,0.371,0.397,0.734c0.362-0.062,0.341,0.356,0.447,0.575c-0.418,0.074-0.374,0.308-0.636,0.521c-0.105,0.087-0.37-0.133-0.604,0.238c-0.201,0.318-0.361,0.471-0.311,0.747c0.06,0.278,0.484,0.632-0.011,0.965c-0.1-0.014-0.405-0.007-0.719-0.04c-0.039-0.071-0.225-0.371-0.427-0.487c-0.274-0.165-0.833-0.211-1.01-0.422c-0.117-0.141-0.025-0.846-0.053-1.048c-0.239,0.096-0.31,0.298-0.482,0.468c-0.317,0.309-0.812,0.173-1.193,0.109c0.08-0.319,0.227-0.822-0.038-0.993c-0.316-0.207-0.811-0.196-1.031-0.056c0.039-0.493-0.283-0.375-0.642-0.526c-0.424-0.177-0.317-0.187-0.551-0.555c-0.087-0.133-0.885-0.109-1.058-0.212c-0.484-0.295-0.058-0.863-0.45-1.004";
+
+
+	points = Raphael.parsePathString(Raphael._pathToAbsolute(data));
+
+	console.log("points");console.log(points);
+
+	var out = "";
+
+	var pointsDigestible = [];
+	var pointsOfPath;
+	var final
+
+	for (var i = 0; i <= points.length - 1; i++) {
+		console.log("points[" + i + "]: ");console.log(points[i]);
+		//make points digestible to simplify
+		var pointsCOrM;
+		var putMHere = [];
+
+		pointsCOrM = points[i][0];
+
+
+		/*if (pointsCOrM == "M" || pointsCOrM == "m" ){
+			putMHere[0] = "M";
+			putMHere[1] = points[i][1];
+			putMHere[2] = points[i][2];
+			pointsTogether = [];
+			pointsTogether["x"] = points[i][1];
+			pointsTogether["y"] = points[i][2];
+			pointsDigestible.push(pointsTogether);
+
+		} else {*/
+			pointsTogether = [];
+			pointsTogether["x"] = points[i][points[i].length - 2];
+			pointsTogether["y"] = points[i][points[i].length - 1];
+			pointsDigestible.push(pointsTogether);
+		//}
+	}
+	console.log("points");console.log(points);
+	console.log("pointsDigestible");console.log(pointsDigestible);		
+	var simplified = simplify(pointsDigestible, tolerance, highQuality);
+	console.log("simplified");console.log(simplified);
+
+	
+	//ds'erschte
+	outAbsolute = [];
+	outAbsolute[0] = points[0];
+	for (var l = 0; l <= points[0].length - 1; l++) {
+		if(!(points[0][l] < 0) && (typeof points[0][l] == "number") && l != 1 ){
+			out2 += ",";
+			out += ",";
+		}
+		out += points[0][l];
+	}
+
+	for (var i = 1; i <= simplified.length - 2; i++) {
+
+		for (var j = 0; j <= points.length - 1; j++) {
+			//console.log("I: " + i + " J: " + j);
+			if ((simplified[i].x == points[j][points[j].length - 2]) && (simplified[i].y == points[j][points[j].length - 1])) {
+				console.log("looking at points[" + j +"]: ");console.log(points[j]);
+				outAbsolute[i] = points[j];
+				var out2 = "";
+				for (var l = 0; l <= points[j].length - 1; l++) {
+					if(!(points[j][l] < 0) && (typeof points[j][l] == "number") && l != 1 ){
+						out2 += ",";
+						out += ",";
+					}
+					out2 += points[j][l];
+					out += points[j][l];
+				}
+				console.log(j);		
+				//whereToStart = j;		
+			}
+		}
+	}
+
+	//ds'letschte
+	for (var l = 0; l <= points[points.length - 1].length - 1; l++) {
+		if(!(points[points.length - 1][l] < 0) && (typeof points[points.length - 1][l] == "number") && l != 1 ){
+			out2 += ",";
+			out += ",";
+		}
+		out += points[points.length - 1][l];
+	}
+	outAbsolute[simplified.length - 1] = points[points.length - 1];
+
+
+	console.log("data");console.log(data);
+	console.log("out");console.log(out);
+	console.log("Raphael.pathToRelative(out)");console.log(Raphael.pathToRelative(out));
+	console.log("Raphael.pathToRelative(outAbsolute)");console.log(Raphael.pathToRelative(outAbsolute));
+
+
+
+	var arrayRelative = Raphael.pathToRelative(out);
+	var outRelative = "";
+	for (var i = 0; i <= arrayRelative.length - 1; i++) {
+		for (var l = 0; l <= arrayRelative[i].length - 1; l++) {
+			if(!(arrayRelative[i][l] < 0) && (typeof arrayRelative[i][l] == "number") && l != 1 ){
+				outRelative += ",";
+			}
+			outRelative += arrayRelative[i][l];
+		}
+	}
+	console.log("outRelative");console.log(outRelative);
+
+
+	</script>
+</body>
+</html>
