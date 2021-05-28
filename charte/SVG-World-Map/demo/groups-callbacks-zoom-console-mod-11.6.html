@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,, shrink-to-fit=no">
+        <title>SVG World Map Demo</title>
+        <link rel="stylesheet" type="text/css" href="css/demo-mod-3.8.css">
+        <link rel="stylesheet" href="../src/cookieconsent.css" media="print" onload="this.media='all'; this.onload=null;">
+	</head>
+	<body>
+		<div onclick="void(0);">
+        <div id="labels" class="box hidden">
+            <button onclick="myWorldMap.labels('all')">Country labels</button>
+            <button onclick="myWorldMap.labels('micro')">Microstate labels</button>
+            <!--put menu here, mobile TODO-->
+        </div>
+        <div id="overout" class="box hidden">
+            Path over: <span id="over"></span><br><br>
+            Path out: <span id="out"></span><br><br>
+            Path click: <span id="click"></span>
+        </div>
+        <div id="countries" class="box"><div id="tongue">
+        	<label for="language"></label>
+        	<select name="language" id="tongueSelector" onchange="setLang(this)">
+			  <option value="en">en</option>
+			  <option value="de">de</option>
+			  <option value="fr">fr</option>
+			</select>
+        </div><div id="countriesContainer"></div><div id="countriesBottom"><div id="wa"><div id="countriesFlights"><div
+				data-skyscanner-widget="SearchWidget"
+				data-locale="en-GB"
+				data-market="GB"
+				data-currency="GBP"
+			></div></div>
+				<div id="pH"></div>
+			</div>
+		</div></div>
+        <div id="groups" class="box hidden"></div>
+        <div id="info" class="box closed">
+        	<div id="infoContainer">
+        	</div>
+        	<div id="wb">
+        		<div id="infoFlights">
+        		</div>
+        	</div>
+        </div>
+        <div id="toggleCountries" class="hovering closed" onclick="toggleCountries('open')"><div id="innerToggleCountries"><a>options</a>
+        </div></div>
+        <script src="../src/svg-world-map-mod4.0.js"></script>
+        <script src="js/svg-pan-zoom.min.js"></script>
+        <script src="../src/easypz.latest.js"></script>
+        <script src="../src/hammer.js"></script>
+        <script src="../src/cookieconsent.js"></script>
+        
+        <script>
+        	function load_js(){
+				var head= document.getElementsByTagName('head')[0];
+				var script= document.createElement('script');
+				script.src= 'https://widgets.skyscanner.net/widget-server/js/loader.js';// + new Date().getTime();
+				if(Boolean(document.getElementsByTagName('script'))){
+					for(s = document.getElementsByTagName('script').length - 1; s >= 0; s--){
+						console.log("s: " + s)
+						if(Boolean(document.getElementsByTagName('script')[s])){
+							if(document.getElementsByTagName('script')[s].src == script.src){
+								head.removeChild(document.getElementsByTagName('script')[s])
+								console.log("script removed");
+							}
+						}
+					}
+				}
+				head.appendChild(script);
+			}
+
+            // Global variables
+            var myWorldMap;
+            var myWorldMap2;
+            var provData;
+            var stateData;
+            var vacGet = document.getElementsByName('vac');
+            var curFewTimeBeginGet = document.getElementsByName('curFewTimeBegin');
+            var curFewTimeEndGet = document.getElementsByName('curFewTimeEnd');
+            var bigMap = true;
+
+            var vacStat;
+            var pastInfection;
+            var curFewTimeBeginStat;
+            var curFewTimeEndStat;
+
+            var chosenCountryId;
+            var chosenCountryName;
+
+
+            var cc = initCookieConsent();
+
+            var tongue = "en";
+            var dixerLoc = "../src/tongues_4.json";
+            var dixer;
+            var cDix;
+
+
+
+            
+
+
+            var inputs = document.getElementsByClassName('radio');
+            //var textbox = document.getElementById('vacState');
+            var i
+            for (i = 0; i < inputs.length; i++) {
+                inputs[i].onclick = function(){
+                //////////console.log("this.dataset.price");
+              }
+            }
+
+
+
+
+
+
+
+
+
+
+			/*onReady(function() {
+			  //setVisible('.page', true);
+			  //setVisible('#loading', false);
+			  //alert("hhh");
+			});
+
+			function onReady(callback) {
+			  var intervalId = window.setInterval(function() {
+			    if (document.getElementsByTagName('body')[0] !== undefined) {
+			      window.clearInterval(intervalId);
+			      callback.call(this);
+			    }
+			  }, 1000);
+			}
+
+			function setVisible(selector, visible) {
+			  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+			}*/
+
+                        
+
+			//set language of user to something
+            function setLang(lang) {
+            	tongue = lang.value;
+            	console.log(tongue);
+            	var d = new Date();
+  				d.setTime(d.getTime() + (60*24*60*60*1000));
+  				var expires = "expires="+ d.toUTCString();
+            	document.cookie = "tongue" + "=" + tongue + ";" + expires + ";SameSite=Strict" + ";path=/";
+            	document.getElementById("info").classList.add("closed");
+            	console.log("cDix");console.log(cDix);
+            	if(tongue != "en"){
+                	var cDSrc =  "../src/countryDix/" + tongue + "/world.json";
+	                console.log("cDSrc");console.log(cDSrc);
+	                loadThisJson(cDSrc).then(value => {cDix = value; console.log("cDix");console.log(cDix); buildCountryControls();});
+                }else{
+                	console.log("cDix");console.log(cDix);
+                	buildCountryControls();
+                }
+                
+            }
+
+	        function getCookie(cname) {
+				  var name = cname + "=";
+				  var decodedCookie = decodeURIComponent(document.cookie);
+				  var ca = decodedCookie.split(';');
+				  for(var i = 0; i <ca.length; i++) {
+				    var c = ca[i];
+				    while (c.charAt(0) == ' ') {
+				      c = c.substring(1);
+				    }
+				    if (c.indexOf(name) == 0) {
+				      return c.substring(name.length, c.length);
+				    }
+				  }
+				  return "";
+			}
+
+			function consultDixer(address) {
+				var gb = "";
+				if(Boolean(dixer[tongue][address])){
+					gb = dixer[tongue][address];
+				}
+				return gb;
+			}
+
+			function countryNameDix(id){
+				if (tongue == "en") {
+					return myWorldMap.countries[id].name;
+				}else{
+					for(element in cDix){
+						if(cDix[element].alpha2 == id.toLowerCase()){
+							return cDix[element].name;
+						}
+					}
+				}
+			}
+
+
+
+
+
+
+
+            function hashTake() {
+				var hash = window.location.hash
+				if(hash.length > 0){
+					//make it so when resizing the window after having chosen a country the map stays visible, not the menu
+	            	document.getElementById("countries").classList.add("closed");
+					document.getElementById("toggleCountries").classList.remove("closed");
+	   				//choosing country
+	            	chosenCountryId = hash.substr(1,2);
+	            	chosenCountryName = myWorldMap.countries[chosenCountryId].name;
+	            	loadCountry(chosenCountryId);
+				}
+
+			}
+			function hashTake2() {
+				console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
+				var hash = window.location.hash
+				if(hash.length > 2){
+					var clicked = hash.substr(3,hash.length - 1);
+					myWorldMap.click(clicked);
+					console.log(clicked);
+				}
+			}
+
+
+
+			
+
+
+            // Wait for JSON data first, then init SVG World Map
+            loadCountryData().then(async function(countryData) {
+                //////////console.log("loadCountryData() loaded --> async function");
+                var navLang = navigator.language.substr(0,2).toLowerCase();
+
+                if(Boolean(getCookie("tongue"))){
+                	tongue = getCookie("tongue");
+                }else if(navLang == "en" || navLang == "fr" || navLang == "de"){
+                	tongue = navLang;
+                }
+                console.log("tongue: " + tongue);
+                document.getElementById("tongueSelector").value = tongue;
+                loadThisJson(dixerLoc).then(value => {dixer = value})
+
+                if(tongue != "en"){
+                	var cDSrc =  "../src/countryDix/" + tongue + "/world.json";
+	                console.log(cDSrc);
+	                loadThisJson(cDSrc).then(value => {cDix = value});
+                }
+                
+
+
+                cc.run({
+				    current_lang : 'en',
+				    onAccept : function(){
+				        // do something ...
+				    },
+
+				    languages : {
+				        en : {
+				            consent_modal : {
+				                title :  "I use cookies",
+				                description :  'Your cookie consent message here',
+				                primary_btn: {
+				                    text: 'Accept',
+				                    role: 'accept_all'  //'accept_selected' or 'accept_all'
+				                },
+				                secondary_btn: {
+				                    text : 'Settings',
+				                    role : 'settings'   //'settings' or 'accept_necessary'
+				                }
+				            },
+				            settings_modal : {
+				                title : 'Cookie settings',
+				                save_settings_btn : "Save settings",
+				                accept_all_btn : "Accept all",
+				                close_btn_label: "Close",   
+				                blocks : [
+				                    {
+				                        title : "Cookie usage",
+				                        description: 'Your cookie usage disclaimer'
+				                    },{
+				                        title : "Strictly necessary cookies",
+				                        description: 'Category description ... ',
+				                        toggle : {
+				                            value : 'necessary_cookies',
+				                            enabled : true,
+				                            readonly: true
+				                        }
+				                    },{
+				                        title : "Statistics cookies",
+				                        description: 'Category description ... ',
+				                        toggle : {
+				                            value : 'statistics_cookies',
+				                            enabled : true,
+				                            readonly: false
+				                        }
+				                    },
+				                ]
+				            }
+				        }
+				    }
+				});
+                await loadSVGWorldMap(countryData).then(async function(){
+                		await hashTake();
+                	}).then(function(){
+                			hashTake2();
+                	});
+
+                	load_js();
+            });
+
+
+            
+
+            // Load SVG World Map
+            async function loadSVGWorldMap(countryData) {
+                //////////console.log("loadSVGWorldMap()");
+                // Custom options
+                var params = { 
+                    showLabels: true, 
+                    showInfoBox: true, 
+                    bigMap: true,
+                    showLabels: false, // Show country labels
+                    // Color options
+                    oceanColor: '#D6E3F8', 
+                    worldColor: '#F1EDEE', 
+                    labelFill: { out: '#666666',  over: '#CCCCCC',  click: '#000000' }, 
+                    //countryFill: { out: '#B9B9B9',  over: '#CCCCCC',  click: '#666666' }, // TODO: Currently this makes no sense for main country groups, until all country borders are existing in the SVG (a lot are missing, e.g. Japan, Greenland, Antarctica)
+                    countryStroke: { out: '#000000',  over: '#000000',  click: '#000000' }, 
+                    countryStrokeWidth: { out: '0',  over: '0',  click: '0' }, 
+                    provinceFill: { out: '#000000',  over: '#000000',  click: '#000000' }, 
+                    provinceStroke: { out: '#000000',  over: '#000000',  click: '#000000' }, 
+                    provinceStrokeWidth: { out: '0',  over: '0',  click: '0' },
+                    groupBy: [ "region", "sovereignty" ]
+                };
+
+
+                // Startup
+                myWorldMap = await svgWorldMap(params, countryData)
+
+                // Controls
+                buildCountryControls();
+                buildGroupControls();
+                // Test svgPanZoom 
+
+                setUpZoom();
+                
+                /*setTimeout(function(){
+            		hashTake();
+            		setTimeout(function(){
+            			hashTake2();
+            		}, 1000);
+                }, 200))*/
+                
+            }
+
+            function resizeMap() {
+            	//svgPanZoom.resize(); / update SVG cached size and controls positions
+				//svgPanZoom.contain();
+            }
+
+
+            // Default callback functions, custom names can be defined in 'options.mapOver', 'options.mapOut' and 'options.mapClick'
+            function mapOver(country) {
+                //console.log(country);
+                //console.log(country.country.name);
+                //console.log(country.id);
+                //console.log(country.country.id);
+                if(country.id != 'World' && country.id != 'Ocean'){
+                	//console.log("esch was");
+                	document.getElementById("over").innerHTML = country.id;
+	                var out = "<strong>";
+	                out += country.country.name;
+	                out += "</strong>";
+
+
+	                if(!(country.id == country.country.id) && !(country.id == (country.country.id + "-country").toLowerCase()) && Boolean(stateData)){
+	                	var stateAddress;
+	                	for(var obj in stateData.main){
+						    if(stateData.main[obj].states.nu == country.id){
+						    	stateAddress = obj;
+						        break
+						    }
+						}
+						
+						if(Boolean(stateAddress)){
+							out += "<br>"
+							out += stateData.main[stateAddress].states.name;
+	                		out += "";
+						}
+	                	
+	                }
+	                myWorldMap.infoBox("over", out);
+                }else{
+                	//console.log("esch nix");
+                	myWorldMap.infoBox("out");
+                }
+                
+            }
+
+            function mapOut(country) {
+                ////////////console.log("mapOut()");//////////console.log(country);
+                document.getElementById("out").innerHTML = country.id;
+                myWorldMap.infoBox("out");
+            }
+
+            async function mapClick(country) {
+                ////////console.log("mapClick()");//////////console.log(country);
+                document.getElementById("click").innerHTML = country.id;
+                ////////console.log('document.getElementById("click").innerHTML');//////////console.log(document.getElementById("click").innerHTML);
+                ////////console.log("country.id");//////////console.log(country.id);
+                if (country != undefined && country.id != 'Ocean') {
+                        //console.log("country not undefined nor ocean");
+                        var nation = country.country; // Get parent nation
+						//console.log("country: ");
+						//console.log(country);
+						//console.log(" country.country: ");
+						//console.log(country.country);
+						//console.log(" country.id: ");
+						//console.log(country.id);
+                        if (nation != undefined) {
+                        	//dases zersch langsam zue geit o när wedr uf
+                        	if(!document.getElementById("info").classList.contains("closed")){
+    							document.getElementById("info").classList.add("closed");
+    							await delay(300);	
+    						}
+    						
+                            //////////console.log("nation not undefined");
+                            if(true){
+
+	                            if(Boolean(provData)){
+
+	                                var address;
+	                                //////console.log("jo brudi da bini");
+	                                for(var obj in provData.main){
+	                                	//////console.log("obj: " + obj + " nation.id" + nation.id);
+	        						    if(provData.main[obj].nu == nation.id){
+	        						    	address = obj;
+	        						        break
+	        						    }
+	        						}
+	        						//////console.log("address: " + address);
+	        						
+	        						
+	                                var out = '<a class="hide" onclick="closeInfo()">×</a>';
+	                                //TODO exclude homecountry
+	                                if(chosenCountryId == nation.id){
+	                                    out += '<div class="infoHome hc">' + consultDixer("withinCountries") + '</div>';
+	                                } else if(Boolean(provData.main[address])){
+	                                	//////console.log("address: " + address);
+	                                	
+	                                	var forbiddenOut = checkForbidden("out", provData.main[address]);
+	                                    var quaraOut = checkQuara("out", provData.main[address]);
+	                                    var PCROut = checkTest("out", "pcr", provData.main[address]);
+	                                    var testAndOut;
+	                                    var AGOut = checkTest("out", "ag", provData.main[address]);
+	                                    var jsonOut = provData.main[address];
+	                                    var forbiddenInto;
+										var quaraInto;
+										var PCRInto;
+										var AGInto;
+										var jsonInto;
+	                                    
+	                                    var cGoing; 
+	                                    var cComing;
+
+	                                    if(nation.id == ((country.id).substr(0, 2)).toUpperCase() && !(nation.id == (country.id).substr(0, 2))){
+	                                    	//it's a country
+	                                    	forbiddenInto = checkForbidden("into", provData.main[address]);
+											quaraInto = checkQuara("into", provData.main[address]);
+											PCRInto = checkTest("into", "pcr", provData.main[address]);
+											//testAndInto = checkTestAnd(provData.main[address]);
+											AGInto = checkTest("into", "ag", provData.main[address]);
+											jsonInto = provData.main[address];
+	                                    	
+	                                    } else {
+	                                    	//it's not a country
+											var filePath = '../src/json_m/' + chosenCountryId + '_States_m.json';
+						                	var stateAddress;
+
+							                ////console.log("filePath");////console.log(filePath);
+
+							                var cData = 0;
+
+							                let response = await fetch(filePath);
+							                //////console.log("response");//////console.log(response);
+							                let data = await response.json();
+
+							                ////////console.log("data");//////console.log(data);
+							                const result = data;
+
+							                stateData = result;
+
+							                for(var obj in stateData.main){
+			        						    if(stateData.main[obj].states.nu == country.id){
+			        						    	stateAddress = obj;
+			        						    	
+			        						        break
+			        						    }
+			        						}
+			        						forbiddenInto = checkForbidden("into", stateData.main[stateAddress].states);
+											quaraInto = checkQuara("into", stateData.main[stateAddress].states);
+											PCRInto = checkTest("into", "pcr", stateData.main[stateAddress].states);
+											//testAndInto = checkTestAnd(provData.main[address]);
+											AGInto = checkTest("into", "ag", stateData.main[stateAddress].states);
+											jsonInto = stateData.main[stateAddress].states;
+											stateName = stateData.main[obj].states.name;
+
+	                                    }
+
+
+
+	                                    
+
+	                                    if(Boolean(forbiddenOut)){
+	                                        cGoing = "forbidden";
+	                                    } else if(Boolean(quaraOut)){
+	                                        cGoing = "quara";
+	                                    } else if(Boolean(PCROut)){
+	                                        cGoing = "pcr";
+	                                    } else if(Boolean(AGOut)){
+	                                        cGoing = "ag";
+	                                    }else{
+	                                    	cGoing = "open";
+	                                    }
+
+
+	                                    out += '<div id="into" class="' + cGoing + '"><div id="intoInner">';
+	                                    out += '<h2 class="infoHeading">' + consultDixer("restrictionsPart1");
+	                                    out += countryNameDix(chosenCountryId);
+	                                    out += consultDixer("restrictionsPart2");
+	                                    //////console.log("country.id" + country.id);
+	                                    //////console.log("nation.id + -country).toLowerCase()" + (nation.id + "-country").toLowerCase());
+	                                    if(!(country.id == nation.id) && !(country.id == (nation.id + "-country").toLowerCase())){
+	                                    	out += stateName;
+	                                    	out += ", ";
+	                                    }
+	                                    out += countryNameDix(nation.id);
+	                                    out += consultDixer("restrictionsPart3");
+	                                    out += '</h2><div class="infoContent">';
+	                                    //TODO travel to this destination has been forbidden by it's authorities
+	                                     //Yes, xx days
+	                                    out += forbiddenPhrase("out", jsonOut);
+	                                    out += quaraPhrase("out", jsonOut)
+
+	                                    if(Boolean(PCROut) || Boolean(AGOut)){
+	                                        out += '<h3 class="subTitle">' + consultDixer("test1") + '</h3>' + consultDixer("Yes") + "asdf, ";
+	                                    }
+	                                    
+	                                    out += testPhrase("out", "pcr", jsonOut);
+	                                    //TODO: AND/OR
+	                                    if(Boolean(PCROut) && Boolean(AGOut)){
+	                                        out += " and // or ";
+	                                    }
+	                                    out += testPhrase("out", "ag", jsonOut);
+	                                    if(!Boolean(PCROut) && !Boolean(AGOut)){
+	                                        out += "";
+	                                    }
+	                                    
+	                                    //TODO comments
+	                                    //////console.log("out: " + out);
+	                                    //////console.log('out.search("quarantine"): ' + out.search("quarantine") + ', out.search("testing"): ' + out.search("testing"));
+
+	                                    if(Boolean(forbiddenInto)){
+	                                        cComing = "forbidden";
+	                                    } else if(Boolean(quaraInto)){
+	                                        cComing = "quara";
+	                                    } else if(Boolean(PCRInto)){
+	                                        cComing = "pcr";
+	                                    } else if(Boolean(AGInto)){
+	                                        cComing = "ag";
+	                                    }else{
+	                                    	cComing = "open";
+	                                    }
+
+
+	                                    if(out.search(consultDixer("travelForbidden")) == -1 && out.search(consultDixer("quara1")) == -1 && out.search(consultDixer("test1")) == -1){
+	                                        out += consultDixer("noneApply");
+	                                    }
+	                                    out += "</div></div></div>"
+
+	                                    var out2 = "";
+	                                    out2 += '<div id="out" class="' + cComing + '"><div id="outInner">';
+	                                    out2 += '<h2 class="infoHeading">' + consultDixer("restrictionsPart1");
+	                                    if(!(country.id == nation.id) && !(country.id == (nation.id + "-country").toLowerCase())){
+	                                    	out2 += stateName;
+	                                    	out2 += ", ";
+	                                    }
+	                                    out2 += countryNameDix(nation.id);
+	                                    out2 += consultDixer("restrictionsPart2");
+	                                    out2 += countryNameDix(chosenCountryId);
+	                                    out2 += consultDixer("restrictionsPart3");
+	                                    out2 += '</h2><div class="infoContent">'
+	                                    out2 += forbiddenPhrase("into", jsonInto);
+	                                    out2 += quaraPhrase("into", jsonInto)
+	                                    if(Boolean(PCRInto) || Boolean(AGInto)){
+	                                        out2 += '<h3 class="subTitle">' + consultDixer("test1") + '</h3>' + consultDixer("Yes") + "fdas, ";
+	                                    }
+	                                    out2 += testPhrase("into", "pcr", jsonInto);
+	                                    //TODO: AND/OR
+	                                    if(Boolean(PCRInto) && Boolean(AGInto)){
+	                                        out2 += " and // or ";
+	                                    }
+	                                    out2 += testPhrase("into", "ag", jsonInto);
+	                                    if(!Boolean(PCRInto) && !Boolean(AGInto)){
+	                                        out2 += "";
+	                                    }
+	                                    //TODO comments
+	                                    if(out2.search(consultDixer("travelForbidden")) == -1 && out2.search(consultDixer("quara1")) == -1 && out2.search(consultDixer("test1")) == -1){
+	                                        out2 += consultDixer("noneApply");
+	                                    }
+	                                    out2 += ""
+
+	                                    out += out2;
+
+	                                    out += '</div></div></div>';
+	                                    //console.log("nation.id");//console.log(nation.id);
+										//console.log("((country.id).substr(0, 2)).toUpperCase()");//console.log(((country.id).substr(0, 2)).toUpperCase());
+	                                    
+
+
+
+	                                    
+	                                }else{
+	                                	document.getElementById("info").classList.add("closed");
+	                                }
+	                            }
+	                            console.log(out);
+	                            if(out != '<a class="hide" onclick="closeInfo()">×</a>' && out != undefined){
+	                            	hashSet(chosenCountryId + country.id);
+	                            	document.getElementById("toggleCountries").classList.add("closed");
+	                            	delay(300);
+                            		document.getElementById("infoContainer").innerHTML = out;
+                            		document.getElementById("infoFlights").innerHTML = '<div id="goToInfoFlights" onclick="showInfoFlights()"><h2 class="infoHeading">' + consultDixer("checkFlights") + '</h2></div><br><div data-responsive="false" data-enable-placeholders="true" data-skyscanner-widget="SearchWidget" data-widget-scale="1.2" data-locale="en-GB" data-market="GB" data-currency="GBP" ></div>';
+                            		document.getElementById("countriesFlights").innerHTML = '<div				data-skyscanner-widget="SearchWidget" data-locale="en-GB" data-market="GB" data-currency="GBP"></div>'
+                            		document.getElementById("info").classList.remove("closed");
+                                	await delay(777);
+            						load_js();
+	                            } else {
+	                            	document.getElementById("info").classList.add("closed");	
+	                            }
+                                
+                            }
+                        }
+                } else {
+                    ////////////console.log('Country not found');
+                    //document.getElementById("info").classList.add("hidden");
+                }
+            }
+
+            async function showInfoFlights() {
+            	document.getElementsByClassName("infoHeading")[0].classList.add("closed");
+            	document.getElementsByClassName("infoContent")[0].classList.add("closed");
+            	document.getElementsByClassName("infoHeading")[1].classList.add("closed");
+            	document.getElementsByClassName("infoContent")[1].classList.add("closed");
+            	document.getElementById("infoContainer").classList.add("closed");
+            	document.getElementById("goToInfoFlights").classList.add("visible");
+            	
+            }
+
+            async function closeInfo() {
+            	hashSet(chosenCountryId);
+            	document.getElementById('info').classList.add('closed');
+            	document.getElementById('toggleCountries').classList.remove('closed');
+            	await delay(600);
+            	document.getElementsByClassName("infoHeading")[0].classList.remove("closed");
+            	document.getElementsByClassName("infoContent")[0].classList.remove("closed");
+            	document.getElementsByClassName("infoHeading")[1].classList.remove("closed");
+            	document.getElementsByClassName("infoContent")[1].classList.remove("closed");
+            	document.getElementById('infoContainer').classList.remove('closed');
+            	document.getElementById('goToInfoFlights').classList.remove('closed');
+            }
+
+            function forbiddenPhrase(dir, jsonData){
+            	var forbidden = checkForbidden(dir, jsonData);
+            	fOut = "";
+            	if(forbidden){
+            		fOut += '<h3 class="subTitle">' + consultDixer("travelForbidden") + '</h2><br>';
+            	}
+            	return fOut;
+            }
+
+            function quaraPhrase(dir, jsonData){
+                var quara = checkQuara(dir, jsonData);
+                //////console.log("quara");//////console.log(quara);
+                var qOut = "";
+                if(Boolean(quara)){
+                    qOut += '<h3 class="subTitle">' + consultDixer("quara1") + '</h2>';
+                    qOut += consultDixer("Yes") + ", ";
+                    if(quara.where == "home"){
+                        qOut += consultDixer("quaraHome");
+                    }else if(quara.where == "hotel"){
+                        qOut += consultDixer("quaraHotel");
+                    }else if(quara.where == "governmental"){
+                    	consultDixer("quaraGov");
+                    }
+                    qOut += consultDixer("quara2");
+                    qOut += parseInt(quara.dur);
+                    qOut += ' ' + consultDixer("days") + '<br>';
+                }
+                
+                return qOut;
+            }
+            function testPhrase(dir, type, jsonData){
+                var tOut = "";
+                var test = checkTest(dir, type, jsonData);
+                if(Boolean(test)){
+                    //tOut += 'yes, ';
+                    if(type == "pcr"){
+                        tOut += "pcr";
+                    }else{
+                        tOut += consultDixer("ab");
+                    }
+                    if(test.hours == "arrival"){
+                    	tout += consultDixer("arrTest");
+                    }else{
+                    	tOut += consultDixer("noOlder");
+	                    tOut += parseInt(test.hours);
+	                    tOut += " " + consultDixer("hours");
+                    }
+                   
+                }
+                ////////console.log("tOut");////////console.log(tOut);
+                return tOut;
+            }
+
+            function buildDropDown(){
+            	var c = [];
+            	if(tongue == "en"){
+	            	for (var countryid in myWorldMap.countries) {
+	            		if(myWorldMap.countries[countryid].name == undefined){
+	            			console.log("undefined: " + myWorldMap.countries[countryid].id)
+	            		} else {
+	            			c.push(myWorldMap.countries[countryid].name);
+	            		}
+	                }
+            	}else{
+            		for (var countryid in cDix) {
+	            		if(cDix[countryid].name == undefined){
+	            			console.log("undefined: " + cDix[countryid].name)
+	            		} else {
+	            			c.push(cDix[countryid].name);
+	            		}
+	                }
+            	}
+            	console.log("cDix");console.log(cDix);
+                console.log("c");console.log(c);
+                autocomplete(document.getElementById("countryComplete"), c);
+            }
+
+            // Demo country list
+            function buildCountryControls() {
+                //////////console.log("buildCountryControls()");
+                var out = "";/*
+                out += "<h1>Logo</h1>"
+                out += "";
+                out += '<div class="autocomplete"><input id="countryComplete" type="text" name="countryComplete" placeholder="' + consultDixer("whereFrom") + '"></div><br><br>';
+                out += '<input onchange="highlightMine()" type="radio" name="vac" value="vYes"><label>' + consultDixer("vYes") + '</label><input onchange="highlightMine()" type="radio" name="vac" value="pI"><label>' + consultDixer("pI") + '</label><input onchange="highlightMine()" type="radio" name="vac" value="false" checked="checked><label>' + consultDixer("nOTA") + '</label></div>';
+                //out += 'I am ok with a curfew starting at, or later:<input onchange="highlightMine()" type="text" name="curFewTimeBegin" >ending at, or earlier<input onchange="highlightMine()" type="text" name="curFewTimeEnd">';
+
+                out += '<div id="toggleCountriesInCountries">';
+                out += '<a onclick="toggleCountries(\'close\')">';
+                out += consultDixer("tTM");
+                out += '</a></div>';*/
+
+
+
+
+
+                out += "<div id='topOfLogo'></div><h1 id='logo'><img src='../src/logo-AA-1.svg'></h1>";
+                out += '<div id="controls"><div class="autocomplete"><input id="countryComplete" type="text" name="countryComplete" placeholder="';
+                out += consultDixer("whereFrom");
+                out += '"></div>';
+
+                out += '<div class="countryInput"><label><input onchange="highlightMine()" type="radio" name="vac" value="vYes"><span class="checkmark"></span>' + consultDixer("vYes") + '</label></div>';
+                out += '<div class="countryInput"><label><input onchange="highlightMine()" type="radio" name="vac" value="pI"><span class="checkmark"></span>' + consultDixer("pI") + '</label></div>';
+                out += '<div class="countryInput"><label><input onchange="highlightMine()" type="radio" name="vac" value="false" checked="checked"><span class="checkmark"></span>' + consultDixer("nOTA") + '</label></div>';
+                //out += 'I am ok with a curfew starting at, or later:<input onchange="highlightMine()" type="text" name="curFewTimeBegin" >ending at, or earlier<input onchange="highlightMine()" type="text" name="curFewTimeEnd">';
+
+                out += '<div id="toggleCountriesInCountries"><a onclick="toggleCountries(\'close\')">' + consultDixer("tTM") +'</a></div></div>';
+                /*
+                for (var countryid in myWorldMap.countries) {
+                    out += '<li id="' + countryid + '" onmouseover="highlightCountry(\'' + countryid + '\')" onmouseout="myWorldMap.out(\'' + countryid + '\')" onclick="myWorldMap.click(\'' + countryid + '\')">[' + countryid + '] ' + myWorldMap.countries[countryid].name + '</li>'; 
+                }
+                out += '</ul>';*/
+                //////////console.log("out");//////////console.log(out);
+                document.getElementById("countriesContainer").innerHTML = out;
+                buildDropDown();
+            }
+
+            // Demo control buttons
+            function buildGroupControls() {
+                //////////console.log("buildGroupControls()");
+                /*var regionNames = { AF: "Afrika", AN: "Antarctica", AS: "Asia", EU: "Europe", NA: "North America", OC: "Ocania", SA: "South America" };
+                var out = '';
+                for (var group in myWorldMap.countryGroups) {
+                    out += '<u>' + group.charAt(0).toUpperCase() + group.slice(1) + ':</u><br><br><ul>'; // Capitalize first letter
+                    for (var subgroup in myWorldMap.countryGroups[group]) {
+                        if (group == 'region') { var name = regionNames[subgroup]; } else { var name = subgroup; }
+                        out += '<li id="' + subgroup + '" onmouseout="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'out\')" onmouseover="highlightGroup(\'' + subgroup + '\', \'' + group + '\', \'over\')" onclick="highlightGroup(\'' + group + '\', \'' + group + '\', \'click\')">' + name + '</li>'; 
+                    }
+                    out += '</ul>';
+                    
+                }
+                //////////console.log("out");//////////console.log(out);
+                document.getElementById("groups").innerHTML = out;
+                */
+            }
+
+            // Highlight country 
+            function highlightCountry(id) {
+                //////////console.log("highlightCountry()");
+                //////////console.log("id");//////////console.log(id);
+                var color = getHighlightColor(id);
+                myWorldMap.update({ [id]: color });
+            }
+
+            // Highlight country group
+            function highlightGroup(id, group, trigger) {
+                //////////console.log("highlightGroup()");
+                //////////console.log("input group");//////////console.log(group);
+                var group = myWorldMap.countryGroups[group];
+                //////////console.log("var id");//////////console.log(id);
+                //////////console.log("var group");//////////console.log(group);
+                //////////console.log("var trigger");//////////console.log(trigger);
+                //////////console.log("var group[id]");//////////console.log(group[id]);
+                var data2 = {};
+                //////////console.log("var data2[group[id]]");//////////console.log(data2[group[id]]);
+                if (trigger == 'out') {
+                    //////////console.log("if (trigger == 'out')");
+                    for (var country in group[id]) {
+                        //////////console.log("country");//////////console.log(country);
+                        myWorldMap.out(country);
+                    }
+                } else if (trigger == 'over' || trigger == 'click') {
+                    var color = getHighlightColor(id);
+                    var data = {};
+                    for (var country in group[id]) {
+                        data[country] = color; // Set data for map update
+                        //////////console.log("data one");//////////console.log(data[country]);
+                    }
+                    //////////console.log("data");//////////console.log(data);
+                    myWorldMap.update(data);
+                }
+            }
+
+            function chooseCountry(inputCountry){
+            	//make it so when resizing the window after having chosen a country the map stays visible, not the menu
+            	var inputCountryId;
+            	console.log("inputCountry");console.log(inputCountry);
+            	if(tongue == "en"){
+            		for(c in myWorldMap.countries){
+	            		if(myWorldMap.countries[c].name == inputCountry){
+	            			inputCountryId = myWorldMap.countries[c].id;
+	            			console.log("inputCountryId");console.log(inputCountryId);
+	            			break;
+	            		}
+	            	}
+            	}else{
+            		for(c in cDix){
+	            		if(cDix[c].name == inputCountry){
+	            			inputCountryId = cDix[c].alpha2.toUpperCase();
+	            			console.log("inputCountryId");console.log(inputCountryId);
+	            		}
+	            	}
+            	}
+            	
+				
+            	document.getElementById("countries").classList.add("closed");
+				document.getElementById("toggleCountries").classList.remove("closed");
+   				//choosing country
+            	chosenCountryId = inputCountryId;
+            	chosenCountryName = myWorldMap.countries[chosenCountryId].name;
+            	loadCountry(chosenCountryId);
+            }
+
+            async function loadCountry(id){
+                var filePath = '../src/json_m/' + id + '_m.json';
+
+                //////console.log("filePath");//////console.log(filePath);
+
+                var cData = 0;
+
+
+                let response = await fetch(filePath);
+                //////console.log("response");//////console.log(response);
+                let data = await response.json();
+                ////////console.log("data");//////console.log(data);
+                const result = data;
+
+                provData = result;
+
+
+                //////////console.log("result");//////////console.log(result);
+                highlightMine();
+            }
+
+            async function loadThisJson(filePath){
+                let response = await fetch(filePath);
+                let data = await response.json();
+                const result = data;
+                return result;
+            }
+
+            // Highlight country group
+            async function highlightMine() {
+                ////////////console.log("groupIn");//////////console.log(groupIn);
+                ////////////console.log("provData");//////////console.log(provData);
+
+                myWorldMap.reset();
+                myWorldMap.click("ocean");
+
+                //close info box
+                document.getElementById('info').classList.add('closed');
+                //document.getElementById('code').classList.add('hidden');
+                var lis = document.getElementsByTagName("li");
+                for (var i=0; i<lis.length; i++) {
+                    lis[i].classList.add('hidden');
+                }
+
+                var data = {};
+                
+
+                for (var i = 1; i >= 0; i--) {
+                    if(vacGet[i].checked){
+                    	if(vacGet[i].value == "vYes"){
+                    		vacStat = true;
+                    		pastInfection = false;
+                    	}else if(vacGet[i].value == "pI"){
+                    		vacStat = false;
+                    		pastInfection = true;
+                    	}else{
+                    		vacStat = false;
+                    		pastInfection = false;
+                    	}
+                        
+                    }
+                    //////////console.log("vacStat");//////////console.log(vacStat);
+                }
+
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
+
+                    var colorInto = "open";
+                    var colorOut = "open";
+
+                    //heime ned analysiere CH-->CH
+                    if(chosenCountryId == provData["main"][i].nu){
+                        data[provData.main[i].nu] = "url(#" + "hc" + ")";
+                        continue;
+                    }
+
+
+                    //if(provData.main[i].){
+	                    //check for restrictions
+	                    //////console.log("i: " + i);
+	                	var forbiddenInto = checkForbidden("into", provData.main[i]);
+	                    var forbiddenOut = checkForbidden("out", provData.main[i]);
+	                    var quaraInto = checkQuara("into", provData.main[i]);
+	                    var quaraOut = checkQuara("out", provData.main[i]);
+	                    var PCRInto = checkTest("into", "pcr", provData.main[i]);
+	                    var AGInto = checkTest("into", "ag", provData.main[i]);
+	                    var PCROut = checkTest("out", "pcr", provData.main[i]);
+	                    var AGOut = checkTest("out", "ag", provData.main[i]);
+	                    var loadStates = checkStates("into", provData.main[i]);
+
+
+
+		                //going on vacation
+	                    if(Boolean(AGOut)){
+	                        colorOut = "ag";
+	                    }    
+	                    if(Boolean(PCROut)){
+	                        colorOut = "pcr";
+	                    }
+	                    if(Boolean(quaraOut)){
+		                    colorOut = "quara";
+	                    }
+	                    if(Boolean(forbiddenOut)){
+	                    	colorOut = "forbidden";
+		                }
+
+
+		                ////console.log(provData.main[i].nu + " load states ? " + loadStates);
+		                //returning
+		                if(!Boolean(loadStates)){
+		                	if(Boolean(AGInto)){
+	                        colorInto = "ag";
+		                    }    
+		                    if(Boolean(PCRInto)){
+		                        colorInto = "pcr";
+		                    }
+		                    if(Boolean(quaraInto)){
+			                    colorInto = "quara";
+		                    }
+		                    if(Boolean(forbiddenInto)){
+		                    	colorInto = "forbidden";
+			                }
+
+
+		                    if (Boolean(colorInto) && Boolean(colorOut)) {
+		                    	if(colorInto == colorOut){
+		                            ////////console.log("colors are the same");
+		                    		////////console.log("url(#" + colorInto + ")");
+		                    		data[provData.main[i].nu] = "url(#" + colorInto + ")";
+		                    		//////console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+		                    	}else{
+		                            ////////console.log("colors aren't the same");
+		                    		////////console.log("url(#" + colorInto + colorOut + ")");
+		                    		data[provData.main[i].nu] = "url(#" + colorInto + colorOut + ")";
+		                    		//////console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+		                    	}
+		                    }
+		                }else{
+		                	var filePath = '../src/json_m/' + chosenCountryId + '_States_m.json';
+		                	stateData;
+
+			                //////console.log("filePath");//////console.log(filePath);
+
+			                var cData = 0;
+
+			                let response = await fetch(filePath);
+			                //////console.log("response");//////console.log(response);
+			                let data2 = await response.json();
+
+			                ////////console.log("data");//////console.log(data);
+			                const result = data2;
+
+			                stateData = result;
+
+			                console.log("stateData");console.log(stateData);
+
+			              
+
+			                for(var obj in stateData.main){
+			                	////console.log("loop for: " + provData.main[i].nu);
+			                	var colorIntoStates = "open";
+			                	var forbiddenIntoStates = checkForbidden("into", stateData.main[obj].states);
+	                    		var quaraIntoStates = checkQuara("into", stateData.main[obj].states);
+	                    		var PCRIntoStates = checkTest("into", "pcr", stateData.main[obj].states);
+	                    		var AGIntoStates = checkTest("into", "ag", stateData.main[obj].states);
+	                    		////console.log("country: " + stateData.main[obj].nu + " state: " + stateData.main[obj].states.nu + " forbiddenIntoStates: " + forbiddenIntoStates + " quaraIntoStates: " + quaraIntoStates + " PCRIntoStates: " + PCRIntoStates + " AGIntoStates: " + AGIntoStates);
+			                	if(provData.main[i].nu == stateData.main[obj].nu){
+			                		////console.log(provData.main[i].nu + " == " + stateData.main[obj].nu)
+			                		if(Boolean(AGIntoStates)){
+			                        colorIntoStates = "ag";
+				                    }    
+				                    if(Boolean(PCRIntoStates)){
+				                        colorIntoStates = "pcr";
+				                    }
+				                    if(Boolean(quaraIntoStates)){
+					                    colorIntoStates = "quara";
+				                    }
+				                    if(Boolean(forbiddenIntoStates)){
+				                    	colorIntoStates = "forbidden";
+					                }
+					                ////console.log("colorIntoStates1: " + colorIntoStates + " colorOut: " + colorOut);
+
+					                if (Boolean(colorIntoStates) && Boolean(colorOut)) {
+				                    	if(colorIntoStates == colorOut){
+				                            ////////console.log("colors are the same");
+				                            ////console.log("colorIntoStates2: " + colorIntoStates + " colorOut: " + colorOut);
+				                    		////console.log("url(#" + colorIntoStates + ")");
+				                    		data[stateData.main[obj].states.nu] = "url(#" + colorIntoStates + ")";
+				                    		//////console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+				                    	}else{
+				                            ////////console.log("colors aren't the same");
+				                            ////console.log("colorIntoStates3: " + colorIntoStates + " colorOut: " + colorOut);
+				                    		////console.log("url(#" + colorIntoStates + colorOut + ")");
+				                    		data[stateData.main[obj].states.nu] = "url(#" + colorIntoStates + colorOut + ")";
+				                    		//////console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+				                    	}
+
+			                    	}
+					            }
+
+					            
+
+					        }
+					        data[(provData.main[i].nu).toLowerCase() +"-country"] = "none";
+					        ////console.log('(provData.main[i].nu).toLowerCase() +"-country" -->' + (provData.main[i].nu).toLowerCase() +"-country");
+					        console.log("data");console.log(data);
+		                }
+						
+                	//}
+
+
+                }
+                myWorldMap.update(data);
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--){
+                	myWorldMap.out(provData["main"][i].nu);
+                	//////////console.log(provData["main"][i].nu);
+                }
+                
+                //////////console.log("data");//////////console.log(data);
+            }
+
+            function checkStates(dir, jsonData){
+            	if(Boolean(jsonData.loadStates)){
+            		if(Boolean(jsonData.loadStates[dir])){
+            			return Boolean(jsonData.loadStates[dir].bool);
+            		}else{
+            			return false;
+            		}
+            	}else{
+            		return false;
+            	}  	
+            }
+
+            function checkQuara(dir, jsonData){
+                ////////console.log("checkQuara");
+                ////////console.log("i");////////console.log(i);
+                ////////console.log("dir");////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                ////////console.log("jsonData");//////////console.log(jsonData);
+                //////console.log(jsonData);
+                if (Boolean(jsonData.quara)) {
+	                if (Boolean(jsonData.quara[dir])) {
+	                	if(Boolean(jsonData.quara[dir].where)){
+	                    ////////console.log("provData.main[i].quara[dir]")
+		                    if (Boolean(jsonData.quara[dir].where.e)) {
+		                        ////////console.log("quara e true");
+	                            var result = {};
+	                            result["where"] = jsonData.quara[dir].where.e;                            
+	                            if(Boolean(jsonData.quara[dir].dur.e)){
+	                            	result["dur"] = jsonData.quara[dir].dur.e;
+	                            } else if (vacStat == true){
+	                            	if(Boolean(jsonData.quara[dir].dur.v)){
+	                            		result["dur"] = jsonData.quara[dir].dur.v;
+	                            	}else{
+	                            		//////console.log("error with checkQuaram e v: " + jsonData.nu);
+	                            	}
+	                            } else if (vacStat == false){
+	                            	if(Boolean(jsonData.quara[dir].dur.uv)){
+	                            		result["dur"] = jsonData.quara[dir].dur.uv;
+	                            	}else{
+	                            		//////console.log("error with checkQuara e uv: " + jsonData.nu);
+	                            	}
+	                            }else{
+	                            	//////console.log("error with checkQuara e: " + jsonData.nu);
+	                            }
+		                        return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.quara[dir].where.v)){
+		                            ////////console.log("quara v true");
+	                                var result = {};
+	    	                        result["where"] = jsonData.quara[dir].where.v;
+	    	                        if(Boolean(jsonData.quara[dir].dur.v)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.v;
+	    	                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.e;
+	    	                        } else {
+	    	                        	//////console.log("error with checkQuara v: " + jsonData.nu);
+	    	                        }
+	                                return result;
+		                        }else{
+		                            ////////console.log("quara v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.quara[dir].where.uv)){
+		                            ////////console.log("quara uv true");
+	                                var result = {};
+		                            result["where"] = jsonData.quara[dir].where.uv;
+	                                if(Boolean(jsonData.quara[dir].dur.uv)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.uv;
+	    	                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+	    	                        	result["dur"] = jsonData.quara[dir].dur.e;
+	    	                        } else {
+	    	                        	//////console.log("error with checkQuara uv: " + jsonData.nu);
+	    	                        }
+
+	                                return result;
+		                        }else{
+		                            ////////console.log("quara uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        ////console.log("error checkQuara 1");
+		                    }
+		                }else{
+		                	////console.log("error checkQuara 2");
+		                }
+	                }
+	            }else{
+                    ////////console.log("quara false");
+                    return false;
+	            }
+            }
+
+            function checkForbidden(dir, jsonData){
+                ////////console.log("checkQuara");
+                ////////console.log("i");////////console.log(i);
+                ////////console.log("dir");////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                ////////console.log("jsonData");//////////console.log(jsonData);
+                if (Boolean(jsonData.forbidden)) {
+	                if (Boolean(jsonData.forbidden[dir])) {
+	                    ////////console.log("provData.main[i].quara[dir]")
+	                    if(Boolean(jsonData.forbidden[dir].bool)){
+		                    if (Boolean(jsonData.forbidden[dir].bool.e)) {
+		                        ////////console.log("quara e true");
+	                            var result = jsonData.forbidden[dir].bool.e;
+		                        return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.forbidden[dir].bool.v)){
+		                            ////////console.log("quara v true");
+	                                var result = jsonData.forbidden[dir].bool.v;
+	                                return result;
+		                        }else{
+		                            ////////console.log("quara v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.forbidden[dir].bool.uv)){
+		                            ////////console.log("quara uv true");
+	                                var result = jsonData.forbidden[dir].bool.uv;
+	                                return result;
+		                        }else{
+		                            ////////console.log("quara uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }
+	                }
+	            }else{
+                    ////////console.log("quara false");
+                    return false;
+	            }
+            }
+
+            function checkTest(dir, type, jsonData){
+                ////////////console.log("checkQuara");
+                ////////////console.log("i");//////////console.log(i);
+                //////////console.log("dir");//////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                //////////console.log("jsonData");//////////console.log(jsonData);
+                if (Boolean(jsonData.test)) {
+	                if (Boolean(jsonData.test[dir])) {
+	                	if (Boolean(jsonData.test[dir][type])) {
+		                    ////////////console.log("provData.main[i].test[dir]")
+		                    if (Boolean(jsonData.test[dir][type].e)) {
+		                        ////////////console.log("test e true");
+                                var result = {};
+                                result["hours"] = jsonData.test[dir][type].e;
+                                return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.test[dir][type].v)){
+		                            ////////////console.log("test v true");
+		                            var result = {};
+                                    result["hours"] = jsonData.test[dir][type].v;
+                                    return result;
+		                        }else{
+		                            ////////////console.log("test v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.test[dir][type].uv)){
+		                            ////////////console.log("test uv true");
+		                            var result = {};
+                                    result["hours"] = jsonData.test[dir][type].uv;
+                                    return result;
+		                        }else{
+		                            ////////////console.log("test uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }else{
+		                	return false;
+		                }
+	                }
+	            }else{
+                    ////////////console.log("test false");
+                    return false;
+	            }
+            }
+
+
+            /*function checkTestAnd(dir, jsonData){
+                ////////////console.log("checkQuara");
+                ////////////console.log("i");//////////console.log(i);
+                //////////console.log("dir");//////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                //////////console.log("jsonData");//////////console.log(jsonData);
+                if (Boolean(jsonData.test)) {
+	                if (Boolean(jsonData.test[dir])) {
+	                	if (Boolean(jsonData.test[dir]or)) {
+		                    ////////////console.log("provData.main[i].test[dir]")
+		                    if (Boolean(jsonData.test[dir]or.e)) {
+		                        ////////////console.log("test e true");
+                                var result = {};
+                                result = jsonData.test[dir]or.e;
+                                return result;
+		                    }else if(vacStat == true){
+		                        if (Boolean(jsonData.test[dir]or.v)){
+		                            ////////////console.log("test v true");
+		                            var result = {};
+                                    result = jsonData.test[dir]or.v;
+                                    return result;
+		                        }else{
+		                            ////////////console.log("test v false");
+		                            return false;
+		                        }
+		                    }else if(vacStat == false){
+		                        if (Boolean(jsonData.test[dir]or.uv)){
+		                            ////////////console.log("test uv true");
+		                            var result = {};
+                                    result = jsonData.test[dir]or.uv;
+                                    return result;
+		                        }else{
+		                            ////////////console.log("test uv false");
+		                            return false;
+		                        }
+		                    }else{
+		                        return "haha";
+		                    }
+		                }else{
+		                	return false;
+		                }
+	                }
+	            }else{
+                    ////////////console.log("test false");
+                    return false;
+	            }
+            }*/
+
+            
+
+            // Get some random color from the element name
+            function getHighlightColor(id) {
+                //////////console.log("getHighlightColor()");
+                // Get the numbers for the id letters, add them, square them and take the last 6 digits
+                var number = parseInt(id.substr(0, 1).charCodeAt(0) + '' + id.substr(1, 2).charCodeAt(0));
+                var hex = '#' + parseInt(number * number).toString().substr(-6, 6);
+                return hex;
+            }
+
+            // Asynchronous JSON load
+            async function loadCountryData() {
+                //////////console.log("loadCountryData()");
+                let response = await fetch('../src/country-data.json');
+                //////////console.log("response");//////////console.log(response);
+                let data = await response.json();
+                ////////////console.log("data");//////////console.log(data);
+                return data;
+            }
+
+            // Number format helper function
+            function formatInteger(number) {
+                //////////console.log("formatInteger()");
+                //////////console.log("number");//////////console.log(number);
+                //////////console.log("number.Format");//////////console.log(Intl.NumberFormat('en-GB').format(number));
+                return new Intl.NumberFormat('en-GB').format(number);
+            }
+
+            function sortObjKeysAlphabetically(obj) {
+			  return Object.keys(obj).sort((a,b) => a > b).reduce((result, key) => {
+			    result[key] = obj[key];
+				return result;
+			  }, {});
+			}
+			const delay = ms => new Promise(res => setTimeout(res, ms));
+			//menu control, open and close the countries div when on mobile
+			function toggleCountries(way){
+				if(way == "close"){
+					document.getElementById("countries").classList.add("closed");
+					document.getElementById("toggleCountries").classList.remove("closed");
+				} else if(way == "open"){
+					document.getElementById("countries").classList.remove("closed");
+					document.getElementById("toggleCountries").classList.add("closed");
+				}
+				
+			}
+
+
+
+			function hashSet(data) {
+				var url_ob = new URL(document.URL);
+				url_ob.hash = '#' + data;
+
+				// new url
+				var new_url = url_ob.href;
+
+				// change the current url
+				document.location.href = new_url;
+			}
+
+			function setUpZoom(){
+				var eventsHandler;
+
+		        eventsHandler = {
+		          haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel']
+		        , init: function(options) {
+		            var instance = options.instance
+		              , initialScale = 1
+		              , pannedX = 0
+		              , pannedY = 0
+
+		            // Init Hammer
+		            // Listen only for pointer and touch events
+		            this.hammer = Hammer(options.svgElement, {
+		              inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput
+		            })
+
+		            // Enable pinch
+		            this.hammer.get('pinch').set({enable: true})
+
+		            // Handle double tap
+		            this.hammer.on('doubletap', function(ev){
+		              instance.zoomIn()
+		            })
+
+		            // Handle pan
+		            this.hammer.on('panstart panmove', function(ev){
+		              // On pan start reset panned variables
+		              if (ev.type === 'panstart') {
+		                pannedX = 0
+		                pannedY = 0
+		              }
+
+		              // Pan only the difference
+		              instance.panBy({x: ev.deltaX - pannedX, y: ev.deltaY - pannedY})
+		              pannedX = ev.deltaX
+		              pannedY = ev.deltaY
+		            })
+
+		            // Handle pinch
+		            this.hammer.on('pinchstart pinchmove', function(ev){
+		              // On pinch start remember initial zoom
+		              if (ev.type === 'pinchstart') {
+		                initialScale = instance.getZoom()
+		                instance.zoomAtPoint(initialScale * ev.scale, {x: ev.center.x, y: ev.center.y})
+		              }
+
+		              instance.zoomAtPoint(initialScale * ev.scale, {x: ev.center.x, y: ev.center.y})
+		            })
+
+		            // Prevent moving the page on some devices when panning over SVG
+		            options.svgElement.addEventListener('touchmove', function(e){ e.preventDefault(); });
+		          }
+
+		        , destroy: function(){
+		            this.hammer.destroy()
+		          }
+		        }
+
+	        	var beforePan
+
+        		beforePan = function(oldPan, newPan){
+          		var stopHorizontal = false
+            		, stopVertical = false
+            		, gutterWidth = 333
+            		, gutterHeight = 333
+            		  // Computed variables
+            		, sizes = this.getSizes()
+            		, leftLimit = -((sizes.viewBox.x + sizes.viewBox.width) * sizes.realZoom) + gutterWidth
+            		, rightLimit = sizes.width - gutterWidth - (sizes.viewBox.x * sizes.realZoom)
+            		, topLimit = -((sizes.viewBox.y + sizes.viewBox.height) * sizes.realZoom) + gutterHeight
+            		, bottomLimit = sizes.height - gutterHeight - (sizes.viewBox.y * sizes.realZoom)
+
+				
+          			customPan = {}
+          			customPan.x = Math.max(leftLimit, Math.min(rightLimit, newPan.x))
+          			customPan.y = Math.max(topLimit, Math.min(bottomLimit, newPan.y))
+          				//console.log(" sizes.viewBox.x: " + sizes.viewBox.x + " sizes.viewBox.width: " + sizes.viewBox.width + " sizes.width: " + sizes.width + " gutterWidth: " + gutterWidth + " sizes.realZoom: " + sizes.realZoom + " leftLimit: " + leftLimit + " rightLimit: " + rightLimit + " topLimit: " + topLimit + " bottomLimit: " + bottomLimit + " customPan.x: " + customPan.x + " customPan.y: " + customPan.y);
+          			return customPan
+        		}
+	        	console.log(beforePan);
+				svgPanZoom = svgPanZoom(myWorldMap.worldMap, {	zoomEnabled: true,
+														        controlIconsEnabled: false,
+														        fit: false,
+														        contain: true,
+														        center: true,
+														        minZoom: 1.1,
+														        maxZoom: 22,
+														        customEventsHandler: eventsHandler,
+														        beforePan: beforePan 
+														        });  //controlIconsEnabled: true, beforePan: beforePan
+			}
+
+
+
+
+
+
+
+
+			function autocomplete(inp, arr) {
+			  /*the autocomplete function takes two arguments,
+			  the text field element and an array of possible autocompleted values:*/
+			  console.log("inp");console.log(inp);
+			  console.log("arr");console.log(arr);
+			  var currentFocus;
+			  /*execute a function when someone writes in the text field:*/
+			  inp.addEventListener("input", function(e) {
+			      var a, b, i, val = this.value;
+			      /*close any already open lists of autocompleted values*/
+			      closeAllLists();
+			      if (!val) { return false;}
+			      currentFocus = -1;
+			      /*create a DIV element that will contain the items (values):*/
+			      a = document.createElement("DIV");
+			      a.setAttribute("id", this.id + "autocomplete-list");
+			      a.setAttribute("class", "autocomplete-items");
+			      /*append the DIV element as a child of the autocomplete container:*/
+			      this.parentNode.appendChild(a);
+			      /*for each item in the array...*/
+			      for (i = 0; i < arr.length; i++) {
+			        /*check if the item starts with the same letters as the text field value:*/
+			        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+			          /*create a DIV element for each matching element:*/
+			          b = document.createElement("DIV");
+			          /*make the matching letters bold:*/
+			          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+			          b.innerHTML += arr[i].substr(val.length);
+			          /*insert a input field that will hold the current array item's value:*/
+			          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+			          /*execute a function when someone clicks on the item value (DIV element):*/
+			              b.addEventListener("click", function(e) {
+			              /*insert the value for the autocomplete text field:*/
+			              inp.value = this.getElementsByTagName("input")[0].value;
+			              chooseCountry(inp.value);
+			              /*close the list of autocompleted values,
+			              (or any other open lists of autocompleted values:*/
+			              closeAllLists();
+			          });
+			          a.appendChild(b);
+			        }
+			      }
+			  });
+			  /*execute a function presses a key on the keyboard:*/
+			  inp.addEventListener("keydown", function(e) {
+			      var x = document.getElementById(this.id + "autocomplete-list");
+			      if (x) x = x.getElementsByTagName("div");
+			      if (e.keyCode == 40) {
+			        /*If the arrow DOWN key is pressed,
+			        increase the currentFocus variable:*/
+			        currentFocus++;
+			        /*and and make the current item more visible:*/
+			        addActive(x);
+			      } else if (e.keyCode == 38) { //up
+			        /*If the arrow UP key is pressed,
+			        decrease the currentFocus variable:*/
+			        currentFocus--;
+			        /*and and make the current item more visible:*/
+			        addActive(x);
+			      } else if (e.keyCode == 13) {
+			        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+			        e.preventDefault();
+			        if (currentFocus > -1) {
+			          /*and simulate a click on the "active" item:*/
+			          if (x) x[currentFocus].click();
+			        }
+			      }
+			  });
+			  function addActive(x) {
+			    /*a function to classify an item as "active":*/
+			    if (!x) return false;
+			    /*start by removing the "active" class on all items:*/
+			    removeActive(x);
+			    if (currentFocus >= x.length) currentFocus = 0;
+			    if (currentFocus < 0) currentFocus = (x.length - 1);
+			    /*add class "autocomplete-active":*/
+			    x[currentFocus].classList.add("autocomplete-active");
+			  }
+			  function removeActive(x) {
+			    /*a function to remove the "active" class from all autocomplete items:*/
+			    for (var i = 0; i < x.length; i++) {
+			      x[i].classList.remove("autocomplete-active");
+			    }
+			  }
+			  function closeAllLists(elmnt) {
+			    /*close all autocomplete lists in the document,
+			    except the one passed as an argument:*/
+			    var x = document.getElementsByClassName("autocomplete-items");
+			    for (var i = 0; i < x.length; i++) {
+			      if (elmnt != x[i] && elmnt != inp) {
+			      x[i].parentNode.removeChild(x[i]);
+			    }
+			  }
+			}
+			/*execute a function when someone clicks in the document:*/
+			document.addEventListener("click", function (e) {
+			    closeAllLists(e.target);
+			});
+			} 
+        </script>
+    </div>
+    </body>
+</html>
