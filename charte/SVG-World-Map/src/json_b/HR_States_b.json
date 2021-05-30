@@ -1,0 +1,1764 @@
+{
+    "main": [
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "827",
+            "states": {
+                "code": "1",
+                "name": "Ahvenanmaan maakunta",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "828",
+            "states": {
+                "code": "2",
+                "name": "Etelä-Karjala",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "829",
+            "states": {
+                "code": "3",
+                "name": "Etelä-Pohjanmaa",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "830",
+            "states": {
+                "code": "4",
+                "name": "Etelä-Savo",
+                "nu": "ETH",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "831",
+            "states": {
+                "code": "5",
+                "name": "Kainuu",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "832",
+            "states": {
+                "code": "6",
+                "name": "Kanta-Häme",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "833",
+            "states": {
+                "code": "7",
+                "name": "Keski-Pohjanmaa",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "834",
+            "states": {
+                "code": "8",
+                "name": "Keski-Suomi",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "835",
+            "states": {
+                "code": "9",
+                "name": "Kymenlaakso",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "836",
+            "states": {
+                "code": "10",
+                "name": "Lappi",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "837",
+            "states": {
+                "code": "11",
+                "name": "Pirkanmaa",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "838",
+            "states": {
+                "code": "12",
+                "name": "Pohjanmaa",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "839",
+            "states": {
+                "code": "13",
+                "name": "Pohjois-Karjala",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "840",
+            "states": {
+                "code": "14",
+                "name": "Pohjois-Pohjanmaa",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "841",
+            "states": {
+                "code": "15",
+                "name": "Pohjois-Savo",
+                "nu": "FLK",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "842",
+            "states": {
+                "code": "16",
+                "name": "Päijät-Häme",
+                "nu": "FRO",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "843",
+            "states": {
+                "code": "17",
+                "name": "Satakunta",
+                "nu": "FJI",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "844",
+            "states": {
+                "code": "18",
+                "name": "Uusimaa",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "FI",
+            "idFile": "FI_States",
+            "number": "845",
+            "states": {
+                "code": "19",
+                "name": "Varsinais-Suomi",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2104",
+            "states": {
+                "code": "2",
+                "name": "Akershus",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2105",
+            "states": {
+                "code": "9",
+                "name": "Aust-Agder",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2106",
+            "states": {
+                "code": "6",
+                "name": "Buskerud",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2107",
+            "states": {
+                "code": "20",
+                "name": "Finnmark",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2108",
+            "states": {
+                "code": "4",
+                "name": "Hedmark",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2109",
+            "states": {
+                "code": "12",
+                "name": "Hordaland",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2110",
+            "states": {
+                "code": "22",
+                "name": "Jan Mayen",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2111",
+            "states": {
+                "code": "15",
+                "name": "Møre og Romsdal",
+                "nu": "NIU",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2112",
+            "states": {
+                "code": "17",
+                "name": "Nord-Trøndelag",
+                "nu": "NFK",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2113",
+            "states": {
+                "code": "18",
+                "name": "Nordland",
+                "nu": "PRK",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2114",
+            "states": {
+                "code": "5",
+                "name": "Oppland",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2115",
+            "states": {
+                "code": "3",
+                "name": "Oslo",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2116",
+            "states": {
+                "code": "11",
+                "name": "Rogaland",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2117",
+            "states": {
+                "code": "14",
+                "name": "Sogn og Fjordane",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2118",
+            "states": {
+                "code": "21",
+                "name": "Svalbard",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2119",
+            "states": {
+                "code": "16",
+                "name": "Sør-Trøndelag",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2120",
+            "states": {
+                "code": "8",
+                "name": "Telemark",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2121",
+            "states": {
+                "code": "19",
+                "name": "Troms",
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2122",
+            "states": {
+                "code": "10",
+                "name": "Vest-Agder",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2123",
+            "states": {
+                "code": "7",
+                "name": "Vestfold",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2124",
+            "states": {
+                "code": "1",
+                "name": "Østfold",
+                "nu": "MNP",
+                "forbidden": {
+                    "into": {
+                        "bool": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        },
+                        "or": "or",
+                        "ag": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "48.0"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://mup.gov.hr/uzg-covid/english/286217"
+                }
+            },
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".4": ".0",
+            ".5": ".0",
+            ".9": "1"
+        }
+    ]
+}

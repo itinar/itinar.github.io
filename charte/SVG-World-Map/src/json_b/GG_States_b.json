@@ -1,0 +1,3359 @@
+{
+    "main": [
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "846",
+            "states": {
+                "code": "A",
+                "name": "Alsace",
+                "nu": "FR-A",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "847",
+            "states": {
+                "code": "B",
+                "name": "Aquitaine",
+                "nu": "FR-B",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "848",
+            "states": {
+                "code": "C",
+                "name": "Auvergne",
+                "nu": "FR-C",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "849",
+            "states": {
+                "code": "E",
+                "name": "Brittany",
+                "nu": "FR-E",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "850",
+            "states": {
+                "code": "D",
+                "name": "Burgundy",
+                "nu": "FR-D",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "851",
+            "states": {
+                "code": "F",
+                "name": "Centre-Val de Loire",
+                "nu": "FR-F",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "852",
+            "states": {
+                "code": "G",
+                "name": "Champagne-Ardenne",
+                "nu": "FR-G",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "853",
+            "states": {
+                "code": "H",
+                "name": "Corsica",
+                "nu": "FR-H",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "854",
+            "states": {
+                "code": "I",
+                "name": "Franche-Comté",
+                "nu": "FR-I",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "855",
+            "states": {
+                "code": "K",
+                "name": "Languedoc-Roussillon",
+                "nu": "FR-K",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "856",
+            "states": {
+                "code": "L",
+                "name": "Limousin",
+                "nu": "FR-L",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "857",
+            "states": {
+                "code": "M",
+                "name": "Lorraine",
+                "nu": "FR-M",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "858",
+            "states": {
+                "code": "P",
+                "name": "Lower Normandy",
+                "nu": "FR-P",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "859",
+            "states": {
+                "code": "N",
+                "name": "Midi-Pyrénées",
+                "nu": "FR-N",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "860",
+            "states": {
+                "code": "O",
+                "name": "Nord-Pas-de-Calais",
+                "nu": "FR-O",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "861",
+            "states": {
+                "code": "R",
+                "name": "Pays de la Loire",
+                "nu": "FR-R",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "862",
+            "states": {
+                "code": "S",
+                "name": "Picardy",
+                "nu": "FR-S",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "863",
+            "states": {
+                "code": "T",
+                "name": "Poitou-Charentes",
+                "nu": "FR-T",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "864",
+            "states": {
+                "code": "U",
+                "name": "Provence-Alpes-Côte d'Azur",
+                "nu": "FR-U",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "865",
+            "states": {
+                "code": "V",
+                "name": "Rhône-Alpes",
+                "nu": "FR-V",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "866",
+            "states": {
+                "code": "Q",
+                "name": "Upper Normandy",
+                "nu": "FR-Q",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "867",
+            "states": {
+                "code": "J",
+                "name": "Île-de-France",
+                "nu": "FR-J",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2285",
+            "states": {
+                "code": "1",
+                "name": "Aveiro",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2286",
+            "states": {
+                "code": "2",
+                "name": "Beja",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2287",
+            "states": {
+                "code": "3",
+                "name": "Braga",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2288",
+            "states": {
+                "code": "4",
+                "name": "Bragança",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2289",
+            "states": {
+                "code": "5",
+                "name": "Castelo Branco",
+                "nu": "PCN",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2290",
+            "states": {
+                "code": "6",
+                "name": "Coimbra",
+                "nu": "POL",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2291",
+            "states": {
+                "code": "8",
+                "name": "Faro",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2292",
+            "states": {
+                "code": "9",
+                "name": "Guarda",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2293",
+            "states": {
+                "code": "10",
+                "name": "Leiria",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2294",
+            "states": {
+                "code": "11",
+                "name": "Lisboa",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2295",
+            "states": {
+                "code": "12",
+                "name": "Portalegre",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2296",
+            "states": {
+                "code": "13",
+                "name": "Porto",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2297",
+            "states": {
+                "code": "30",
+                "name": "Região Autónoma da Madeira",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2298",
+            "states": {
+                "code": "20",
+                "name": "Região Autónoma dos Açores",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2299",
+            "states": {
+                "code": "14",
+                "name": "Santarém",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2300",
+            "states": {
+                "code": "15",
+                "name": "Setúbal",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2301",
+            "states": {
+                "code": "16",
+                "name": "Viana do Castelo",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2302",
+            "states": {
+                "code": "17",
+                "name": "Vila Real",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2303",
+            "states": {
+                "code": "18",
+                "name": "Viseu",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "PT",
+            "idFile": "PT_States",
+            "number": "2304",
+            "states": {
+                "code": "7",
+                "name": "Évora",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2839",
+            "states": {
+                "code": "C",
+                "name": "A Coruña",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2840",
+            "states": {
+                "code": "AB",
+                "name": "Albacete",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2841",
+            "states": {
+                "code": "A",
+                "name": "Alicante",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2842",
+            "states": {
+                "code": "AL",
+                "name": "Almería",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2843",
+            "states": {
+                "code": "O",
+                "name": "Asturias",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2844",
+            "states": {
+                "code": "BA",
+                "name": "Badajoz",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2845",
+            "states": {
+                "code": "PM",
+                "name": "Balears",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2846",
+            "states": {
+                "code": "B",
+                "name": "Barcelona",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2847",
+            "states": {
+                "code": "BU",
+                "name": "Burgos",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2848",
+            "states": {
+                "code": "S",
+                "name": "Cantabria",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2849",
+            "states": {
+                "code": "CS",
+                "name": "Castellón",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2850",
+            "states": {
+                "code": "CR",
+                "name": "Ciudad Real",
+                "nu": "SSD",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2851",
+            "states": {
+                "code": "CU",
+                "name": "Cuenca",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2852",
+            "states": {
+                "code": "CC",
+                "name": "Cáceres",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2853",
+            "states": {
+                "code": "CA",
+                "name": "Cádiz",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2854",
+            "states": {
+                "code": "CO",
+                "name": "Córdoba",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2855",
+            "states": {
+                "code": "GI",
+                "name": "Girona",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2856",
+            "states": {
+                "code": "GR",
+                "name": "Granada",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2857",
+            "states": {
+                "code": "GU",
+                "name": "Guadalajara",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2858",
+            "states": {
+                "code": "SS",
+                "name": "Guipúzcoa",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2859",
+            "states": {
+                "code": "H",
+                "name": "Huelva",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2860",
+            "states": {
+                "code": "HU",
+                "name": "Huesca",
+                "nu": "ESP",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2861",
+            "states": {
+                "code": "J",
+                "name": "Jaén",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2862",
+            "states": {
+                "code": "LO",
+                "name": "La Rioja",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2863",
+            "states": {
+                "code": "GC",
+                "name": "Las Palmas",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2864",
+            "states": {
+                "code": "LE",
+                "name": "León",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2865",
+            "states": {
+                "code": "L",
+                "name": "Lleida",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2866",
+            "states": {
+                "code": "LU",
+                "name": "Lugo",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2867",
+            "states": {
+                "code": "M",
+                "name": "Madrid",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2868",
+            "states": {
+                "code": "MU",
+                "name": "Murcia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2869",
+            "states": {
+                "code": "MA",
+                "name": "Málaga",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2870",
+            "states": {
+                "name": "Navarra",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2871",
+            "states": {
+                "code": "OR",
+                "name": "Ourense",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2872",
+            "states": {
+                "code": "P",
+                "name": "Palencia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2873",
+            "states": {
+                "code": "PO",
+                "name": "Pontevedra",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2874",
+            "states": {
+                "code": "SA",
+                "name": "Salamanca",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2875",
+            "states": {
+                "code": "TF",
+                "name": "Santa Cruz de Tenerife",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2876",
+            "states": {
+                "code": "SG",
+                "name": "Segovia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2877",
+            "states": {
+                "code": "SE",
+                "name": "Sevilla",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2878",
+            "states": {
+                "code": "SO",
+                "name": "Soria",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2879",
+            "states": {
+                "code": "T",
+                "name": "Tarragona",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2880",
+            "states": {
+                "code": "TE",
+                "name": "Teruel",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2881",
+            "states": {
+                "code": "TO",
+                "name": "Toledo",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2882",
+            "states": {
+                "code": "V",
+                "name": "Valencia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2883",
+            "states": {
+                "code": "VA",
+                "name": "Valladolid",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2884",
+            "states": {
+                "code": "BI",
+                "name": "Vizcaya",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2885",
+            "states": {
+                "code": "ZA",
+                "name": "Zamora",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2886",
+            "states": {
+                "code": "Z",
+                "name": "Zaragoza",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2887",
+            "states": {
+                "code": "VI",
+                "name": "Álava",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2888",
+            "states": {
+                "code": "AV",
+                "name": "Ávila",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2889",
+            "states": {
+                "code": "CE",
+                "name": "Ceuta",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2890",
+            "states": {
+                "code": "ML",
+                "name": "Melilla",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2891",
+            "states": {
+                "code": "AN",
+                "name": "Andalucía",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2892",
+            "states": {
+                "code": "AR",
+                "name": "Aragón",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2893",
+            "states": {
+                "code": "AS",
+                "name": "Asturias, Principado de",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2894",
+            "states": {
+                "code": "CN",
+                "name": "Canarias",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2895",
+            "states": {
+                "code": "CB",
+                "name": "Cantabria",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2896",
+            "states": {
+                "code": "CL",
+                "name": "Castilla y León",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2897",
+            "states": {
+                "code": "CM",
+                "name": "Castilla-La Mancha",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2898",
+            "states": {
+                "code": "CT",
+                "name": "Catalunya",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2899",
+            "states": {
+                "code": "EX",
+                "name": "Extremadura",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2900",
+            "states": {
+                "code": "GA",
+                "name": "Galicia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2901",
+            "states": {
+                "code": "IB",
+                "name": "Illes Balears",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "7"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2902",
+            "states": {
+                "code": "RI",
+                "name": "La Rioja",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2903",
+            "states": {
+                "code": "MD",
+                "name": "Madrid, Comunidad de",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2904",
+            "states": {
+                "code": "MC",
+                "name": "Murcia, Región de",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2905",
+            "states": {
+                "code": "NC",
+                "name": "Navarra, Comunidad Foral de",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2906",
+            "states": {
+                "code": "PV",
+                "name": "País Vasco",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2907",
+            "states": {
+                "code": "VC",
+                "name": "Valenciana, Comunidad",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": "home"
+                        },
+                        "dur": {
+                            "e": "13"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "arrival"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://covid19.gov.gg/guidance/travel/general;https://covid19.gov.gg/guidance/travel/countries"
+                }
+            },
+            ".9": "1"
+        }
+    ]
+}
