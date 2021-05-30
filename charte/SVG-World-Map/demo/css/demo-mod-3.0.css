@@ -404,11 +404,7 @@ input[type=submit] {
 
 
 
-@media all and (min-width: 889px) and (min-height: 1000px){
-    #countriesFlights{
-        display: none;
-    }
-}
+
 @media all and (max-width: 888px){
     #svg-world-map-container {
         width: 100%;
@@ -561,5 +557,20 @@ input[type=submit] {
     }
     .infoContent {
         font-size: calc(1.11 * var(--textSizeMobile));
+    }
+}
+
+
+@media all and (max-width: 1300px){
+    #countries {
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: min(88%, 555px);
+        padding: 6%; 
+        max-width: 2000px;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: var(--cBM);
     }
 }
