@@ -1,0 +1,2949 @@
+{
+    "main": [
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "925",
+            "states": {
+                "code": "A",
+                "name": "Anatoliki Makedonia kai Thraki",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "926",
+            "states": {
+                "code": "I",
+                "name": "Attiki",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "927",
+            "states": {
+                "code": "G",
+                "name": "Dytiki Ellada",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "928",
+            "states": {
+                "code": "C",
+                "name": "Dytiki Makedonia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "929",
+            "states": {
+                "code": "F",
+                "name": "Ionia Nisia",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "930",
+            "states": {
+                "code": "D",
+                "name": "Ipeiros",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "931",
+            "states": {
+                "code": "B",
+                "name": "Kentriki Makedonia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "932",
+            "states": {
+                "code": "M",
+                "name": "Kriti",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "933",
+            "states": {
+                "code": "L",
+                "name": "Notio Aigaio",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "934",
+            "states": {
+                "code": "J",
+                "name": "Peloponnisos",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "935",
+            "states": {
+                "code": "H",
+                "name": "Sterea Ellada",
+                "nu": "GHA",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "936",
+            "states": {
+                "code": "E",
+                "name": "Thessalia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "GR",
+            "idFile": "GR_States",
+            "number": "937",
+            "states": {
+                "code": "K",
+                "name": "Voreio Aigaio",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2104",
+            "states": {
+                "code": "2",
+                "name": "Akershus",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2105",
+            "states": {
+                "code": "9",
+                "name": "Aust-Agder",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2106",
+            "states": {
+                "code": "6",
+                "name": "Buskerud",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2107",
+            "states": {
+                "code": "20",
+                "name": "Finnmark",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2108",
+            "states": {
+                "code": "4",
+                "name": "Hedmark",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2109",
+            "states": {
+                "code": "12",
+                "name": "Hordaland",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2110",
+            "states": {
+                "code": "22",
+                "name": "Jan Mayen",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2111",
+            "states": {
+                "code": "15",
+                "name": "Møre og Romsdal",
+                "nu": "NIU",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2112",
+            "states": {
+                "code": "17",
+                "name": "Nord-Trøndelag",
+                "nu": "NFK",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2113",
+            "states": {
+                "code": "18",
+                "name": "Nordland",
+                "nu": "PRK",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2114",
+            "states": {
+                "code": "5",
+                "name": "Oppland",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2115",
+            "states": {
+                "code": "3",
+                "name": "Oslo",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2116",
+            "states": {
+                "code": "11",
+                "name": "Rogaland",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2117",
+            "states": {
+                "code": "14",
+                "name": "Sogn og Fjordane",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2118",
+            "states": {
+                "code": "21",
+                "name": "Svalbard",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2119",
+            "states": {
+                "code": "16",
+                "name": "Sør-Trøndelag",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2120",
+            "states": {
+                "code": "8",
+                "name": "Telemark",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2121",
+            "states": {
+                "code": "19",
+                "name": "Troms",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2122",
+            "states": {
+                "code": "10",
+                "name": "Vest-Agder",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2123",
+            "states": {
+                "code": "7",
+                "name": "Vestfold",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "NO",
+            "idFile": "NO_States",
+            "number": "2124",
+            "states": {
+                "code": "1",
+                "name": "Østfold",
+                "nu": "MNP",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2839",
+            "states": {
+                "code": "C",
+                "name": "A Coruña",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2840",
+            "states": {
+                "code": "AB",
+                "name": "Albacete",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2841",
+            "states": {
+                "code": "A",
+                "name": "Alicante",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2842",
+            "states": {
+                "code": "AL",
+                "name": "Almería",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2843",
+            "states": {
+                "code": "O",
+                "name": "Asturias",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2844",
+            "states": {
+                "code": "BA",
+                "name": "Badajoz",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2845",
+            "states": {
+                "code": "PM",
+                "name": "Balears",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2846",
+            "states": {
+                "code": "B",
+                "name": "Barcelona",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2847",
+            "states": {
+                "code": "BU",
+                "name": "Burgos",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2848",
+            "states": {
+                "code": "S",
+                "name": "Cantabria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2849",
+            "states": {
+                "code": "CS",
+                "name": "Castellón",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2850",
+            "states": {
+                "code": "CR",
+                "name": "Ciudad Real",
+                "nu": "SSD",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2851",
+            "states": {
+                "code": "CU",
+                "name": "Cuenca",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2852",
+            "states": {
+                "code": "CC",
+                "name": "Cáceres",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2853",
+            "states": {
+                "code": "CA",
+                "name": "Cádiz",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2854",
+            "states": {
+                "code": "CO",
+                "name": "Córdoba",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2855",
+            "states": {
+                "code": "GI",
+                "name": "Girona",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2856",
+            "states": {
+                "code": "GR",
+                "name": "Granada",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2857",
+            "states": {
+                "code": "GU",
+                "name": "Guadalajara",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2858",
+            "states": {
+                "code": "SS",
+                "name": "Guipúzcoa",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2859",
+            "states": {
+                "code": "H",
+                "name": "Huelva",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2860",
+            "states": {
+                "code": "HU",
+                "name": "Huesca",
+                "nu": "ESP",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2861",
+            "states": {
+                "code": "J",
+                "name": "Jaén",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2862",
+            "states": {
+                "code": "LO",
+                "name": "La Rioja",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2863",
+            "states": {
+                "code": "GC",
+                "name": "Las Palmas",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2864",
+            "states": {
+                "code": "LE",
+                "name": "León",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2865",
+            "states": {
+                "code": "L",
+                "name": "Lleida",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2866",
+            "states": {
+                "code": "LU",
+                "name": "Lugo",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2867",
+            "states": {
+                "code": "M",
+                "name": "Madrid",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2868",
+            "states": {
+                "code": "MU",
+                "name": "Murcia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2869",
+            "states": {
+                "code": "MA",
+                "name": "Málaga",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2870",
+            "states": {
+                "name": "Navarra",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2871",
+            "states": {
+                "code": "OR",
+                "name": "Ourense",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2872",
+            "states": {
+                "code": "P",
+                "name": "Palencia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2873",
+            "states": {
+                "code": "PO",
+                "name": "Pontevedra",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2874",
+            "states": {
+                "code": "SA",
+                "name": "Salamanca",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2875",
+            "states": {
+                "code": "TF",
+                "name": "Santa Cruz de Tenerife",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2876",
+            "states": {
+                "code": "SG",
+                "name": "Segovia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2877",
+            "states": {
+                "code": "SE",
+                "name": "Sevilla",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2878",
+            "states": {
+                "code": "SO",
+                "name": "Soria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2879",
+            "states": {
+                "code": "T",
+                "name": "Tarragona",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2880",
+            "states": {
+                "code": "TE",
+                "name": "Teruel",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2881",
+            "states": {
+                "code": "TO",
+                "name": "Toledo",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2882",
+            "states": {
+                "code": "V",
+                "name": "Valencia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2883",
+            "states": {
+                "code": "VA",
+                "name": "Valladolid",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2884",
+            "states": {
+                "code": "BI",
+                "name": "Vizcaya",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2885",
+            "states": {
+                "code": "ZA",
+                "name": "Zamora",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2886",
+            "states": {
+                "code": "Z",
+                "name": "Zaragoza",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2887",
+            "states": {
+                "code": "VI",
+                "name": "Álava",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2888",
+            "states": {
+                "code": "AV",
+                "name": "Ávila",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2889",
+            "states": {
+                "code": "CE",
+                "name": "Ceuta",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2890",
+            "states": {
+                "code": "ML",
+                "name": "Melilla",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2891",
+            "states": {
+                "code": "AN",
+                "name": "Andalucía",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2892",
+            "states": {
+                "code": "AR",
+                "name": "Aragón",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2893",
+            "states": {
+                "code": "AS",
+                "name": "Asturias, Principado de",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2894",
+            "states": {
+                "code": "CN",
+                "name": "Canarias",
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2895",
+            "states": {
+                "code": "CB",
+                "name": "Cantabria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2896",
+            "states": {
+                "code": "CL",
+                "name": "Castilla y León",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2897",
+            "states": {
+                "code": "CM",
+                "name": "Castilla-La Mancha",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2898",
+            "states": {
+                "code": "CT",
+                "name": "Catalunya",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2899",
+            "states": {
+                "code": "EX",
+                "name": "Extremadura",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2900",
+            "states": {
+                "code": "GA",
+                "name": "Galicia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2901",
+            "states": {
+                "code": "IB",
+                "name": "Illes Balears",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2902",
+            "states": {
+                "code": "RI",
+                "name": "La Rioja",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2903",
+            "states": {
+                "code": "MD",
+                "name": "Madrid, Comunidad de",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2904",
+            "states": {
+                "code": "MC",
+                "name": "Murcia, Región de",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2905",
+            "states": {
+                "code": "NC",
+                "name": "Navarra, Comunidad Foral de",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2906",
+            "states": {
+                "code": "PV",
+                "name": "País Vasco",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        },
+        {
+            "nu": "ES",
+            "idFile": "ES_States",
+            "number": "2907",
+            "states": {
+                "code": "VC",
+                "name": "Valenciana, Comunidad",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": "72.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "or": ".0",
+                        "ag": {
+                            "e": "24.0",
+                            "v": ".0",
+                            "uv": ".0"
+                        },
+                        "comment": {
+                            "en": "Or just a pcr test, done no longer than 24h before boarding.",
+                            "de": "Oder nur 1 PCR-Test, nicht älter als 24h beim Einsteigen.",
+                            "fr": "Ou juste un test pcr, pas plus vieux que 24h lors de l'embarquement."
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.government.nl/topics/coronavirus-covid-19/visiting-the-netherlands-from-abroad"
+                }
+            },
+            ".9": "1"
+        }
+    ]
+}

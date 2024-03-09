@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg version="1.1" 
+	id="Earth" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" 
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000" height="507.224" viewBox="0 0 1000 507.224" enable-background="new 0 0 1000 507.224" xml:space="preserve">
+<defs>
+	<style type="text/css"><![CDATA[ text { cursor: default; } ]]></style>
+	<!--<param id="quara" param="color" default="#f57640" />
+  	<param id="pcr" param="color" default="#f2f540" />
+  	<param id="ag" param="color" default="#f5cb40" />
+  	<param id="hhh"	param="color" default="red" />-->
+  	<pattern id="forbidden" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#E7171F"></polygon>
+    </pattern>
+  	<pattern id="quara" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#f57640"></polygon>
+    </pattern>
+    <pattern id="pcr" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#f5cb40"></polygon>
+    </pattern>
+    <pattern id="ag" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#f2f540"></polygon>
+    </pattern>
+    <pattern id="hc" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#71f5e3"></polygon>
+    </pattern>
+    <pattern id="open" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 8,0 8,8 0,8" fill="#43aa8b"></polygon>
+    </pattern>
+	<pattern id="quarapcr" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#quara)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#quara)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#pcr)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#pcr)"></polygon>
+    </pattern>
+    <pattern id="pcrquara" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#pcr)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#pcr)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#quara)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#quara)"></polygon>
+    </pattern>
+    <pattern id="quaraag" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#quara)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#quara)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#ag)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#ag)"></polygon>
+    </pattern>
+    <pattern id="agquara" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#ag)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#ag)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#quara)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#quara)"></polygon>
+    </pattern>
+    <pattern id="agpcr" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#ag)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#ag)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#pcr)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#pcr)"></polygon>
+    </pattern>
+    <pattern id="pcrag" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#pcr)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#pcr)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#ag)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#ag)"></polygon>
+    </pattern>
+    <pattern id="openpcr" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#open)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#open)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#pcr)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#pcr)"></polygon>
+    </pattern>
+    <pattern id="pcropen" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#pcr)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#pcr)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#open)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#open)"></polygon>
+    </pattern>
+    <pattern id="agopen" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#open)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#open)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#ag)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#ag)"></polygon>
+    </pattern>
+    <pattern id="openag" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#ag)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#ag)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#open)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#open)"></polygon>
+    </pattern>
+   	<pattern id="quaraopen" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#quara)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#quara)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#open)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#open)"></polygon>
+    </pattern>
+    <pattern id="openquara" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#open)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#open)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#quara)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#quara)"></polygon>
+    </pattern>
+    <pattern id="test" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="red"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="red"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="green"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="green"></polygon>
+    </pattern>
+    <pattern id="quaraforbidden" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#quara)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#quara)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#forbidden)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#forbidden)"></polygon>
+    </pattern>
+    <pattern id="forbiddenquara" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#forbidden)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#forbidden)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#quara)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#quara)"></polygon>
+    </pattern>
+    <pattern id="forbiddenpcr" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#forbidden)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#forbidden)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#pcr)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#pcr)"></polygon>
+    </pattern>
+    <pattern id="pcrforbidden" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#pcr)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#pcr)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#forbidden)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#forbidden)"></polygon>
+    </pattern>
+  <pattern id="agforbidden" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#ag)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#ag)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#forbidden)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#forbidden)"></polygon>
+    </pattern>
+    <pattern id="forbiddenag" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#forbidden)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#forbidden)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#ag)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#ag)"></polygon>
+    </pattern>
+    <pattern id="forbiddenopen" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#forbidden)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#forbidden)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#open)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#open)"></polygon>
+    </pattern>
+    <pattern id="openforbidden" viewBox="0,0,4,4" width="4" height="4" patternUnits="userSpaceOnUse">
+          <polygon points="0,0 2,0 0,2" fill="url(#open)"></polygon>
+          <polygon points="0,4 4,0 4,2 2,4" fill="url(#open)"></polygon>
+          <polygon points="0,2 0,4 4,0 2,0" fill="url(#forbidden)"></polygon>
+          <polygon points="2,4 4,4 4,2" fill="url(#forbidden)"></polygon>
+    </pattern>
+</defs>
+<rect id="World" x="0" y="0" fill="#FFFFFF" width="1000" height="507.224"/>
+<path id="Ocean" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.1" stroke-miterlimit="1" d="M766.124,507.223H233.945c-0.042,0-0.066-0.003-0.108-0.014c-1.19-0.319-2.382-0.632-3.571-0.949c-2.173-0.578-4.325-1.231-6.476-1.88c-8.329-2.509-16.552-5.467-24.657-8.625c-8.597-3.35-17.126-6.874-25.542-10.66c-8.144-3.662-15.997-7.861-23.779-12.229c-7.503-4.211-14.814-8.799-21.948-13.606c-7.665-5.166-15.227-10.449-22.652-15.956c-6.798-5.043-13.564-10.202-19.991-15.713c-6.928-5.94-13.892-11.884-20.244-18.456c-6.313-6.534-12.363-13.312-18.243-20.242c-5.743-6.769-10.926-14.003-15.718-21.47c-4.672-7.28-9.019-14.824-12.514-22.743c-1.801-4.077-3.657-8.206-5.005-12.461c-1.319-4.171-2.582-8.365-3.74-12.586c-2.333-8.481-4.527-16.952-6.048-25.626c-1.55-8.836-2.42-17.708-3.165-26.641c-0.729-8.738-0.685-17.528-0.102-26.268c0.569-8.595,1.403-17.236,2.889-25.726c1.548-8.838,3.595-17.487,5.973-26.135c2.329-8.472,4.841-16.83,8.395-24.883c3.654-8.275,8.017-16.095,12.809-23.763c4.729-7.563,10.033-14.736,15.695-21.623c5.469-6.655,11.267-13.106,17.251-19.303c6.405-6.633,13.264-12.744,20.262-18.738c6.703-5.745,13.686-11.145,20.738-16.448c7.076-5.32,14.333-10.379,21.66-15.345c7.529-5.099,15.237-9.906,23.114-14.449c7.745-4.466,15.688-8.519,23.787-12.296c7.991-3.728,16.192-7.057,24.404-10.258c8.25-3.213,16.585-6.244,25.036-8.887c2.203-0.689,4.424-1.321,6.641-1.952c0.991-0.277,1.981-0.547,2.977-0.812C232.618,0.338,233.332,0,233.901,0H766.29c0.006,0,0.009,0,0.016,0c-0.061,0-0.121,0-0.18,0c8.475,2.254,16.853,4.847,25.087,7.859c8.395,3.068,16.747,6.276,24.969,9.783c8.462,3.611,16.808,7.423,24.951,11.714c7.667,4.044,15.239,8.367,22.525,13.069c7.662,4.944,15.224,10.02,22.665,15.294c7.095,5.024,14.091,10.244,20.86,15.698c7.003,5.64,13.965,11.382,20.513,17.547c6.476,6.102,12.61,12.501,18.494,19.178c5.926,6.723,11.705,13.546,16.902,20.855c5.05,7.104,9.811,14.542,13.859,22.264c4.193,7.995,7.822,16.24,10.551,24.852c1.322,4.162,2.444,8.394,3.614,12.6c1.168,4.191,2.312,8.394,3.235,12.647c1.879,8.68,3.347,17.428,4.236,26.267c0.894,8.868,1.477,17.724,1.405,26.639c-0.071,8.564-0.833,17.209-1.896,25.706c-1.104,8.817-2.635,17.572-4.771,26.201c-1.075,4.341-2.27,8.648-3.489,12.95c-1.198,4.217-2.354,8.47-3.867,12.587c-3.02,8.229-6.623,16.256-11.001,23.856c-4.411,7.671-9.19,15.15-14.5,22.231c-5.478,7.304-11.474,14.167-17.571,20.958c-5.836,6.505-11.992,12.758-18.545,18.547c-6.828,6.035-13.797,11.866-20.973,17.483c-6.854,5.365-13.88,10.528-21.021,15.504c-7.493,5.222-15.106,10.246-22.84,15.104c-3.66,2.299-7.44,4.419-11.207,6.533c-3.854,2.164-7.725,4.386-11.701,6.321c-8.255,4.018-16.601,7.77-25.101,11.237c-8.214,3.352-16.47,6.544-24.848,9.478C779.904,503.332,773.048,505.384,766.124,507.223"/>

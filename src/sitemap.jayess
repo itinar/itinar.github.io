@@ -1,0 +1,86 @@
+var mapVY = "";
+for(ori in mWMcountries){
+	for(desti in mWMcountries){
+		mapVY += "<url><loc>https://www.itinar.com/text/results/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;destination=";
+		mapVY += desti.toLowerCase();
+		mapVY += "-country&vaccinated=true";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><mobile:mobile/></url>";
+
+		mapVY += "<url><loc>https://www.itinar.com/text/results/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;destination=";
+		mapVY += desti.toLowerCase();
+		mapVY += "-country&amp;vaccinated=false";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><mobile:mobile/></url>";
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+var mapVY = "";
+for(ori in mWMcountries){
+		mapVY += "<url><loc>https://www.itinar.com/text/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;vaccinated=true";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><mobile:mobile/></url>";
+
+		mapVY += "<url><loc>https://www.itinar.com/text/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;vaccinated=false";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><mobile:mobile/></url>";
+
+
+		mapVY += "<url><loc>https://www.itinar.com/map/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;vaccinated=true";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><mobile:mobile/></url>";
+
+		mapVY += "<url><loc>https://www.itinar.com/map/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;vaccinated=false";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><mobile:mobile/></url>";
+
+
+
+	for(desti in mWMcountries){
+		mapVY += "<url><loc>https://www.itinar.com/text/results/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;destination=";
+		mapVY += desti.toLowerCase();
+		mapVY += "-country&amp;vaccinated=true";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><mobile:mobile/></url>";
+
+		mapVY += "<url><loc>https://www.itinar.com/text/results/?origin=";
+		mapVY += ori;
+		mapVY += "&amp;destination=";
+		mapVY += desti.toLowerCase();
+		mapVY += "-country&amp;vaccinated=false";
+		mapVY += "</loc><lastmod>2021-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><mobile:mobile/></url>";
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

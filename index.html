@@ -1,1 +1,1427 @@
-hola
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,, shrink-to-fit=no">
+	<title>itinar - covid-19 travel restriction database</title>
+	<meta name="description" content='Covid restricitons have made travelling very difficult and frustrating. Itinar will help you navigate rules in place and quickly spot possible holiday destinations, only once more will you ask "where can I travel to?"'/>
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/demo-mod-text-8.5.css">
+	<link rel="stylesheet" type="text/css" href="css/modal_0009.css">
+	<link rel="stylesheet" href="src/cookieconsent_0005.css" media="print" onload="this.media='all'; this.onload=null;">
+    <script data-ad-client="ca-pub-9635257571319210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGZ6QJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+		<div class="modal micromodal-slide" id="disclaim" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="disclaim-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="disclaim-title">
+            Hello traveler!
+          </h2>
+        </header>
+        <main class="modal__content" id="modal-1-content">
+          <p class="text-modal">
+           Thank you for visiting our covid-19 travel restriction database.<br><br> The information you will find on this website might be wrong or/and outdated as rules can change quickly or/and sources might contradict each other, we do not take responsibility for actions taken based on what you will find here. Furthermore all data has been compiled with tourists in mind, it may or may not apply to your specific case.<br><br>
+            <strong>ALWAYS CHECK GOVERNMENT SOURCES BEFORE MAKING A DECISION!</strong>
+          </p>
+        </main>
+        <footer class="modal__footer">
+          <button class="oOM" class="modal__btn" data-micromodal-close aria-label="accept" onclick="modalCookie('disclaim');MicroModal.close('disclaim');/*setTimeout(function(){checkModal('instructions');}, 2000);*/">understood</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="datenSchutz" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="datenSchutz-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="datenSchutz-title">
+                    Privacy Policy
+                </h2>
+                </header>
+                <main class="modal__content bigger" id="datenSchutz-content">
+                  <p>
+                    <!--<a href="https://www.iubenda.com/privacy-policy/22420771" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" title="Privacy Policy">Privacy Policy</a>-->
+                    <iframe src="https://www.iubenda.com/privacy-policy/22420771" style="width: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;height: 84%;" title="Iframe Example"></iframe> 
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="keksSchutz" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="keksSchutz-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="keksSchutz-title">
+                    Cookie Policy
+                </h2>
+                </header>
+                <main class="modal__content bigger" id="keksSchutz-content">
+                  <p>
+                    <!--<a href="https://www.iubenda.com/privacy-policy/22420771" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" title="Privacy Policy">Privacy Policy</a>-->
+                    <iframe src="https://www.iubenda.com/privacy-policy/22420771/cookie-policy" style="width: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;height: 84%;" title="Iframe Example"></iframe> 
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="license" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="license-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="license-title">
+                    Licensing
+                </h2>
+                </header>
+                <main class="modal__content" id="license-content">
+                  <p>
+                    
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="faq" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="faq-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="faq-title">
+                    Update Frequency
+                </h2>
+                </header>
+                <main class="modal__content" id="faq-content">
+                  <p>
+                  	We automatically get notified of changes on official websites, when available, which is the case for about half the countries. Usually it does not take us more than 3 days to update itinar with this information.
+                  </p>
+                  <p>
+                  	Countries without good ressources might be updated with more delay, since we have to wait for news outlets to publish the data first.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="contact" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="contact-title">
+                    Contact
+                </h2>
+                </header>
+                <main class="modal__content" id="contact-content">
+                  <p style="">
+                  	If you find a mistake or have any suggestions feel free to contact us!
+                  </p><br>
+                  <p style="text-align: center; font-weight: bold;">
+                  	<a target="_blank" href="https://www.facebook.com/itinardotcom">FACEBOOK</a>  <br><br>
+                  	<a target="_blank" href="https://www.instagram.com/itinarthemap/">INSTAGRAM</a>  <br><br>
+                  	<a target="_blank" href="https://www.reddit.com/r/itinar/">REDDIT</a>  <br><br>
+                  	<a target="_blank" href="mailto:contact@itinar.com">EMAIL</a>  
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="load" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="load-title" style="width: auto;height: auto;min-height: auto;">
+                <header class="modal__header">
+                <h2 class="modal__title" id="load-title" style="text-align: center;">
+                    Loading...
+                </h2>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+	<div id="countries" class="box">
+		<div id="tongue">
+			<label for="language"></label>
+			<select name="language" id="tongueSelector" onchange="setLang(this)">
+				<option value="en">en</option>
+				<option value="de">de</option>
+				<option value="fr">fr</option>
+			</select>
+		</div>
+		<div id="countriesContainer">
+			<div id="topOfLogo"></div>
+
+			<div>
+				<div id="logo"><a href='https://www.itinar.com/'><img src='src/logo-AA-1.svg'></a></div>
+				<h1 id="subTitle">covid-19 travel restriction database</h1>
+			</div>
+
+
+			
+		</div>
+        <div id="contentContainer">
+            <div id="halfWayContainer">
+            	<span id="intro">ITINAR will help you quickly find out about covid travel restrictions in place at the moment. It is easy to use, shows information in a clear manner, regularly up to date and - of course - free to use. Hope you'll enjoy summer!</span>
+                <div id="startContent">
+					<div>
+						<h2>map version</h2>
+						<span>destinations will be color coded according to restrictions in place. For more information click on a country you're interested in.</span>
+						<img src="src/mapScreen.png">
+						<a href="map/">map version</a>
+					</div>
+					<div>
+						<h2>text version</h2>
+						<span>destinations are grouped by restrictions and displayed in lists. Clicking on a country will provide you with more information.</span>
+						<img src="src/textScreen.png">
+						<a href="text/">text version</a>
+					</div>
+				</div>
+	                
+            </div>
+        </div>
+		
+		<div id="countriesBottom">
+			<div id="links"><a onclick="MicroModal.show('contact');">Contact</a> <a onclick="MicroModal.show('faq');">Update Frequency</a></div>
+			<div id="maybeDisclaim">
+				<div><a onclick="MicroModal.show('datenSchutz')" title="Privacy Policy ">Privacy Policy</a></div>
+				<div><a onclick="MicroModal.show('disclaim');">Disclaimer</a></div>
+				<div><a onclick="cc.showSettings(0);">Cookie Settings</a></div>
+			</div>
+			<div id="wa">
+				<div id="countriesFlights">
+					<div data-skyscanner-widget="SearchWidget" data-locale="en-GB" data-market="GB" data-currency="GBP"></div>
+				</div>
+				<div id="pH"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+    <script src="src/easypz.latest.js"></script>
+    <script src="src/hammer.js"></script>
+    <script src="src/cookieconsent.js"></script>
+    <script src="src/micromodal.min.js"></script>
+    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>    
+    <script type="text/javascript">
+    	// Global variables
+            var myWorldMap;
+            var myWorldMap2;
+            var provData;
+            var stateData;
+            var vacGet = "";
+            var curFewTimeBeginGet = "";
+            var curFewTimeEndGet = "";
+            var bigMap = true;
+
+            var vacStat;
+            var pastInfection;
+            var curFewTimeBeginStat;
+            var curFewTimeEndStat;
+
+            var chosenCountryId;
+            var chosenCountryName;
+
+
+            var cc = initCookieConsent();
+
+            var tongue = "en";
+            var dixerLoc = "src/tongues_8.json";
+            var dixer;
+            var cDix;
+
+            var mWMcountries;
+            var rules = {};
+            var destination;
+
+            loadThisJson("src/country-data.json").then(value => {mWMcountries = value;buildDropDown();setTimeout(function(){hashTake().then(value => hashTake2(value));}, 0);});
+
+            // Wait for JSON data first, then init SVG World Map
+            
+            // Wait for JSON data first, then init SVG World Map
+            loadDixer("1").then(loadCountryData().then(async function(countryData) {
+    	       cc.run({
+				    current_lang : 'en',
+                    onAccept: function(cookies){
+                        if(cc.allowedCategory('analytics_cookies')){
+                            //console.log("hhh");
+                            cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-6JJXHNMF0H', function(){   
+                            //console.log("hhh");   
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-6JJXHNMF0H');
+                            });
+                        }
+                    },
+                    languages : {
+				        en : {
+				            consent_modal : {
+				                title :  "We use cookies",
+				                description :  "Hi, this website uses essential cookies to ensure its proper function and tracking cookies to understand how you interact with it. The latter will be set only upon approval. More information in our <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>",
+				                primary_btn: {
+				                    text: 'accept all',
+				                    role: 'accept_all'  //'accept_selected' or 'accept_all'
+				                },
+				                secondary_btn: {
+				                    text : 'settings',
+				                    role : 'settings'   //'settings' or 'accept_necessary'
+				                }
+				            },
+				            settings_modal : {
+				                title : 'Cookie preferences',
+				                save_settings_btn : "Save settings",
+				                accept_all_btn : "Accept all",
+				                cookie_table_headers : [
+				                    {col1: "Name" }, 
+				                    {col2: "Domain" }, 
+				                    {col3: "Expiration" }, 
+				                    {col4: "Description" }, 
+				                    {col5: "Type" }
+				                ],
+				                blocks : [
+				                    {
+				                        title : "Cookie usage",
+				                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want.'
+				                    },{
+				                        title : "Strictly necessary cookies",
+				                        description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.',
+				                        toggle : {
+				                            value : 'necessary_cookies',
+				                            enabled : true,
+				                            readonly: true
+				                        }
+				                    },{
+				                        title : "Analytics cookies",
+				                        description: 'This Website uses Trackers to measure traffic and analyze User behavior with the goal of improving the Service.',
+				                        toggle : {
+				                            value : 'analytics_cookies',
+				                            enabled : false,
+				                            readonly: false
+				                        },
+				                        cookie_table: [
+				                            {
+				                                col1: '_ga',
+				                                col2: 'google.com',
+				                                col3: '2 years',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gat',
+				                                col2: 'google.com',
+				                                col3: '1 minute',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gid',
+				                                col2: 'google.com',
+				                                col3: '1 day',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            }
+				                        ]
+				                    },{
+				                        title : "More information",
+				                        description: "For further details please consult our detailed <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>.",
+				                    }
+				                ]
+				            }
+				        }
+				    }
+				});
+
+                document.getElementById("maybeDisclaim").innerHTML = "<div><a onclick='MicroModal.show(\"datenSchutz\")' title='Privacy Policy '>Privacy Policy</a></div><div><a onclick='MicroModal.show(\"disclaim\");'>Disclaimer</a></div><div><a onclick='cc.showSettings(0);'>Cookie Settings</a></div>";
+
+                
+            }).then());
+
+		
+		
+		
+
+        function autocomplete(inp, arr) {
+              
+            } 
+
+            function doesFileExist(urlToFile) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', urlToFile, false);
+                xhr.send();
+                 
+                if (xhr.status == "404") {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function findGetParameter(parameterName) {
+                var result = null,
+                    tmp = [];
+                location.search
+                    .substr(1)
+                    .split("&")
+                    .forEach(function (item) {
+                      tmp = item.split("=");
+                      if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                    });
+                return result;
+            }
+
+            async function loadThisJson(filePath){
+                let response = await fetch(filePath);
+                let data = await response.json();
+                const result = data;
+                return result;
+            }
+
+            function buildDropDown(){
+                var c = [];
+                if(true/*tongue == "en"*/){
+                    for (var countryid in mWMcountries) {
+                        if(mWMcountries[countryid].name == undefined){
+                            ////////console.log("undefined: " + mWMcountries[countryid].id)
+                        } else {
+                            c.push(mWMcountries[countryid].name);
+                        }
+                    }
+                }else{
+                    for (var countryid in cDix) {
+                        if(cDix[countryid].name == undefined){
+                            ////////console.log("undefined: " + cDix[countryid].name)
+                        } else {
+                            c.push(cDix[countryid].name);
+                        }
+                    }
+                }
+                ////////console.log("cDix");////////console.log(cDix);
+                ////////console.log("c");////////console.log(c);
+                autocomplete(document.getElementById("countryComplete"), c);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function chooseCountry(inputCountry){
+                //make it so when resizing the window after having chosen a country the map stays visible, not the menu
+                var inputCountryId;
+                //////console.log("inputCountry");//////console.log(inputCountry);
+                if(tongue == "en"){
+                    for(c in mWMcountries){
+                        if(Boolean(mWMcountries[c])){
+                            if(Boolean(mWMcountries[c].name)){
+                                if(mWMcountries[c].name.toLowerCase() == inputCountry.toLowerCase()){
+                                    inputCountryId = c;
+                                    console.log("inputCountryId");console.log(c);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }else{
+                    for(c in cDix){
+                        if(cDix[c].name.toLowerCase() == inputCountry.toLowerCase()){
+                            inputCountryId = cDix[c].alpha2.toUpperCase();
+                            //////console.log("inputCountryId");//////console.log(inputCountryId);
+                            break;
+                        }
+                    }
+                }
+                
+                
+                if(window.innerWidth > 1600){
+
+                }
+                
+                //choosing country
+                chosenCountryId = inputCountryId;
+                chosenCountryName = mWMcountries[chosenCountryId].name;
+                loadCountry(chosenCountryId);
+            }
+
+            async function loadCountry(id){
+                var filePath = 'src/json_m_0006/' + id + '_m.json';
+
+                ////////////console.log("filePath");////////////console.log(filePath);
+
+                var cData = 0;
+
+
+                            var result = "";
+                loadThisJson(filePath).then(value => {provData = value;attributeRules();});
+
+
+                ////////////////console.log("result");////////////////console.log(result);
+                
+            }
+
+                        // Highlight country group
+            async function attributeRules() {
+                //////////////////console.log("groupIn");////////////////console.log(groupIn);
+                //////////////////console.log("provData");////////////////console.log(provData);
+
+
+
+                //close info box
+                //document.getElementById('info').classList.add('closed');
+                //document.getElementById('code').classList.add('hidden');
+                var lis = document.getElementsByTagName("li");
+                for (var i=0; i<lis.length; i++) {
+                    lis[i].classList.add('hidden');
+                }
+
+                
+                
+
+                for (var i = 1; i >= 0; i--) {
+                    /*if(vacGet[i].checked){
+                        if(vacGet[i].value == "vYes"){
+                            vacStat = true;
+                            pastInfection = false;
+                        }else if(vacGet[i].value == "pI"){
+                            vacStat = false;
+                            pastInfection = true;
+                        }else{
+                            vacStat = false;
+                            pastInfection = false;
+                        }
+                        
+                    }*/
+                    vacStat = vacGet;
+                    ////////////////console.log("vacStat");////////////////console.log(vacStat);
+                }
+
+                for (var i = Object.keys(provData["main"]).length - 1; i >= 0; i--) {
+
+                    var colorInto = "open";
+                    var colorOut = "open";
+
+                    //heime ned analysiere CH-->CH
+                    if(chosenCountryId == provData["main"][i].nu){
+                        rules[provData.main[i].nu] = {"cI": "home", "cO": "home"};
+                        continue;
+                    }
+
+
+                    //if(provData.main[i].){
+                        //check for restrictions
+                        ////////////console.log("i: " + i);
+                        var forbiddenInto = checkForbidden("into", provData.main[i]);
+                        var forbiddenOut = checkForbidden("out", provData.main[i]);
+                        var quaraInto = checkQuara("into", provData.main[i]);
+                        var quaraOut = checkQuara("out", provData.main[i]);
+                        var PCRInto = checkTest("into", "pcr", provData.main[i]);
+                        var AGInto = checkTest("into", "ag", provData.main[i]);
+                        var PCROut = checkTest("out", "pcr", provData.main[i]);
+                        var AGOut = checkTest("out", "ag", provData.main[i]);
+                        var loadStates = checkStates("into", provData.main[i]);
+
+
+
+                        //going on vacation
+                        if(Boolean(AGOut)){
+                            colorOut = "ag";
+                        }    
+                        if(Boolean(PCROut)){
+                            colorOut = "pcr";
+                        }
+                        if(Boolean(quaraOut)){
+                            colorOut = "quara";
+                        }
+                        if(Boolean(forbiddenOut)){
+                            colorOut = "forbidden";
+                        }
+
+
+                        //////////console.log(provData.main[i].nu + " load states ? " + loadStates);
+                        //returning
+                        var filePath = 'src/json_m_0006/' + chosenCountryId + '_States_m.json';
+
+                        if(!Boolean(loadStates) || !(doesFileExist(filePath))){
+                            if(Boolean(AGInto)){
+                            colorInto = "ag";
+                            }    
+                            if(Boolean(PCRInto)){
+                                colorInto = "pcr";
+                            }
+                            if(Boolean(quaraInto)){
+                                colorInto = "quara";
+                            }
+                            if(Boolean(forbiddenInto)){
+                                colorInto = "forbidden";
+                            }
+
+
+                            if (Boolean(colorInto) && Boolean(colorOut)) {
+                                
+                                    //////////////console.log("colors aren't the same");
+                                    //////////////console.log("url(#" + colorInto + colorOut + ")");
+                                    rules[provData.main[i].nu] = {"cI": colorInto, "cO": colorOut};
+                                    
+                                    ////////////console.log(provData.main[i].nu + " --> " + data[provData.main[i].nu]);
+                                
+                            }
+
+                        }else{
+                            
+                            var stateAddress;
+                            ////////////console.log("filePath");////////////console.log(filePath);
+
+                            var cData = 0;
+
+                            
+                            var result = "";
+                            loadThisJson(filePath).then(value => {result = value;});
+
+                            stateData = result;
+
+                            //////console.log("stateData");//////console.log(stateData);
+
+                          
+
+                            for(var obj in stateData.main){
+                                //////////console.log("loop for: " + provData.main[i].nu);
+                                var colorIntoStates = "open";
+                                var forbiddenIntoStates = checkForbidden("into", stateData.main[obj].states);
+                                var quaraIntoStates = checkQuara("into", stateData.main[obj].states);
+                                var PCRIntoStates = checkTest("into", "pcr", stateData.main[obj].states);
+                                var AGIntoStates = checkTest("into", "ag", stateData.main[obj].states);
+                                //////////console.log("country: " + stateData.main[obj].nu + " state: " + stateData.main[obj].states.nu + " forbiddenIntoStates: " + forbiddenIntoStates + " quaraIntoStates: " + quaraIntoStates + " PCRIntoStates: " + PCRIntoStates + " AGIntoStates: " + AGIntoStates);
+                                if(provData.main[i].nu == stateData.main[obj].nu){
+                                    //////////console.log(provData.main[i].nu + " == " + stateData.main[obj].nu)
+                                    if(Boolean(AGIntoStates)){
+                                    colorIntoStates = "ag";
+                                    }    
+                                    if(Boolean(PCRIntoStates)){
+                                        colorIntoStates = "pcr";
+                                    }
+                                    if(Boolean(quaraIntoStates)){
+                                        colorIntoStates = "quara";
+                                    }
+                                    if(Boolean(forbiddenIntoStates)){
+                                        colorIntoStates = "forbidden";
+                                    }
+                                    //////////console.log("colorIntoStates1: " + colorIntoStates + " colorOut: " + colorOut);
+
+                                    if (Boolean(colorIntoStates) && Boolean(colorOut)) {
+                                        rules[provData.main[i].nu] = {"cI": colorInto, "cO": colorOut};
+
+                                    }
+                                }
+
+                                
+
+                            }
+                            rules[(provData.main[i].nu).toLowerCase() +"-country"] = "none";
+                            //////////console.log('(provData.main[i].nu).toLowerCase() +"-country" -->' + (provData.main[i].nu).toLowerCase() +"-country");
+                            //////console.log("data");//////console.log(data);
+                        }
+                        
+                    //}
+
+
+
+                }
+
+                makeHTML();
+
+            }
+
+            function checkStates(dir, jsonData){
+                if(Boolean(jsonData.loadStates)){
+                    if(Boolean(jsonData.loadStates[dir])){
+                        return Boolean(jsonData.loadStates[dir].bool);
+                    }else{
+                        return false;
+                    }
+                }else{
+                    return false;
+                }   
+            }
+
+            function checkQuara(dir, jsonData){
+                //////////////console.log("checkQuara");
+                //////////////console.log("i");//////////////console.log(i);
+                //////////////console.log("dir");//////////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                //////////////console.log("jsonData");////////////////console.log(jsonData);
+                ////////////console.log(jsonData);
+                if (Boolean(jsonData.quara)) {
+                    if (Boolean(jsonData.quara[dir])) {
+                        if(Boolean(jsonData.quara[dir].where)){
+                        //////////////console.log("provData.main[i].quara[dir]")
+                            if (Boolean(jsonData.quara[dir].where.e)) {
+                                //////////////console.log("quara e true");
+                                var result = {};
+                                result["where"] = jsonData.quara[dir].where.e;
+                                if(Boolean(jsonData.quara[dir].dur)){
+                                    if(Boolean(jsonData.quara[dir].dur.e)){
+                                        result["dur"] = jsonData.quara[dir].dur.e;
+                                    } else if (vacStat == true){
+                                        if(Boolean(jsonData.quara[dir].dur.v)){
+                                            result["dur"] = jsonData.quara[dir].dur.v;
+                                        }else{
+                                            ////////////console.log("error with checkQuaram e v: " + jsonData.nu);
+                                        }
+                                    } else if (vacStat == false){
+                                        if(Boolean(jsonData.quara[dir].dur.uv)){
+                                            result["dur"] = jsonData.quara[dir].dur.uv;
+                                        }else{
+                                            ////////////console.log("error with checkQuara e uv: " + jsonData.nu);
+                                        }
+                                    }else{
+                                        ////////////console.log("error with checkQuara e: " + jsonData.nu);
+                                    }
+                                }else{
+                                    result["dur"] = "unknown";
+                                }                           
+                                
+                                return result;
+                            }else if(vacStat == true){
+                                if (Boolean(jsonData.quara[dir].where.v)){
+                                    //////////////console.log("quara v true");
+                                    var result = {};
+                                    result["where"] = jsonData.quara[dir].where.v;
+                                    if(Boolean(jsonData.quara[dir].dur)){
+                                        if(Boolean(jsonData.quara[dir].dur.v)){
+                                            result["dur"] = jsonData.quara[dir].dur.v;
+                                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+                                            result["dur"] = jsonData.quara[dir].dur.e;
+                                        } else {
+                                            ////////////console.log("error with checkQuara v: " + jsonData.nu);
+                                        }
+                                    }else{
+                                        result["dur"] = "unknown";
+                                    }
+                                    
+                                    return result;
+                                }else{
+                                    //////////////console.log("quara v false");
+                                    return false;
+                                }
+                            }else if(vacStat == false){
+                                if (Boolean(jsonData.quara[dir].where.uv)){
+                                    //////////////console.log("quara uv true");
+                                    var result = {};
+                                    result["where"] = jsonData.quara[dir].where.uv;
+                                    if(Boolean(jsonData.quara[dir].dur)){
+                                        if(Boolean(jsonData.quara[dir].dur.uv)){
+                                            result["dur"] = jsonData.quara[dir].dur.uv;
+                                        } else if (Boolean(jsonData.quara[dir].dur.e)){
+                                            result["dur"] = jsonData.quara[dir].dur.e;
+                                        } else {
+                                            ////////////console.log("error with checkQuara uv: " + jsonData.nu);
+                                        }
+                                    }else{
+                                        result["dur"] = "unknown";
+                                    }
+
+                                    
+
+                                    return result;
+                                }else{
+                                    //////////////console.log("quara uv false");
+                                    return false;
+                                }
+                            }else{
+                                //////////console.log("error checkQuara 1");
+                            }
+                        }else{
+                            //////////console.log("error checkQuara 2");
+                        }
+                    }
+                }else{
+                    //////////////console.log("quara false");
+                    return false;
+                }
+            }
+
+            function checkForbidden(dir, jsonData){
+                //////////////console.log("checkQuara");
+                //////////////console.log("i");//////////////console.log(i);
+                //////////////console.log("dir");//////////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                //////////////console.log("jsonData");////////////////console.log(jsonData);
+                if (Boolean(jsonData.forbidden)) {
+                    if (Boolean(jsonData.forbidden[dir])) {
+                        //////////////console.log("provData.main[i].quara[dir]")
+                        if(Boolean(jsonData.forbidden[dir].bool)){
+                            if (Boolean(jsonData.forbidden[dir].bool.e)) {
+                                //////////////console.log("quara e true");
+                                var result = jsonData.forbidden[dir].bool.e;
+                                return result;
+                            }else if(vacStat == true){
+                                if (Boolean(jsonData.forbidden[dir].bool.v)){
+                                    //////////////console.log("quara v true");
+                                    var result = jsonData.forbidden[dir].bool.v;
+                                    return result;
+                                }else{
+                                    //////////////console.log("quara v false");
+                                    return false;
+                                }
+                            }else if(vacStat == false){
+                                if (Boolean(jsonData.forbidden[dir].bool.uv)){
+                                    //////////////console.log("quara uv true");
+                                    var result = jsonData.forbidden[dir].bool.uv;
+                                    return result;
+                                }else{
+                                    //////////////console.log("quara uv false");
+                                    return false;
+                                }
+                            }else{
+                                return "haha";
+                            }
+                        }
+                    }
+                }else{
+                    //////////////console.log("quara false");
+                    return false;
+                }
+            }
+
+            function checkTest(dir, type, jsonData){
+                //////////////////console.log("checkQuara");
+                //////////////////console.log("i");////////////////console.log(i);
+                ////////////////console.log("dir");////////////////console.log(dir);
+                //var jsonData = {};
+                //jsonData = provData.main[i];
+                ////////////////console.log("jsonData");////////////////console.log(jsonData);
+                if (Boolean(jsonData.test)) {
+                    if (Boolean(jsonData.test[dir])) {
+                        if (Boolean(jsonData.test[dir][type])) {
+                            //////////////////console.log("provData.main[i].test[dir]")
+                            if (Boolean(jsonData.test[dir][type].e)) {
+                                //////////////////console.log("test e true");
+                                var result = {};
+                                result["hours"] = jsonData.test[dir][type].e;
+                                return result;
+                            }else if(vacStat == true){
+                                if (Boolean(jsonData.test[dir][type].v)){
+                                    //////////////////console.log("test v true");
+                                    var result = {};
+                                    result["hours"] = jsonData.test[dir][type].v;
+                                    return result;
+                                }else{
+                                    //////////////////console.log("test v false");
+                                    return false;
+                                }
+                            }else if(vacStat == false){
+                                if (Boolean(jsonData.test[dir][type].uv)){
+                                    //////////////////console.log("test uv true");
+                                    var result = {};
+                                    result["hours"] = jsonData.test[dir][type].uv;
+                                    return result;
+                                }else{
+                                    //////////////////console.log("test uv false");
+                                    return false;
+                                }
+                            }else{
+                                return "haha";
+                            }
+                        }else{
+                            return false;
+                        }
+                    }
+                }else{
+                    //////////////////console.log("test false");
+                    return false;
+                }
+            }
+
+
+            function makeHTML(){
+                
+
+                
+
+
+                if (true/*country != undefined && country.id != 'Ocean'*/) {
+                        //////////console.log("country not undefined nor ocean");
+                        var nation = {"id" : destination.substr(0,2).toUpperCase()}; // Get parent nation
+                        //////////console.log("country: ");
+                        //////////console.log(country);
+                        //////////console.log(" country.country: ");
+                        //////////console.log(country.country);
+                        //////////console.log(" country.id: ");
+                        //////////console.log(country.id);
+                        if (nation != undefined) {
+                            //dases zersch langsam zue geit o när wedr uf
+                            
+                            
+                            console.log("nation not undefined");
+                            if(true){
+
+                                if(Boolean(provData)){
+
+                                    var address;
+                                    console.log("jo brudi da bini");
+                                    for(var obj in provData.main){
+                                        //console.log("obj: " + obj + " nation.id" + nation.id);
+                                        if(provData.main[obj].nu == nation.id){
+                                            address = obj;
+                                            break
+                                        }
+                                    }
+                                    console.log("address: " + address);
+                                    
+                                    
+                                    var out = '';
+                                    //TODO exclude homecountry
+                                    if(chosenCountryId == nation.id){
+                                        out += '<div class="infoHome hc"><br><br><br><br>' + consultDixer("withinCountries") + '<br><br><br><br></div>';
+                                    } else if(Boolean(provData.main[address])){
+                                        console.log("address: " + address);
+                                        
+                                        var forbiddenOut = checkForbidden("out", provData.main[address]);
+                                        var quaraOut = checkQuara("out", provData.main[address]);
+                                        var PCROut = checkTest("out", "pcr", provData.main[address]);
+                                        var testAndOut;
+                                        var AGOut = checkTest("out", "ag", provData.main[address]);
+                                        var jsonOut = provData.main[address];
+                                        var forbiddenInto;
+                                        var quaraInto;
+                                        var PCRInto;
+                                        var AGInto;
+                                        var jsonInto;
+                                        
+                                        var cGoing; 
+                                        var cComing;
+
+                                        if(true/*nation.id == ((country.id).substr(0, 2)).toUpperCase() && !(nation.id == (country.id).substr(0, 2))*/){
+                                            //it's a country
+                                            forbiddenInto = checkForbidden("into", provData.main[address]);
+                                            quaraInto = checkQuara("into", provData.main[address]);
+                                            PCRInto = checkTest("into", "pcr", provData.main[address]);
+                                            //testAndInto = checkTestAnd(provData.main[address]);
+                                            AGInto = checkTest("into", "ag", provData.main[address]);
+                                            jsonInto = provData.main[address];
+                                            
+                                        } else {
+                                            //it's not a country
+                                            var filePath = 'src/json_m_0006/' + chosenCountryId + '_States_m.json';
+                                            var stateAddress;
+
+                                            ////////////console.log("filePath");////////////console.log(filePath);
+
+                                            var cData = 0;
+
+                                                                        var result = "";
+                                            loadThisJson(filePath).then(value => {result = value;});;
+
+                                            stateData = result;
+
+                                            for(var obj in stateData.main){
+                                                if(stateData.main[obj].states.nu == country.id){
+                                                    stateAddress = obj;
+                                                    
+                                                    break
+                                                }
+                                            }
+                                            forbiddenInto = checkForbidden("into", stateData.main[stateAddress].states);
+                                            quaraInto = checkQuara("into", stateData.main[stateAddress].states);
+                                            PCRInto = checkTest("into", "pcr", stateData.main[stateAddress].states);
+                                            //testAndInto = checkTestAnd(provData.main[address]);
+                                            AGInto = checkTest("into", "ag", stateData.main[stateAddress].states);
+                                            jsonInto = stateData.main[stateAddress].states;
+                                            stateName = stateData.main[obj].states.name;
+
+                                        }
+
+
+
+                                        
+
+                                        if(Boolean(forbiddenOut)){
+                                            cGoing = "forbidden";
+                                        } else if(Boolean(quaraOut)){
+                                            cGoing = "quara";
+                                        } else if(Boolean(PCROut)){
+                                            cGoing = "pcr";
+                                        } else if(Boolean(AGOut)){
+                                            cGoing = "ag";
+                                        }else{
+                                            cGoing = "open";
+                                        }
+
+
+                                        out += '<div id="into" class="' + cGoing + '"><div id="intoInner">';
+                                        out += '<h1 class="infoHeading">' + consultDixer("restrictionsPart1");
+                                        out += countryNameDix(chosenCountryId);
+                                        out += consultDixer("restrictionsPart2");
+                                        //////////////console.log("country.id" + country.id);
+                                        //////////////console.log("nation.id + -country).toLowerCase()" + (nation.id + "-country").toLowerCase());
+                                        /*if(!(country.id == nation.id) && !((country.id == (nation.id + "-country").toLowerCase())||(country.id == (nation.id + ".").toLowerCase()))){
+                                            out += stateName;
+                                            out += ", ";
+                                        }*/
+                                        out += countryNameDix(nation.id);
+                                        out += consultDixer("restrictionsPart3");
+                                        out += '</h1><div class="infoContent">';
+                                        //TODO travel to this destination has been forbidden by it's authorities
+                                         //Yes, xx days
+                                        out += forbiddenPhrase("out", jsonOut);
+                                        if(Boolean(forbiddenOut)){
+                                            //out +=  + "<br>";
+                                        }
+                                        out += quaraPhrase("out", jsonOut)
+
+                                        if(Boolean(PCROut) || Boolean(AGOut)){
+                                            out += '<h2 class="subTitle">' + consultDixer("test1") + '</h2>' + consultDixer("Yes") + ", ";
+                                        }
+                                        
+                                        out += testPhrase("out", "pcr", jsonOut);
+                                        //TODO: AND/OR DIXER
+                                        if(Boolean(PCROut) && Boolean(AGOut)){
+                                            if(Boolean(provData.main[address].test.into.or)){
+                                            	out += " ";
+                                                out += provData.main[address].test.into.or;
+                                                out += " ";
+                                            }
+                                            
+
+                                        }
+                                        out += testPhrase("out", "ag", jsonOut);
+                                        if(!Boolean(PCROut) && !Boolean(AGOut)){
+                                            out += "";
+                                        }
+                                        if(Boolean(PCROut) || Boolean(AGOut)){
+                                            out += '. <br>';
+                                        }
+
+                                        
+                                        
+                                        //TODO comments
+                                        //////////////console.log("out: " + out);
+                                        //////////////console.log('out.search("quarantine"): ' + out.search("quarantine") + ', out.search("testing"): ' + out.search("testing"));
+
+                                        if(Boolean(forbiddenInto)){
+                                            cComing = "forbidden";
+                                        } else if(Boolean(quaraInto)){
+                                            cComing = "quara";
+                                        } else if(Boolean(PCRInto)){
+                                            cComing = "pcr";
+                                        } else if(Boolean(AGInto)){
+                                            cComing = "ag";
+                                        }else{
+                                            cComing = "open";
+                                        }
+
+
+                                        if(out.search(consultDixer("travelForbidden")) == -1 && out.search(consultDixer("quara1")) == -1 && out.search(consultDixer("test1")) == -1){
+                                            out += consultDixer("noneApply") + "<br>";
+                                        }
+                                        out += checkWeb("out", provData.main[address]);
+                                        out += "</div></div></div>"
+
+                                        var out2 = "";
+                                        out2 += '<div id="out" class="' + cComing + '"><div id="outInner">';
+                                        out2 += '<h1 class="infoHeading">' + consultDixer("restrictionsPart1");
+                                        /*if(!(country.id == nation.id) && !((country.id == (nation.id + "-country").toLowerCase())||(country.id == (nation.id + ".").toLowerCase()))){
+                                            out2 += stateName;
+                                            out2 += ", ";
+                                        }*/
+                                        out2 += countryNameDix(nation.id);
+                                        out2 += consultDixer("restrictionsPart2");
+                                        out2 += countryNameDix(chosenCountryId);
+                                        out2 += consultDixer("restrictionsPart3");
+                                        out2 += '</h1><div class="infoContent">'
+                                        out2 += forbiddenPhrase("into", jsonInto);
+                                        ////console.log(jsonInto);
+                                        if(Boolean(forbiddenInto)){
+                                            //out2 +=  + "<br>";
+                                        }
+
+                                        out2 += quaraPhrase("into", jsonInto)
+                                        if(Boolean(PCRInto) || Boolean(AGInto)){
+                                            out2 += '<h2 class="subTitle">' + consultDixer("test1") + '</h2>' + consultDixer("Yes") + ", ";
+                                        }
+                                        out2 += testPhrase("into", "pcr", jsonInto);
+                                        //TODO: AND/OR
+                                        if(Boolean(PCROut) && Boolean(AGOut)){
+                                            if(Boolean(provData.main[address].test.into.or)){
+                                            	out2 += " ";
+                                                out2 += provData.main[address].test.into.or;
+                                                out2 += " ";
+                                            }
+                                        }
+                                        out2 += testPhrase("into", "ag", jsonInto);
+                                        if(!Boolean(PCRInto) && !Boolean(AGInto)){
+                                            out2 += "";
+                                        }
+                                        //TODO comments
+                                        if(Boolean(PCRInto) || Boolean(AGInto)){
+                                            out2 += '. <br>';
+                                        }
+                                        if(out2.search(consultDixer("travelForbidden")) == -1 && out2.search(consultDixer("quara1")) == -1 && out2.search(consultDixer("test1")) == -1){
+                                            out2 += consultDixer("noneApply") + "<br>";
+                                        }
+                                        out2 += checkWeb("into", provData.main[address]);
+                                        out2 += ""
+
+                                        out += out2;
+
+                                        out += '</div></div></div>';
+                                        //////////console.log("nation.id");//////////console.log(nation.id);
+                                        //////////console.log("((country.id).substr(0, 2)).toUpperCase()");//////////console.log(((country.id).substr(0, 2)).toUpperCase());
+                                        
+
+
+
+                                        
+                                    }else{
+                                        //document.getElementById("info").classList.add("closed");
+                                    }
+                                }
+                                ////////console.log(out);
+                                if(true){
+                                    //hashSet(chosenCountryId,country.id);
+                                    //document.getElementById("toggleCountries").classList.add("closed");
+                                    //delay(300);
+                                    document.getElementById("preciseContent").innerHTML = out;
+                                    //document.getElementById("infoFlights").innerHTML = '<div id="goToInfoFlights" onclick="showInfoFlights()"><h2 class="infoHeading" id="cF">' + consultDixer("checkFlights") + '</h2></div><div data-responsive="false" data-enable-placeholders="true" data-skyscanner-widget="SearchWidget" data-widget-scale="1.2" data-locale="en-GB" data-market="GB" data-currency="GBP" ></div>';
+                                    //document.getElementById("countriesFlights").innerHTML = '<div               data-skyscanner-widget="SearchWidget" data-locale="en-GB" data-market="GB" data-currency="GBP"></div>'
+                                    //document.getElementById("info").classList.remove("closed");
+                                    //await delay(777);
+                                    //load_js();
+                                } else {
+                                    //document.getElementById("info").classList.add("closed");    
+                                }
+                                
+                            }
+                        }
+                } else {
+                    ////////////////////console.log('Country not found');
+                    //document.getElementById("info").classList.add("hidden");
+                }
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function hashSet(origin,destination) {
+
+                data = "";
+                if(Boolean(origin)){
+                    data += "?origin=" + origin;
+                    if(Boolean(destination)){
+                        data += "&destination=" + destination;
+                    }
+                }
+
+
+                var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + data;    
+                    window.history.pushState({ path: refresh }, '', refresh);
+
+                
+            }
+            async function hashTake() {
+                
+
+                /*var hash = window.location.hash
+                if(hash.length > 0){
+                    //make it so when resizing the window after having chosen a country the map stays visible, not the menu
+                    document.getElementById("countries").classList.add("closed");
+                    document.getElementById("toggleCountries").classList.remove("closed");
+                    //choosing country
+                    chosenCountryId = hash.substr(1,2);
+                    chosenCountryName = myWorldMap.countries[chosenCountryId].name;
+                    loadCountry(chosenCountryId);
+                }
+                ////////console.log("finish taking hash");
+                //hashTake2(hash.substr(3,hash.length - 1));
+                ////////console.log(hash.substr(3,hash.length - 1));
+                myWorldMap.click("");
+                var clicked = hash.substr(3,hash.length - 1);
+                myWorldMap.click(clicked);
+                return hash.substr(3,hash.length - 1);
+                */
+                
+
+                if(findGetParameter("origin")){
+                    chosenCountryId = findGetParameter("origin");
+                    chosenCountryName = mWMcountries[chosenCountryId].name;
+                    loadCountry(chosenCountryId);
+                }
+                if(findGetParameter("destination")){
+                    var clicked = findGetParameter("destination");
+                    destination = findGetParameter("destination");;
+                }
+                if(findGetParameter("vaccinated")){
+                    var vacGet = findGetParameter("vaccinated");
+                    return findGetParameter("vaccinated");
+                }
+                
+            }
+            async function hashTake2(hashSubbed) {
+                ////////console.log("continue taking hash");
+                ////////console.log(hashSubbed);
+                //var hash = window.location.hash
+
+                /*if(hashSubbed.length > 2){
+                    //var clicked = hash.substr(3,hash.length - 1);
+                    myWorldMap.click(hashSubbed);
+                    ////////console.log(hashSubbed);
+                }*/
+
+                if(findGetParameter("destination")){
+                    var clicked = findGetParameter("destination");
+                    return findGetParameter("destination");
+                }
+            }
+            //set language of user to something
+            function checkModal(modal) {
+                if(!Boolean(getCookie(modal))){
+                    MicroModal.show(modal);
+                }else{
+                    modalCookie(modal);
+                }
+                
+            }
+            function modalCookie(modal){
+                var d = new Date();
+                d.setTime(d.getTime() + (60*24*60*60*1000));
+                var expires = "expires="+ d.toUTCString();
+                document.cookie = modal + "=" + "knowsIt" + ";" + expires + ";SameSite=Strict" + ";path=/";
+            }
+
+
+
+            function getCookie(cname) {
+                  var name = cname + "=";
+                  var decodedCookie = decodeURIComponent(document.cookie);
+                  var ca = decodedCookie.split(';');
+                  for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                      c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                      return c.substring(name.length, c.length);
+                    }
+                  }
+                  return "";
+            }
+
+            function consultDixer(address) {
+                var gb = "";
+                if(Boolean(dixer[tongue][address])){
+                    gb = dixer[tongue][address];
+                }
+                return gb;
+            }
+
+            function countryNameDix(id){
+                if (tongue == "en") {
+                    return mWMcountries[id].name;
+                }else{
+                    for(element in cDix){
+                        if(cDix[element].alpha2 == id.toLowerCase()){
+                            return cDix[element].name;
+                        }
+                    }
+                }
+            }
+            async function loadDixer(h){
+
+                //////////////////console.log("loadCountryData() loaded --> async function");
+                var navLang = navigator.language.substr(0,2).toLowerCase();
+
+                if(Boolean(getCookie("tongue"))){
+                    tongue = getCookie("tongue");
+                }else if(navLang == "en" || navLang == "fr" || navLang == "de"){
+                    tongue = navLang;
+                }
+                ////////console.log("tongue: " + tongue);
+                document.getElementById("tongueSelector").value = tongue;
+                loadThisJson(dixerLoc).then(value => {dixer = value})
+
+                if(tongue != "en"){
+                    var cDSrc =  "src/countryDix/" + tongue + "/world.json";
+                    ////////console.log(cDSrc);
+                    loadThisJson(cDSrc).then(value => {cDix = value});
+                }
+                
+
+
+                tongue = "en";
+                return h;
+            }
+            // Asynchronous JSON load
+            async function loadCountryData() {
+                //////////////////console.log("loadCountryData()");
+                var filePathLCD = 'src/country-data.json';
+                //////////////////console.log("response");//////////////////console.log(response);
+                var data = "";
+
+                loadThisJson(filePathLCD).then(value => {data = value;});
+                ////////////////////console.log("data");//////////////////console.log(data);
+                return data;
+            }
+            function checkWeb(dir, jsonData){
+                if(Boolean(jsonData.link[dir])){
+                    var wholeThing = jsonData.link[dir];
+                    var wholeArray = wholeThing.split(";");
+                    var out = '<h2 class="subTitle">' + consultDixer("link") + ":</h2> ";
+                    for(url in wholeArray){
+                        out += "<a href='";
+                        out += wholeArray[url];
+                        out += "''>";
+                        out += wholeArray[url].split("//")[1].split("/", 1);
+                        out += "</a>  "
+                    }
+                }
+                if(out != undefined){
+                    return out;
+                }else{
+                    return "";
+                }
+            }
+
+            function forbiddenPhrase(dir, jsonData){
+                //////console.log("jsonData");//////console.log(jsonData);
+                var forbidden = checkForbidden(dir, jsonData);
+                fOut = "";
+                if(Boolean(forbidden)){
+                    fOut += '<h2 class="subTitle">' + consultDixer("travelForbidden") + '</h2><br>';
+                    if(Boolean(jsonData.forbidden[dir].comment)){
+                        fOut += capitalizeFLetter(jsonData.forbidden[dir].comment[tongue]);
+                    }
+                    fOut += "<br>";
+                }
+                
+                return fOut;
+            }
+
+            function quaraPhrase(dir, jsonData){
+                var quara = checkQuara(dir, jsonData);
+                //////console.log("jsonData");//////console.log(jsonData);
+                var qOut = "";
+                if(Boolean(quara)){
+                    qOut += '<h2 class="subTitle">' + consultDixer("quara1") + '</h2>';
+                    qOut += consultDixer("Yes") + ", ";
+                    if(quara.where == "home"){
+                        qOut += consultDixer("quaraHome");
+                    }else if(quara.where == "hotel"){
+                        qOut += consultDixer("quaraHotel");
+                    }else if(quara.where == "governmental"){
+                        consultDixer("quaraGov");
+                    }
+                    qOut += consultDixer("quara2");
+                    if(quara.dur != "unknown"){
+                        qOut += parseInt(quara.dur);
+                        qOut += ' ' + consultDixer("days");
+                        qOut += '. ';
+                    }
+                    if(Boolean(jsonData.quara[dir].comment)){
+                        qOut += capitalizeFLetter(jsonData.quara[dir].comment[tongue]);
+                    }
+                    qOut += '<br>';
+                }
+                
+                return qOut;
+            }
+            function testPhrase(dir, type, jsonData){
+                //////console.log("jsonData");//////console.log(jsonData);
+                var tOut = "";
+                var test = checkTest(dir, type, jsonData);
+                if(Boolean(test)){
+                    //tOut += 'yes, ';
+                    if(type == "pcr"){
+                        tOut += "pcr";
+                    }else{
+                        tOut += consultDixer("ab");
+                    }
+                    if(test.hours == "arrival"){
+                        tOut += consultDixer("arrTest");
+                    }else if(test.hours == "unknown"){
+                        tOut += consultDixer("bfA");
+                    }else{
+                        tOut += consultDixer("noOlder");
+                        tOut += parseInt(test.hours);
+                        tOut += " " + consultDixer("hours");
+                    }
+                   if(Boolean(jsonData.test[dir][type].comment)){
+                        tOut += capitalizeFLetter(jsonData.test[dir][type].comment[tongue]);
+                    }
+
+                }
+                              
+                ////////////////console.log("tOut");////////////////console.log(tOut);
+                return tOut;
+            }
+
+            function capitalizeFLetter(string) {
+               return string.charAt(0).toUpperCase() +
+               string.slice(1);
+            }
+
+
+    </script>
+
+</body>
+</html>

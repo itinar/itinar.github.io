@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,, shrink-to-fit=no">
+	<title>itinar - covid-19 travel restriction database</title>
+	<meta name="description" content='Covid restricitons have made travelling very difficult and frustrating. Itinar will help you navigate rules in place and quickly spot possible holiday destinations, only once more will you ask "where can I travel to?"'/>
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/demo-mod-text-8.3.css">
+	<link rel="stylesheet" type="text/css" href="css/modal_0009.css">
+	<link rel="stylesheet" href="src/cookieconsent_0005.css" media="print" onload="this.media='all'; this.onload=null;">
+    <script data-ad-client="ca-pub-9635257571319210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGZ6QJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+	<div id="countries" class="box">
+		<div id="tongue">
+			<label for="language"></label>
+			<select name="language" id="tongueSelector" onchange="setLang(this)">
+				<option value="en">en</option>
+				<option value="de">de</option>
+				<option value="fr">fr</option>
+			</select>
+		</div>
+		<div id="countriesContainer">
+			<div id="topOfLogo"></div>
+
+			<div>
+				<div id="logo"><img src="src/logo-AA-1.svg"></div>
+				<h1 id="subTitle">covid-19 travel restriction database</h1>
+			</div>
+
+			<div id="controls">
+				<div><span class="instructions break">1. Tell me where you're travelling from</span><br>
+					<div class="autocomplete">
+						<input id="countryComplete" onfocus="document.getElementsByClassName('instructions')[0].scrollIntoView();" type="text" autocomplete="off" name="countryComplete" placeholder="Start typing and choose from list">
+						<label for="countryComplete">country of origin</label>
+					</div>
+				</div>
+				<div><span class="instructions break">2. Select your vaccination status</span>
+					<div class="countryInput">
+						<label>
+							<input onchange="highlightMine()" type="radio" name="vac" value="vYes" checked="checked"><span class="checkmark"></span>I have been fully vaccinated</label>
+					</div>
+					<!--<div class="countryInput"><label><input onchange="highlightMine()" type="radio" name="vac" value="pI"><span class="checkmark"></span>I've had Covid-19 before</label></div>-->
+					<div class="countryInput">
+						<label>
+							<input onchange="highlightMine()" type="radio" name="vac" value="false" checked="checked"><span class="checkmark"></span>I haven't been fully vaccinated</label>
+					</div>
+				</div>
+				<div id="toggleCountriesInCountries">
+					<button class="oOM" onclick="toggleCountries('close')"><span id="chnopf">Show more map</span>
+				</div>
+			</div>
+			
+		</div>
+		<div id="countriesBottom">
+			<div id="links"><a onclick="MicroModal.show(\'contact\');">Contact</a> <a onclick="MicroModal.show(\'faq\');">Update Frequency</a></div>
+			<div id="maybeDisclaim">
+				<div><a onclick="MicroModal.show(\'datenSchutz\')" title="Privacy Policy ">Privacy Policy</a></div>
+				<div><a onclick="MicroModal.show(\'disclaim\');">Disclaimer</a></div>
+				<div><a onclick="cc.showSettings(0);">Cookie Settings</a></div>
+			</div>
+			<div id="wa">
+				<div id="countriesFlights">
+					<div data-skyscanner-widget="SearchWidget" data-locale="en-GB" data-market="GB" data-currency="GBP"></div>
+				</div>
+				<div id="pH"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="src/svg-world-map-mod4.7.js"></script>
+    <script src="js/svg-pan-zoom.min.js"></script>
+    <script src="src/easypz.latest.js"></script>
+    <script src="src/hammer.js"></script>
+    <script src="src/cookieconsent.js"></script>
+    <script src="src/micromodal.min.js"></script>
+    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>    
+    <script type="text/javascript">
+    	cc.run({
+				    current_lang : 'en',
+                    onAccept: function(cookies){
+                        if(cc.allowedCategory('analytics_cookies')){
+                            //console.log("hhh");
+                            cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-6JJXHNMF0H', function(){   
+                            //console.log("hhh");   
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-6JJXHNMF0H');
+                            });
+                        }
+                    },
+                    languages : {
+				        en : {
+				            consent_modal : {
+				                title :  "We use cookies",
+				                description :  "Hi, this website uses essential cookies to ensure its proper function and tracking cookies to understand how you interact with it. The latter will be set only upon approval. More information in our <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>",
+				                primary_btn: {
+				                    text: 'accept all',
+				                    role: 'accept_all'  //'accept_selected' or 'accept_all'
+				                },
+				                secondary_btn: {
+				                    text : 'settings',
+				                    role : 'settings'   //'settings' or 'accept_necessary'
+				                }
+				            },
+				            settings_modal : {
+				                title : 'Cookie preferences',
+				                save_settings_btn : "Save settings",
+				                accept_all_btn : "Accept all",
+				                cookie_table_headers : [
+				                    {col1: "Name" }, 
+				                    {col2: "Domain" }, 
+				                    {col3: "Expiration" }, 
+				                    {col4: "Description" }, 
+				                    {col5: "Type" }
+				                ],
+				                blocks : [
+				                    {
+				                        title : "Cookie usage",
+				                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want.'
+				                    },{
+				                        title : "Strictly necessary cookies",
+				                        description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.',
+				                        toggle : {
+				                            value : 'necessary_cookies',
+				                            enabled : true,
+				                            readonly: true
+				                        }
+				                    },{
+				                        title : "Analytics cookies",
+				                        description: 'This Website uses Trackers to measure traffic and analyze User behavior with the goal of improving the Service.',
+				                        toggle : {
+				                            value : 'analytics_cookies',
+				                            enabled : false,
+				                            readonly: false
+				                        },
+				                        cookie_table: [
+				                            {
+				                                col1: '_ga',
+				                                col2: 'google.com',
+				                                col3: '2 years',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gat',
+				                                col2: 'google.com',
+				                                col3: '1 minute',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gid',
+				                                col2: 'google.com',
+				                                col3: '1 day',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            }
+				                        ]
+				                    },{
+				                        title : "More information",
+				                        description: "For further details please consult our detailed <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>.",
+				                    }
+				                ]
+				            }
+				        }
+				    }
+				});
+    </script>
+
+</body>
+</html>

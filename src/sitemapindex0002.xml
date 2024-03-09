@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <sitemap>
+
+      <loc>src/sitemap01_0001.xml</loc>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>src/sitemap02_0001.xml</loc>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>src/sitemap03_0001.xml</loc>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>src/sitemap04_0001.xml</loc>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>src/sitemap05_0001.xml</loc>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>src/sitemap06_0001.xml</loc>
+
+   </sitemap>
+
+</sitemapindex>

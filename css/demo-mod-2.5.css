@@ -1,0 +1,522 @@
+:root{
+    --widthSideBar: max(25%, 345px);
+    --cB: ease-in;
+    --cBM: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    --ControlsColor: rgba(250, 250, 250, 1);
+    --countriesMargin: 11px;
+}
+
+html, body { 
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden; 
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+body.black { 
+    background-color: #000000; 
+}
+
+a { 
+    color: #CCCCCC; 
+    text-decoration: dotted underline; 
+    cursor: pointer; 
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li { 
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+ul li:hover { 
+    background-color: #444444; 
+}
+
+ul li:last-child { 
+    margin-bottom: 10px;
+}
+
+svg {
+    width: calc(100% - var(--widthSideBar));
+}
+
+#svg-world-map-container {
+    width: calc(100% - var(--widthSideBar));
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: var(--cBM);
+}
+
+.box { 
+    position: fixed; 
+
+    background-color: var(--ControlsColor); 
+    color: #101010; 
+    border-radius: 5px; 
+    overflow-y: auto; 
+}
+
+
+
+
+
+
+.box select {
+    cursor: pointer; 
+    width: 100%; 
+    padding: 2% 5px; 
+    font-size: 13px; 
+    border: none;  
+    border-radius: 5px; 
+}
+
+option{
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#countries {
+    top: 0px; 
+    right: 0px;
+    bottom: 0px;
+    width: var(--widthSideBar);
+}
+#countriesContainer {
+    margin: 10px;
+}
+
+#toggleCountries {
+    display: none;
+    background: var(--ControlsColor);
+}
+#toggleCountriesInCountries {
+    display: none;
+}
+
+#info { 
+    top: unset; 
+    bottom: 0px;
+    right: var(--widthSideBar);/*var(--widthSideBar);*/
+    left: 0px; 
+    overflow: hidden;
+    max-height: 500px;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: var(--cB);
+    /*left: calc(50vw - 300px);
+    min-height: 14%;*/
+}
+#info.closed { 
+    max-height: 0px;
+}
+#wb {
+        display: none;
+}
+#info .hide { 
+    right: calc(var(--widthSideBar) + 5px);
+    margin-top: -11px;
+    margin-right: 10px;
+    color: black;
+    font-size: 55px;
+
+}
+#into, #out {
+    padding: 2% 2% 4% 2%;
+    min-height: 28%;
+}
+#wa {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#countriesFlights {
+    margin: var(--countriesMargin);
+}
+#pH {
+    height: 280px;
+    background: grey;
+    margin-top: 7%;
+}
+iframe {
+    width: 100%;
+    height: 277px;
+    border: none;
+    bottom: 0;
+}
+
+@media all and (max-width: 888px){
+    #svg-world-map-container {
+        width: 100%;
+    }
+    #countries {
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 88%;
+        padding: 6%; 
+        max-width: 2000px;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: var(--cBM);
+    }
+
+    #countries.closed{
+        right: -100%;
+    }
+
+    #toggleCountries {
+        display: table;
+        font-style: bold;
+        font-size: 100%;
+        height: 30px;
+        cursor: pointer;
+        /*padding: 1px 44px;*/
+        width: 36%;
+        background: var(--ControlsColor);
+        border-radius: 15px 0 0 15px; 
+        margin: 30px 0px;
+        right: 0px;
+        top: 0px;
+        position: fixed;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: var(--cBM);
+    }
+    #wa {
+        display: none;
+    }
+    #toggleCountriesInCountries {
+        display: inherit;
+    }
+    #toggleCountries.closed {
+        margin-right: -44%;
+    }
+    #innerToggleCountries{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #infoContainer {
+        height: 88%;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: var(--cBM);
+    }
+    #infoContainer.closed{
+        margin-top: 0%;
+        height: 95px;
+    }
+    #infoContainer.closed #into, #infoContainer.closed #out{
+        font-size-adjust: 0;
+        padding: 0 2%;
+        height: 50%;
+    }
+    #info { 
+        top: unset; 
+        bottom: 0px;
+        /*right: calc(var(--widthSideBar) + 20px);var(--widthSideBar);*/
+        right: 0px;
+        left: 0px; 
+        overflow: hidden;
+        height: 100%;
+        max-height: 2000px;
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-timing-function: var(--cBM);
+        /*left: calc(50vw - 300px);
+        min-height: 14%;*/
+    }
+    #goToInfoFlights {
+        cursor: pointer;
+        margin-bottom: 22%;
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-timing-function: var(--cBM);
+    }
+    #goToInfoFlights.visible {
+        margin-bottom: 0%;
+    }
+    .infoContent {
+        padding-top: 22px;
+    }
+    #info.closed { 
+        max-height: 0px;
+    }
+
+    #info .hide { 
+        right: /*calc(var(--widthSideBar) + 20px);*/5px;
+        margin-right: var(--countriesMargin);
+        margin-top: -22px;
+        color: black;
+        font-size: 111px;
+
+    }
+    #wb {
+        display: inherit;
+        background-color: #71A9F7;
+        padding: 2% 2% 4% 2%;
+        height: 88%;
+        width: 96%;
+    }
+    #into, #out {
+        height: 46.8%;
+        padding: 2% 2% 4% 2%;
+        display: table;
+        width: 96%;
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-timing-function: var(--cBM);
+    }
+    #intoInner, #outInner{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .infoHome {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        padding: 2% 2%;
+        min-height: 28%;
+        height: 100%;
+    }
+
+}
+
+#info.time {
+    bottom: 50px; 
+}
+h2.infoHeading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+h3.subTitle{
+    font-style: initial;
+    font-size: 20px;
+    display: inline;
+}
+.infoHome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 2% 2%;
+    min-height: 28%;
+}
+.infoContent {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.forbidden {
+    background-color: #E7171F;
+}
+
+.quara {
+    background-color: #f57640;
+}
+
+.pcr {
+    background-color: #f5cb40;
+}
+
+.ag {
+    background-color: #f2f540;
+}
+
+.open {
+    background-color: #43aa8b;
+}
+
+.hc {
+    background-color: #71f5e3;
+}
+
+
+/*.box input { 
+    padding: 5px; 
+    text-align: left; 
+}*/
+
+.hide { 
+    position: fixed; 
+    margin-top: -5px; 
+    right: 20px;
+    cursor: pointer; 
+    font-size: 25px; 
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#options, #groups { 
+    left: 10px; 
+    right: unset; 
+}
+
+#labels { 
+    top: 10px; 
+    /*min-width: 255px;*/
+}
+
+
+/*#details, #countries { 
+    top: 222px; 
+    max-height: calc(100vh - 252px);
+}*/
+
+#overout { 
+    top: 102px;
+    right: 10px; 
+    left: unset; 
+}
+
+body.black #overout {
+    top: 10px; 
+}
+
+
+
+#pageurl { 
+    width: 340px; 
+    margin-top: 10px; 
+}
+
+#code { 
+    right: unset; 
+    left: 10px; 
+    top: 230px;
+    width: 350px; 
+    max-height: calc(100vh - 260px); 
+    font-family: monospace; 
+    white-space: pre; 
+    background-color: rgba(10, 10, 10, .85);
+}
+
+#code .hide { 
+    right: unset; 
+    margin-left: 335px; 
+}
+
+body.black #code {
+    top: 10px; 
+}
+
+body.wikianim #code {
+    top: 94px; 
+}
+
+/* Taken from: https://gist.github.com/faffyman/6183311 */
+pre {
+    margin: 5px;
+}
+
+.function {
+    color: #BDBB16;
+}
+
+.string {
+    color: #008000;
+}
+
+.number {
+    color: #8585F2;
+}
+
+.boolean {
+    color: #B22222;
+}
+
+.null, 
+.comment {
+    color: #808080;
+}
+
+.key {
+    color: #CCCCCC;
+}
+
+/* Responsive breakpoints */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}

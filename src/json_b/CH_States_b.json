@@ -1,0 +1,3149 @@
+{
+    "main": [
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "846",
+            "states": {
+                "code": "A",
+                "name": "Alsace",
+                "nu": "FR-A",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "847",
+            "states": {
+                "code": "B",
+                "name": "Aquitaine",
+                "nu": "FR-B",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "848",
+            "states": {
+                "code": "C",
+                "name": "Auvergne",
+                "nu": "FR-C",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "849",
+            "states": {
+                "code": "E",
+                "name": "Brittany",
+                "nu": "FR-E",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "850",
+            "states": {
+                "code": "D",
+                "name": "Burgundy",
+                "nu": "FR-D",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "851",
+            "states": {
+                "code": "F",
+                "name": "Centre-Val de Loire",
+                "nu": "FR-F",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "852",
+            "states": {
+                "code": "G",
+                "name": "Champagne-Ardenne",
+                "nu": "FR-G",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "853",
+            "states": {
+                "code": "H",
+                "name": "Corsica",
+                "nu": "FR-H",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "854",
+            "states": {
+                "code": "I",
+                "name": "Franche-Comté",
+                "nu": "FR-I",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "855",
+            "states": {
+                "code": "K",
+                "name": "Languedoc-Roussillon",
+                "nu": "FR-K",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "856",
+            "states": {
+                "code": "L",
+                "name": "Limousin",
+                "nu": "FR-L",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "857",
+            "states": {
+                "code": "M",
+                "name": "Lorraine",
+                "nu": "FR-M",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "858",
+            "states": {
+                "code": "P",
+                "name": "Lower Normandy",
+                "nu": "FR-P",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "859",
+            "states": {
+                "code": "N",
+                "name": "Midi-Pyrénées",
+                "nu": "FR-N",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "860",
+            "states": {
+                "code": "O",
+                "name": "Nord-Pas-de-Calais",
+                "nu": "FR-O",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "861",
+            "states": {
+                "code": "R",
+                "name": "Pays de la Loire",
+                "nu": "FR-R",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "862",
+            "states": {
+                "code": "S",
+                "name": "Picardy",
+                "nu": "FR-S",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "863",
+            "states": {
+                "code": "T",
+                "name": "Poitou-Charentes",
+                "nu": "FR-T",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "864",
+            "states": {
+                "code": "U",
+                "name": "Provence-Alpes-Côte d'Azur",
+                "nu": "FR-U",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "865",
+            "states": {
+                "code": "V",
+                "name": "Rhône-Alpes",
+                "nu": "FR-V",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "866",
+            "states": {
+                "code": "Q",
+                "name": "Upper Normandy",
+                "nu": "FR-Q",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "FR",
+            "idFile": "FR_States",
+            "number": "867",
+            "states": {
+                "code": "J",
+                "name": "Île-de-France",
+                "nu": "FR-J",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "898",
+            "states": {
+                "code": "BW",
+                "name": "Baden-Württemberg",
+                "nu": "DE-BW",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "899",
+            "states": {
+                "code": "BY",
+                "name": "Bayern",
+                "nu": "DE-BY",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "900",
+            "states": {
+                "code": "BE",
+                "name": "Berlin",
+                "nu": "DE-BE",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "901",
+            "states": {
+                "code": "BB",
+                "name": "Brandenburg",
+                "nu": "DE-BB",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "902",
+            "states": {
+                "code": "HB",
+                "name": "Bremen",
+                "nu": "DE-HB",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "903",
+            "states": {
+                "code": "HH",
+                "name": "Hamburg",
+                "nu": "DE-HH",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "904",
+            "states": {
+                "code": "HE",
+                "name": "Hessen",
+                "nu": "DE-HE",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "905",
+            "states": {
+                "code": "MV",
+                "name": "Mecklenburg-Vorpommern",
+                "nu": "DE-MV",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "906",
+            "states": {
+                "code": "NI",
+                "name": "Niedersachsen",
+                "nu": "DE-NI",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "907",
+            "states": {
+                "code": "NW",
+                "name": "Nordrhein-Westfalen",
+                "nu": "DE-NW",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "908",
+            "states": {
+                "code": "RP",
+                "name": "Rheinland-Pfalz",
+                "nu": "DE-RP",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "909",
+            "states": {
+                "code": "SL",
+                "name": "Saarland",
+                "nu": "DE-SL",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "910",
+            "states": {
+                "code": "SN",
+                "name": "Sachsen",
+                "nu": "DE-SN",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "911",
+            "states": {
+                "code": "ST",
+                "name": "Sachsen-Anhalt",
+                "nu": "DE-ST",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "912",
+            "states": {
+                "code": "SH",
+                "name": "Schleswig-Holstein",
+                "nu": "DE-SH",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "DE",
+            "idFile": "DE_States",
+            "number": "913",
+            "states": {
+                "code": "TH",
+                "name": "Thüringen",
+                "nu": "DE-TH",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1200",
+            "states": {
+                "code": "65",
+                "name": "Abruzzo",
+                "nu": "IT-abruzzo",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1201",
+            "states": {
+                "code": "77",
+                "name": "Basilicata",
+                "nu": "IT-basilicata",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1202",
+            "states": {
+                "code": "78",
+                "name": "Calabria",
+                "nu": "IT-calabria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1203",
+            "states": {
+                "code": "72",
+                "name": "Campania",
+                "nu": "IT-campania",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1204",
+            "states": {
+                "code": "45",
+                "name": "Emilia-Romagna",
+                "nu": "IT-emilia-romagna",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1205",
+            "states": {
+                "code": "36",
+                "name": "Friuli-Venezia Giulia",
+                "nu": "IT-friuli-venezia giulia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1206",
+            "states": {
+                "code": "62",
+                "name": "Lazio",
+                "nu": "IT-lazio",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1207",
+            "states": {
+                "code": "42",
+                "name": "Liguria",
+                "nu": "IT-liguria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1208",
+            "states": {
+                "code": "25",
+                "name": "Lombardia",
+                "nu": "IT-lombardia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1209",
+            "states": {
+                "code": "57",
+                "name": "Marche",
+                "nu": "IT-marche",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1210",
+            "states": {
+                "code": "67",
+                "name": "Molise",
+                "nu": "IT-molise",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1211",
+            "states": {
+                "code": "21",
+                "name": "Piemonte",
+                "nu": "IT-piemonte",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1212",
+            "states": {
+                "code": "75",
+                "name": "Puglia",
+                "nu": "IT-puglia",
+                "quara": {
+                    "into": {
+                        "where": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "home",
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "10.0",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": ".0",
+                            "de": ".0",
+                            "fr": ".0",
+                            "es": ".0"
+                        }
+                    }
+                },
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            "Unnamed: 7": ".0",
+            "Unnamed: 8": ".0",
+            "Unnamed: 9": ".0",
+            "Unnamed: 10": ".0",
+            "Unnamed: 11": ".0",
+            "Unnamed: 12": ".0",
+            "Unnamed: 13": ".0",
+            "Unnamed: 14": ".0",
+            "Unnamed: 15": ".0",
+            "": ".0",
+            ".1": ".0",
+            ".2": ".0",
+            ".3": ".0",
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1213",
+            "states": {
+                "code": "88",
+                "name": "Sardegna",
+                "nu": "IT-sardegna",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1214",
+            "states": {
+                "code": "82",
+                "name": "Sicilia",
+                "nu": "IT-sicilia",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1215",
+            "states": {
+                "code": "52",
+                "name": "Toscana",
+                "nu": "IT-toscana",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1216",
+            "states": {
+                "code": "32",
+                "name": "Trentino-Alto Adige",
+                "nu": "IT-trentino-alto adige",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1217",
+            "states": {
+                "code": "55",
+                "name": "Umbria",
+                "nu": "IT-umbria",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1218",
+            "states": {
+                "code": "23",
+                "name": "Valle d'Aosta",
+                "nu": "IT-valle d'aosta",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        },
+        {
+            "nu": "IT",
+            "idFile": "IT_States",
+            "number": "1219",
+            "states": {
+                "code": "34",
+                "name": "Veneto",
+                "nu": "IT-veneto",
+                "test": {
+                    "into": {
+                        "pcr": {
+                            "e": ".0",
+                            "v": ".0",
+                            "uv": "72",
+                            "hEF": "False"
+                        },
+                        "comment": {
+                            "en": "Only when entering by plane.",
+                            "de": "Nur wenn mit dem Flugzeug anreisend.",
+                            "fr": "Seulement en arrivant en avion."
+                        },
+                        "ag": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "link": {
+                    "into": "https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html#-1186482803;https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/liste.html#accordion1622273589667"
+                },
+                "quara": {
+                    "into": {
+                        "where": {
+                            "hEF": "False"
+                        },
+                        "dur": {
+                            "hEF": "False"
+                        }
+                    }
+                },
+                "hEF": {
+                    "into": {
+                        "hLS": "180"
+                    }
+                }
+            },
+            ".7": "1"
+        }
+    ]
+}

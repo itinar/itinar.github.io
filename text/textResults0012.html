@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,, shrink-to-fit=no">
+	<title>itinar - covid-19 travel restriction database</title>
+	<meta name="description" content='Covid restricitons have made travelling very difficult and frustrating. Itinar will help you navigate rules in place and quickly spot possible holiday destinations, only once more will you ask "where can I travel to?"'/>
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../css/demo-mod-text-8.3.css">
+	<link rel="stylesheet" type="text/css" href="../css/modal_0009.css">
+	<link rel="stylesheet" href="../src/cookieconsent_0005.css" media="print" onload="this.media='all'; this.onload=null;">
+    <script data-ad-client="ca-pub-9635257571319210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGZ6QJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+  <div class="modal micromodal-slide" id="datenSchutz" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="datenSchutz-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="datenSchutz-title">
+                    Privacy Policy
+                </h2>
+                </header>
+                <main class="modal__content bigger" id="datenSchutz-content">
+                  <p>
+                    <!--<a href="https://www.iubenda.com/privacy-policy/22420771" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" title="Privacy Policy">Privacy Policy</a>-->
+                    <iframe src="https://www.iubenda.com/privacy-policy/22420771" style="width: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;height: 84%;" title="Iframe Example"></iframe> 
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="keksSchutz" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="keksSchutz-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="keksSchutz-title">
+                    Cookie Policy
+                </h2>
+                </header>
+                <main class="modal__content bigger" id="keksSchutz-content">
+                  <p>
+                    <!--<a href="https://www.iubenda.com/privacy-policy/22420771" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" title="Privacy Policy">Privacy Policy</a>-->
+                    <iframe src="https://www.iubenda.com/privacy-policy/22420771/cookie-policy" style="width: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;height: 84%;" title="Iframe Example"></iframe> 
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="license" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="license-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="license-title">
+                    Licensing
+                </h2>
+                </header>
+                <main class="modal__content" id="license-content">
+                  <p>
+                    
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="faq" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="faq-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="faq-title">
+                    Update Frequency
+                </h2>
+                </header>
+                <main class="modal__content" id="faq-content">
+                  <p>
+                  	We automatically get notified of changes on official websites, when available, which is the case for about half the countries. Usually it does not take us more than 3 days to update itinar with this information.
+                  </p>
+                  <p>
+                  	Countries without good ressources might be updated with more delay, since we have to wait for news outlets to publish the data first.
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="contact" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="contact-title">
+                    Contact
+                </h2>
+                </header>
+                <main class="modal__content" id="contact-content">
+                  <p style="">
+                  	If you find a mistake or have any suggestions feel free to contact us!
+                  </p><br>
+                  <p style="text-align: center; font-weight: bold;">
+                  	<a target="_blank" href="https://www.facebook.com/itinardotcom">FACEBOOK</a>  <br><br>
+                  	<a target="_blank" href="https://www.instagram.com/itinarthemap/">INSTAGRAM</a>  <br><br>
+                  	<a target="_blank" href="https://www.reddit.com/r/itinar/">REDDIT</a>  <br><br>
+                  	<a target="_blank" href="mailto:contact@itinar.com">EMAIL</a>  
+                  </p>
+                </main>
+                <footer class="modal__footer">
+                  <button class="oOM" class="modal__btn" data-micromodal-close aria-label="back" onclick="">back to map</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="load" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="load-title" style="width: auto;height: auto;min-height: auto;">
+                <header class="modal__header">
+                <h2 class="modal__title" id="load-title" style="text-align: center;">
+                    Loading...
+                </h2>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+	<div id="countries" class="box">
+		<div id="tongue">
+			<label for="language"></label>
+			<select name="language" id="tongueSelector" onchange="setLang(this)">
+				<option value="en">en</option>
+				<option value="de">de</option>
+				<option value="fr">fr</option>
+			</select>
+		</div>
+		<div id="countriesContainer">
+			<div id="topOfLogo"></div>
+
+			<div>
+				<div id="logo"><img src="../src/logo-AA-1.svg"></div>
+				<h1 id="subTitle">covid-19 travel restriction database</h1>
+			</div>
+
+			<div id="controls">
+				<div><span class="instructions break">1. Tell me where you're travelling from</span><br>
+					<div class="autocomplete">
+						<input id="countryComplete" onfocus="document.getElementsByClassName('instructions')[0].scrollIntoView();" type="text" autocomplete="off" name="countryComplete" placeholder="Start typing and choose from list">
+						<label for="countryComplete">country of origin</label>
+					</div>
+				</div>
+				<div><span class="instructions break">2. Select your vaccination status</span>
+					<div class="countryInput">
+						<label>
+							<input onchange="highlightMine()" type="radio" name="vac" value="vYes" checked="checked"><span class="checkmark"></span>I have been fully vaccinated</label>
+					</div>
+					<!--<div class="countryInput"><label><input onchange="highlightMine()" type="radio" name="vac" value="pI"><span class="checkmark"></span>I've had Covid-19 before</label></div>-->
+					<div class="countryInput">
+						<label>
+							<input onchange="highlightMine()" type="radio" name="vac" value="false" checked="checked"><span class="checkmark"></span>I haven't been fully vaccinated</label>
+					</div>
+				</div>
+				<div id="toggleCountriesInCountries">
+					<button class="oOM" onclick="toggleCountries('close')"><span id="chnopf">Show more map</span>
+				</div>
+			</div>
+			
+		</div>
+		<div id="listContent">
+			
+		</div>
+		<div id="countriesBottom">
+			<div id="links"><a onclick="MicroModal.show(\'contact\');">Contact</a> <a onclick="MicroModal.show(\'faq\');">Update Frequency</a></div>
+			<div id="maybeDisclaim">
+				<div><a onclick="MicroModal.show(\'datenSchutz\')" title="Privacy Policy ">Privacy Policy</a></div>
+				<div><a onclick="MicroModal.show(\'disclaim\');">Disclaimer</a></div>
+				<div><a onclick="cc.showSettings(0);">Cookie Settings</a></div>
+			</div>
+			<div id="wa">
+				<div id="countriesFlights">
+					<div data-skyscanner-widget="SearchWidget" data-locale="en-GB" data-market="GB" data-currency="GBP"></div>
+				</div>
+				<div id="pH"></div>
+			</div>
+		</div>
+	</div>
+		
+
+
+
+
+
+
+	<script src="../src/svg-world-map-mod4.7.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+    <script src="../src/easypz.latest.js"></script>
+    <script src="../src/hammer.js"></script>
+    <script src="../src/cookieconsent.js"></script>
+    <script src="../src/micromodal.min.js"></script>
+    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>    
+    <script type="text/javascript">
+    	// Global variables
+            var myWorldMap;
+            var myWorldMap2;
+            var provData;
+            var stateData;
+            var vacGet = document.getElementsByName('vac');
+            var curFewTimeBeginGet = document.getElementsByName('curFewTimeBegin');
+            var curFewTimeEndGet = document.getElementsByName('curFewTimeEnd');
+            var bigMap = true;
+
+            var vacStat;
+            var pastInfection;
+            var curFewTimeBeginStat;
+            var curFewTimeEndStat;
+
+            var chosenCountryId;
+            var chosenCountryName;
+
+
+            var cc = initCookieConsent();
+
+            var tongue = "en";
+            var dixerLoc = "../src/tongues_8.json";
+            var dixer;
+            var cDix;
+
+            var mWMcountries;
+
+            loadThisJson("../src/country-data.json").then(value => {mWMcountries = value;buildDropDown();});
+
+    	cc.run({
+				    current_lang : 'en',
+                    onAccept: function(cookies){
+                        if(cc.allowedCategory('analytics_cookies')){
+                            //console.log("hhh");
+                            cc.loadScript('https://www.googletagmanager.com/gtag/js?id=G-6JJXHNMF0H', function(){   
+                            //console.log("hhh");   
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'G-6JJXHNMF0H');
+                            });
+                        }
+                    },
+                    languages : {
+				        en : {
+				            consent_modal : {
+				                title :  "We use cookies",
+				                description :  "Hi, this website uses essential cookies to ensure its proper function and tracking cookies to understand how you interact with it. The latter will be set only upon approval. More information in our <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>",
+				                primary_btn: {
+				                    text: 'accept all',
+				                    role: 'accept_all'  //'accept_selected' or 'accept_all'
+				                },
+				                secondary_btn: {
+				                    text : 'settings',
+				                    role : 'settings'   //'settings' or 'accept_necessary'
+				                }
+				            },
+				            settings_modal : {
+				                title : 'Cookie preferences',
+				                save_settings_btn : "Save settings",
+				                accept_all_btn : "Accept all",
+				                cookie_table_headers : [
+				                    {col1: "Name" }, 
+				                    {col2: "Domain" }, 
+				                    {col3: "Expiration" }, 
+				                    {col4: "Description" }, 
+				                    {col5: "Type" }
+				                ],
+				                blocks : [
+				                    {
+				                        title : "Cookie usage",
+				                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want.'
+				                    },{
+				                        title : "Strictly necessary cookies",
+				                        description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.',
+				                        toggle : {
+				                            value : 'necessary_cookies',
+				                            enabled : true,
+				                            readonly: true
+				                        }
+				                    },{
+				                        title : "Analytics cookies",
+				                        description: 'This Website uses Trackers to measure traffic and analyze User behavior with the goal of improving the Service.',
+				                        toggle : {
+				                            value : 'analytics_cookies',
+				                            enabled : false,
+				                            readonly: false
+				                        },
+				                        cookie_table: [
+				                            {
+				                                col1: '_ga',
+				                                col2: 'google.com',
+				                                col3: '2 years',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gat',
+				                                col2: 'google.com',
+				                                col3: '1 minute',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            },
+				                            {
+				                                col1: '_gid',
+				                                col2: 'google.com',
+				                                col3: '1 day',
+				                                col4: 'description ...' ,
+				                                col5: 'Permanent cookie'
+				                            }
+				                        ]
+				                    },{
+				                        title : "More information",
+				                        description: "For further details please consult our detailed <a onclick='MicroModal.show(\"keksSchutz\")' title='Cookie Policy '>Cookie Policy</a>.",
+				                    }
+				                ]
+				            }
+				        }
+				    }
+				});
+		
+
+		function autocomplete(inp, arr) {
+			  /*the autocomplete function takes two arguments,
+			  the text field element and an array of possible autocompleted values:*/
+			  ////////console.log("inp");////////console.log(inp);
+			  ////////console.log("arr");////////console.log(arr);
+			  var currentFocus;
+			  /*execute a function when someone writes in the text field:*/
+			  inp.addEventListener("input", function(e) {
+			      var a, b, i, val = this.value;
+			      /*close any already open lists of autocompleted values*/
+			      closeAllLists();
+			      if (!val) { return false;}
+			      currentFocus = -1;
+			      /*create a DIV element that will contain the items (values):*/
+			      a = document.createElement("DIV");
+			      a.setAttribute("id", this.id + "autocomplete-list");
+			      a.setAttribute("class", "autocomplete-items");
+			      /*append the DIV element as a child of the autocomplete container:*/
+			      this.parentNode.appendChild(a);
+			      /*for each item in the array...*/
+			      for (i = 0; i < arr.length; i++) {
+			        /*check if the item starts with the same letters as the text field value:*/
+			        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+			          /*create a DIV element for each matching element:*/
+			          b = document.createElement("DIV");
+			          /*make the matching letters bold:*/
+			          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+			          b.innerHTML += arr[i].substr(val.length);
+			          /*insert a input field that will hold the current array item's value:*/
+			          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+			          /*execute a function when someone clicks on the item value (DIV element):*/
+			              b.addEventListener("click", function(e) {
+			              /*insert the value for the autocomplete text field:*/
+			              inp.value = this.getElementsByTagName("input")[0].value;
+			              chooseCountry(inp.value);
+			              /*close the list of autocompleted values,
+			              (or any other open lists of autocompleted values:*/
+			              closeAllLists();
+			          });
+			          a.appendChild(b);
+			        }
+			      }
+			  });
+			  /*execute a function presses a key on the keyboard:*/
+			  inp.addEventListener("keydown", function(e) {
+			      var x = document.getElementById(this.id + "autocomplete-list");
+			      if (x) x = x.getElementsByTagName("div");
+			      if (e.keyCode == 40) {
+			        /*If the arrow DOWN key is pressed,
+			        increase the currentFocus variable:*/
+			        currentFocus++;
+			        /*and and make the current item more visible:*/
+			        addActive(x);
+			      } else if (e.keyCode == 38) { //up
+			        /*If the arrow UP key is pressed,
+			        decrease the currentFocus variable:*/
+			        currentFocus--;
+			        /*and and make the current item more visible:*/
+			        addActive(x);
+			      } else if (e.keyCode == 13) {
+			        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+			        e.preventDefault();
+			        if (currentFocus > -1) {
+			          /*and simulate a click on the "active" item:*/
+			          if (x) x[currentFocus].click();
+			        }
+			      }
+			  });
+			  document.addEventListener("focusout", function(){
+			  })
+			  function addActive(x) {
+			    /*a function to classify an item as "active":*/
+			    if (!x) return false;
+			    /*start by removing the "active" class on all items:*/
+			    removeActive(x);
+			    if (currentFocus >= x.length) currentFocus = 0;
+			    if (currentFocus < 0) currentFocus = (x.length - 1);
+			    /*add class "autocomplete-active":*/
+			    x[currentFocus].classList.add("autocomplete-active");
+			  }
+			  function removeActive(x) {
+			    /*a function to remove the "active" class from all autocomplete items:*/
+			    for (var i = 0; i < x.length; i++) {
+			      x[i].classList.remove("autocomplete-active");
+			    }
+			  }
+			  function closeAllLists(elmnt) {
+			    /*close all autocomplete lists in the document,
+			    except the one passed as an argument:*/
+			    var x = document.getElementsByClassName("autocomplete-items");
+			    for (var i = 0; i < x.length; i++) {
+			      if (elmnt != x[i] && elmnt != inp) {
+			      x[i].parentNode.removeChild(x[i]);
+			    }
+			  }
+			}
+
+			/*execute a function when someone clicks in the document:*/
+			document.addEventListener("click", function (e) {
+			    closeAllLists(e.target);
+			});
+			} 
+
+			function doesFileExist(urlToFile) {
+			    var xhr = new XMLHttpRequest();
+			    xhr.open('HEAD', urlToFile, false);
+			    xhr.send();
+			     
+			    if (xhr.status == "404") {
+			        return false;
+			    } else {
+			        return true;
+			    }
+			}
+
+            function findGetParameter(parameterName) {
+                var result = null,
+                    tmp = [];
+                location.search
+                    .substr(1)
+                    .split("&")
+                    .forEach(function (item) {
+                      tmp = item.split("=");
+                      if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+                    });
+                return result;
+            }
+
+            async function loadThisJson(filePath){
+                let response = await fetch(filePath);
+                let data = await response.json();
+                const result = data;
+                return result;
+            }
+
+            function buildDropDown(){
+            	var c = [];
+            	if(true/*tongue == "en"*/){
+	            	for (var countryid in mWMcountries) {
+	            		if(mWMcountries[countryid].name == undefined){
+	            			////////console.log("undefined: " + mWMcountries[countryid].id)
+	            		} else {
+	            			c.push(mWMcountries[countryid].name);
+	            		}
+	                }
+            	}else{
+            		for (var countryid in cDix) {
+	            		if(cDix[countryid].name == undefined){
+	            			////////console.log("undefined: " + cDix[countryid].name)
+	            		} else {
+	            			c.push(cDix[countryid].name);
+	            		}
+	                }
+            	}
+            	////////console.log("cDix");////////console.log(cDix);
+                ////////console.log("c");////////console.log(c);
+                autocomplete(document.getElementById("countryComplete"), c);
+            }
+    </script>
+
+</body>
+</html>
